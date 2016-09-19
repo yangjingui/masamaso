@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>首页</title>
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/index.css" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/right.css" />
+
+		<script src="../assets/jquery-1.12.0.js"></script>
+		<script src="../js/index.js"></script>
+		<script src="../js/common.js"></script>
+	<script>
+		jQuery(function($){
+			var $window = $(window);
+			var $bar = $('#btns_bar1');
+				//给window绑定滚动事件
+		    $window.scroll(function(){
+				
+				if($window.scrollTop() > 600){
+			      	//当滚动条滚到大于600时，开始显示
+			       	$bar.show(); 
+			       			       			        
+		      	}else{
+		       		$bar.hide();
+		      	}
+		      
+		    });
+		});
+	</script>
+	</head>
+	<body>
+	<div class="container">
+		<!--首页顶部固定导航栏-->
+		<div id="btns_bar1">
+           <div class="header-nav"> 
+              <div class="fl">                 
+			   <a href="" title="首页" class="act">首页</a> 			 
+			   <a href="" title="薄便装" class="act">薄便装</a> 			 
+			   <a href="" title="短T" class="act">短T</a> 		 
+			   <a href="" title="牛仔系列" class="act">牛仔系列
+					<i class="new-nav"><img src="../css/img/hot.gif"></i>
+				</a> 			 
+			   <a href="" title="男包" class="act">男包</a> 			 
+			   <a href="" title="衬衫" class="act">衬衫</a> 			 
+			   <a href="" title="休闲裤" class="act">休闲裤</a> 			 
+			   <a href="" title="长T" class="act">长T</a> 			 
+			   <a href="" title="休闲鞋" class="act">休闲鞋</a> 			 
+			   <a href="" title="皮衣" class="act">皮衣</a> 			 
+			   <a href="" title="正装鞋" class="act">正装鞋</a> 		 
+			   <a href="" title="长袖毛衫" class="act">长袖毛衫</a> 			 
+              </div>
+              <div class="fr">              	  
+				<a href="" title="本周会员专享" class="act">本周会员专享
+					<i class="hot-nav"><img src="../css/img/hot.gif"></i>
+				</a>   		      
+				<a href="" title="断码清仓" class="act">断码清仓</a>   		      
+				<a href="" title="新品发布" class="act">新品发布</a>   		     
+              </div>
+              <p class="cl"></p>
+          </div>
+      </div>
+		<!--首页顶部固定导航栏end-->
+		
+		<!--banner轮播图-->	   
+      	<div class="index_wrap">
+          <div class="index_banner">
+              <div class="fullSlide">
+                  <div class="bd">
+                      <ul style="position: relative; width: 1349px; height: 500px;">
+                          <li style="position: absolute; width: 1349px; height: 500px; left: 0px; top: 0px; display: block; background: url(../img/banner1.png) 50% 0px no-repeat;">
+                              <ahref=""></a>
+                          </li>
+                          <li style="position: absolute; width: 1349px; height: 500px; left: 0px; top: 0px; display: none; background: url(../img/banner2.png) 50% 0px no-repeat;">
+                              <a href=""></a>
+                          </li>
+                          <li style="position: absolute; width: 1349px; height: 500px; left: 0px; top: 0px; display: none; background: url(../img/banner3.png) 50% 0px no-repeat;">
+                              <a href=""></a>
+                          </li>                        		
+                      </ul>
+                  </div>
+                  <div class="hd">
+                    <span class="on"><img src="../css/img/banner1.jpg" width="144"></span>
+                    <span class=""><img src="../css/img/banner2.jpg" width="144"></span>
+                    <span class=""><img src="../css/img/banner3.jpg" width="144"></span>                     	 
+                  </div>
+              </div>             
+          </div>
+      </div>
+	<!--banner轮播图 end-->
+	
+	<!--公告-->
+	    <div class="new-notice">
+	    	<i class="red fl">最新公告： </i>
+		    <div class="notice-wr">		    	
+		        <div class="notice-poab" style="width: 4124px; left: -819px;">
+		        	<marquee behavior="scroll" direction="left" contenteditable="true" scrollamount="3"
+					onstart="this.firstChild.innerHTML+=this.firstChild.innerHTML;" width="2500">
+		        	<a href=""></a>
+		            <a href="" class="red">中秋嘉年华第2件5折   </a> 
+		            <a href=""   >新品长T169元起   </a> 
+		            <a href="" class="red">会员免费抽奖   </a> 
+		            <a href=""   >新品满399送围巾   </a> 
+		            <a href="" class="red">超柔纱商务牛仔裤299元   </a> 
+		            <a href=""   >夏季清仓满399减100   </a> 
+		            <a href="" class="red">新品潮鞋329元起   </a> 
+		            <a href=""   >亚麻牛津纺衬衫专题   </a> 
+		            <a href="" class="red">新品薄便装399元起   </a> 
+		            <a href=""   >新品皮具预售满699赠礼包   </a> 
+		            <a href="" class="red">处女座内裤2条88元   </a> 
+		            <a href=""   >中秋嘉年华第2件5折   </a>
+		            <a href="" class="red">新品长T169元起   </a>
+		            <a href=""   >会员免费抽奖   </a>
+		            <a href="" class="red">新品满399送围巾   </a>
+		            <a href=""   >超柔纱商务牛仔裤299元   </a>
+		            <a href="" class="red">夏季清仓满399减100   </a>
+		            <a href=""   >新品潮鞋329元起   </a>
+		            <a href="" class="red">亚麻牛津纺衬衫专题   </a>
+		            <a href=""   >新品薄便装399元起   </a>
+		            <a href="" class="red">新品皮具预售满699赠礼包   </a>
+		            <a href=""   >处女座内裤2条88元   </a>
+		            </marquee>
+		        </div>
+		    </div>
+	</div>
+   	<!-- 公告end  -->                
+	<!--时尚风标--手风琴效果-->
+	<div class="line-title">
+		<span>2016时尚风标</span>
+	</div>
+	<div class="masapic">
+      <div class="masapic_item_index" href="" index="0" 
+      	style="cursor: pointer; width: 780px; overflow: hidden; background: url(../css/img/f1.png) 50% 50% no-repeat;">        
+        <div class="text active">
+            <div class="title">牛仔风</div>
+            <div class="content"> 
+             	  还有什么比牛仔裤更能随心搭配呢？你在这可以玩经典、玩时尚、玩工匠手艺、玩版型、玩弹力、玩舒适！
+            </div>
+            <div class="link">点击进入 </div>
+        </div>
+    	</div> 
+      	<div class="masapic_item_index" href="" index="1" on="1" 
+      		style="cursor: pointer; width: 140px; overflow: hidden; background: url(../css/img/f2.png) 50% 50% no-repeat;">        
+        <div class="text text-moren">
+            <div class="title">休闲商务风</div>
+            <div class="content"> 
+               “宁愿休闲，不想商务！”  但是没办法，毕竟还有客户召见、向老板汇报！其实只要把休闲装品质做更好一些，就会显得商务了！
+            </div>
+            <div class="link">点击进入 </div>
+        </div>
+    	</div> 
+      	<div class="masapic_item_index" href="" index="2" on="0" 
+      		style="cursor: pointer; width: 140px; overflow: hidden; background: url(../css/img/f3.png) 50% 50% no-repeat;"> 
+        <div class="text text-moren">
+            <div class="title">复古丹宁风</div>
+            <div class="content"> 
+              	 丹宁风暴，无可阻挡！全棉的舒适带给你前所未有的时尚复古体验，用心的设计为你打造国际超模的衣橱！
+            </div>
+            <div class="link">点击进入 </div>
+        </div>
+    	</div> 
+     	<div class="masapic_item_index" href="" index="3" on="0" 
+     		style="cursor: pointer; width: 140px; overflow: hidden; background: url(../css/img/f4.png) 50% 50% no-repeat;"> 
+        <div class="text text-moren">
+            <div class="title">时尚潮流风</div>
+            <div class="content"> 
+              	 酷作为男人的必备元素之一，无时无刻在吸引着各路型男的目光。环保的面料，独特的设计风格，精致的工艺，打造最帅酷型，今秋必备！
+            </div>
+            <div class="link">点击进入 </div>
+        </div>
+    	</div>     
+	</div>
+	<!--时尚风标end--> 
+	
+	<!--热销推荐-->
+	<div class="line-title">
+		<span>热销推荐</span>
+	</div>
+	<div class="recomment-wr slideTxtBox">
+        <div class="recomment hd">
+	        <li class="on"> 秋装新品推荐  </li> 
+	        <li class=""> 秋装外套  </li> 
+	        <li class=""> 短袖T恤  </li> 
+	        <li class=""> 衬衫  </li> 
+	        <li class=""> 裤子  </li> 
+	        <li class=""> 男鞋  </li> 
+	        <li class=""> 男包  </li> 
+	    </div>
+		<!--商品列表-->							
+		<div class="tab-bd clearfix" >
+			<div class="in_masa">
+			<ul>
+				<li>
+					<div class="in_masa_up"> 									 				  
+						<a class="in_pic" href=""><img class="lazyload_bk" src="../css/img/1.jpg"></a> 
+					</div>
+					<div class="in_masa_info">					
+						<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+						
+						<div class="in_price">							
+							<em><span class="yuan">¥</span><span>429</span></em> 
+						</div>
+					</div>
+				</li>   
+				<li>
+					<div class="in_masa_up"> 									 				  
+						<a class="in_pic" href=""><img class="lazyload_bk" src="../css/img/2.jpg"></a> 
+					</div>
+					<div class="in_masa_info">					
+						<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+						 
+						<div class="in_price">							
+							<em><span class="yuan">¥</span><span>429</span></em> 
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="in_masa_up"> 									 				  
+						<a class="in_pic" href=""><img class="lazyload_bk" src="../css/img/1.jpg"></a> 
+					</div>
+					<div class="in_masa_info">					
+						<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+						
+						<div class="in_price">							
+							<em><span class="yuan">¥</span><span>429</span></em> 
+						</div>
+					</div>
+				</li>   
+				<li>
+					<div class="in_masa_up"> 									 				  
+						<a class="in_pic" href=""><img class="lazyload_bk" src="../css/img/3.jpg"></a> 
+					</div>
+					<div class="in_masa_info">					
+						<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+						 
+						<div class="in_price">							
+							<em><span class="yuan">¥</span><span>429</span></em> 
+						</div>
+					</div>
+				</li>   
+				<li class="no-right">
+					<div class="in_masa_up"> 								 				  
+						<a class="in_pic" href=""><img class="lazyload_bk" src="../css/img/4.jpg"></a> 
+					</div>
+					<div class="in_masa_info">					
+						<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+						 
+						<div class="in_price">							
+							<em><span class="yuan">¥</span><span>429</span></em> 
+						</div>
+					</div>
+				</li>   
+				<li>
+					<div class="in_masa_up"> 									 				  
+						<a class="in_pic" href=""><img class="lazyload_bk" src="../css/img/5.jpg"></a> 
+					</div>
+					<div class="in_masa_info">					
+						<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+						 
+						<div class="in_price">							
+							<em><span class="yuan">¥</span><span>429</span></em> 
+						</div>
+					</div>
+				</li> 
+				<li>
+					<div class="in_masa_up"> 									 				  
+						<a class="in_pic" href=""><img class="lazyload_bk" src="../css/img/1.jpg"></a> 
+					</div>
+					<div class="in_masa_info">					
+						<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+						
+						<div class="in_price">							
+							<em><span class="yuan">¥</span><span>429</span></em> 
+						</div>
+					</div>
+				</li>   
+				<li>
+					<div class="in_masa_up"> 									 				  
+						<a class="in_pic" href=""><img class="lazyload_bk" src="../css/img/6.jpg"></a> 
+					</div>
+					<div class="in_masa_info">					
+						<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+						 
+						<div class="in_price">							
+							<em><span class="yuan">¥</span><span>429</span></em> 
+						</div>
+					</div>
+				</li>   
+				<li>
+					<div class="in_masa_up"> 									 				  
+						<a class="in_pic" href=""><img class="lazyload_bk" src="../css/img/7.jpg"></a> 
+					</div>
+					<div class="in_masa_info">					
+						<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+						 
+						<div class="in_price">							
+							<em><span class="yuan">¥</span><span>429</span></em> 
+						</div>
+					</div>
+				</li>   
+				<li class="no-right">
+					<div class="in_masa_up"> 									 				  
+						<a class="in_pic" href=""><img class="lazyload_bk" src="../css/img/8.jpg"></a> 
+					</div>
+					<div class="in_masa_info">					
+						<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+						 
+						<div class="in_price">							
+							<em><span class="yuan">¥</span><span>429</span></em> 
+						</div>
+					</div>
+				</li>
+				<p class="clearfix"></p>
+			</ul>
+		</div> 
+	</div>			
+	<!--热销推荐end-->
+	
+	<!--活动主题篇-->
+	<div class="line-title mt"> 
+		<span>活动主题篇</span>
+	</div>
+	<div class="hot-active hot">
+	    <ul> 
+	        <li class="act-big">
+	            <a href=""  >
+	            	<img src="../css/img/a1.jpg" >
+	                <div class="text">
+	                    <p class="hottexttitle"  >中秋嘉年华</p>
+	                    <p class="hottextcontent"  >第二件五折</p>
+	                </div>
+	            </a>
+	        </li>
+	        <li class=" maso_transclass">
+	            <a href=""  >
+	            	<img src="../css/img/a6.jpg" >
+	                <div class="text" >
+	                    <p class="hottexttitle"  >夏季清仓</p>
+	                    <p class="hottextcontent"   >满399减100</p>
+	                </div>
+	            </a>
+	        </li>
+	        <li class=" maso_transclass">
+	            <a href=""  >
+	            	<img src="../css/img/a2.jpg" >
+	                <div class="text" >
+	                    <p class="hottexttitle"  >新品舒适保姆裤</p>
+	                    <p class="hottextcontent"   >299元起</p>
+	                </div>
+	            </a>
+	        </li>
+	        <li class=" maso_transclass">
+	            <a href=""  >
+	            	<img src="../css/img/a3.jpg" >
+	                <div class="text" >
+	                    <p class="hottexttitle"  >新品休闲潮鞋</p>
+	                    <p class="hottextcontent"    >299元起</p>
+	                </div>
+	            </a>
+	        </li>
+	        <li class=" maso_transclass">
+	            <a href=""  >
+	            	<img src="../css/img/a5.jpg"  >
+	                <div class="text" >
+	                    <p class="hottexttitle"   >新品薄便装</p>
+	                    <p class="hottextcontent"   >399元起</p>
+	                </div>
+	            </a>
+	        </li>
+	       	<!-- 清除浮动-->
+	        <p class="clearfix"></p>
+	    </ul>  
+	</div>
+	<!--活动主题篇end-->
+	
+	<!--经典专区-->
+	<div class="line-title mt"> 
+		<span>经典专区</span>
+	</div>
+	<div class="hot-active hot">
+	    <ul> 
+	        <li class=" maso_transclass">
+	            <a href="">
+	            	<img src="../css/img/c1.jpg">
+	                <div class="text hottext" >
+	                    <p class="hottexttitle"  >本周新品</p>
+	                    <p class="hottextcontent"  >"装"出男神范</p>
+	                </div>
+	            </a>
+	        </li>
+	        <li class=" maso_transclass">
+	            <a href="">
+	            	<img src="../css/img/c2.jpg">
+	                <div class="text hottext">
+	                    <p class="hottexttitle"  >会员专场</p>
+	                    <p class="hottextcontent"  >免费抽奖</p>
+	                </div>
+	            </a>
+	        </li>
+	        <li class=" maso_transclass">
+	            <a href="">
+	            	<img src="../css/img/c3.jpg">
+	                <div class="text hottext">
+	                    <p class="hottexttitle"  >库存告急</p>
+	                    <p class="hottextcontent"  >断码清仓</p>
+	                </div>
+	            </a>
+	        </li>
+	        <li class=" maso_transclass">
+	            <a href="">
+	            	<img src="../css/img/c4.jpg">
+	                <div class="text hottext">
+	                    <p class="hottexttitle"  >处女座星座内裤</p>
+	                    <p class="hottextcontent"  >88元/2条</p>
+	                </div>
+	            </a>
+	        </li>
+	        <li class="act-big maso_transclass">
+	            <a href="">
+	            	<img src="../css/img/c5.jpg">
+	                <div class="text hottext">
+	                    <p class="hottexttitle"  >新品皮具</p>
+	                    <p class="hottextcontent"  >满699赠199礼包</p>
+	                </div>
+	            </a>
+	        </li>
+	        <p class="clearfix"></p>
+	    </ul>  
+	</div>
+	<!--经典专区end-->
+	
+	<!--时尚资讯-->
+	<div class="line-title">
+    	<span>时尚资讯</span>
+	</div>
+	<div class="new-info">
+	    <ul>
+	        <li>
+	            <a href=""><img src="../css/img/ff1.jpg"></a>
+	            <p class="p1"><a href="">入秋换装穿搭推荐</a></p>
+	            <p class="p2">转眼就入秋了，又到了换装的季节。先别着急给自己置办新装，看看时尚潮人们都在穿什么外套，这么穿才能引领潮流。看似低调的丹宁外套，可说是美式风格最具代表性的单品.....</p>
+	            <p class="p3"><a href="">点击查看详情</a></p>
+	        </li>
+	        <li>
+	            <a href=""><img src="../css/img/ff2.jpg"></a>
+	            <p class="p1"><a href="">好男人要“衬”出来</a></p>
+	            <p class="p2">想必大家都喜欢现在的天气吧，秋高气爽，心情盎然，终于赶走闷热迎来了清爽。又到了穿衬衫的季节，正所谓男人的优雅要“衬”出来。那么，不同款式的衬衫该如何选择呢？</p>
+	            <p class="p3"><a href="">点击查看详情</a></p>
+	        </li>
+	               
+	        <li class="info-little">
+	            <img src="../css/img/m.png"> 
+	            <div class="info-ltext">
+	                <p class="pimg pimg1"><img src="../css/img/apple.png"><span>客户端</span></p>
+	                <p class="p4">新人有礼下载客户端领红包</p>
+	                <p class="pimg pimg2"><img src="../css/img/andriod.png"><span>客户端</span></p>
+	                <p class="p5">新人有礼下载客户端领红包</p>
+	                <p class="p6">关注微信享受更多服务</p>
+	                <p class="p7">首次绑定得<font color="red">10</font>元现金券</p>
+	            </div>
+	        </li>
+	    </ul>
+	</div>
+	<!--时尚资讯end-->
+	<!--中秋嘉年华-->	
+	<div class="foot_add maso_transclass" >
+		<ul>
+			<li>
+		    	<a class="add_03" href=""><img src="../css/img/bottom.jpg">
+				    <div class="text">
+				       <p class="hottexttitle">中秋嘉年华</p>
+				       <p class="hottextcontent">第二件五折</p>
+				    </div>
+		    	</a>
+			   <p class="clearfix"></p>
+		   </li>
+	  </ul>
+	</div>
+	<!--中秋嘉年华end-->
+    </div>
+	</body>
+</html>

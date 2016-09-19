@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>网站头部</title>
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/reset.css" />
+		
+		<script src="../assets/jquery-1.12.0.js"></script>
+		<script>
+			jQuery(function($){
+				//给下部导航菜单添加鼠标移入事件
+				$('.menu_box_nav').on('mouseenter','.menu2',function(){
+					//给menu2添加active类
+					$('.menu2').addClass('active');
+					
+					//将向下的图标改成向上的图标
+					$(this).find('i').removeClass('arr').addClass('art');
+					$(this).find('li').addClass('act');
+					
+					//将文字改成白色
+					$(this).find('a').css('color', '#fff');
+					$(this).find('span').css('color', '#fff');
+					
+					//给弹出菜单添加向下展开的动画效果
+					$('.maso_nav').appendTo($('.menu_box_nav_bg'));
+					$('.menu_box_nav_bg').css('opacity','1');
+					$('.maso_nav').slideDown();
+				//鼠标移出时恢复默认值
+				}).on('mouseleave',function(){
+					$('.menu2').removeClass('active');			
+					$(this).find('i').addClass('arr').removeClass('art');
+					$(this).find('li').removeClass('act');
+					$(this).find('a').css('color', '#666');
+					$(this).find('span').css('color', '#666');				
+					$('.maso_nav').slideUp();
+					$('.menu_box_nav_bg').css('opacity','0');
+				});							
+			});
+		</script>
+	</head>
+	<body>
+	<div class="head-top">		
+	<div class="head">
+	  <!--logo-->
+	  <div class="header_top">
+	      <div class="top_box">
+	          <div class="top_left_box fl">
+	              <span style="color:red;">30天</span>无障碍退换货<i>|</i>
+	              <span style="color:red;">365天</span>客服<i>|</i>顺丰快递<i>|</i>主力城市
+	              <span style="color:red;">次日送达</span><i>|</i>&lt;广告&gt;
+	          </div>
+	          <div class="fr top_right_ctl" id="index_login">
+	          	<a href="">用户登录</a><i>|</i><a href="">新用户注册</a>
+	          </div>
+	          <p class="cl"></p>
+	      </div>
+	  </div>
+	  
+	  <div class="header_box">
+	      <div class="header clearfix">
+	          <a href=""><img src="../css/img/logor.jpg" class="logo-img"></a>
+	          <div class="header-seach">    
+		          <form>
+	                  <input type="text" placeholder="查找" name="keywords" class="search-input">
+	                  <input type="submit" value=""> 
+		          </form>
+	          </div>
+	      </div>
+	      <p class="clearfix"></p>
+	  </div>  
+	  
+	 <!-- 上部导航菜单 -->  
+	   <div class="header-nav"> 
+	      <div class="fl">    
+			   <a href="" title="首页"  >首页</a>  
+			   <a href="" title="薄便装"  >薄便装</a> 		 
+			   <a href="" title="短T"  >短T </a> 		 
+			   <a href="" title="牛仔系列"  >牛仔系列<i class="new-nav"><img src="../css/img/hot.gif"></i></a> 		 
+			   <a href="" title="男包"  >男包</a> 		 
+			   <a href="" title="衬衫"  >衬衫</a> 		 
+			   <a href="" title="休闲裤"  >休闲裤</a> 		 
+			   <a href="" title="长T"  >长T</a> 		 
+			   <a href="" title="休闲鞋"  >休闲鞋</a> 		 
+			   <a href="" title="皮衣"  >皮衣</a> 		 
+			   <a href="" title="正装鞋"  >正装鞋</a> 		 
+			   <a href="" title="长袖毛衫"  >长袖毛衫</a> 		 
+	      </div>
+	      <div class="fr">
+	      	<a href="" title="限时抢购"  >限时抢购</a> 
+			<a href="" title="本周会员专享"  >本周会员专享<i class="hot-nav"><img src="../css/img/hot.gif"></i></a>   			      
+			<a href="" title="断码清仓"  >断码清仓</a>   				      
+			<a href="" title="新品发布" class="no-mr" >新品发布</a>   				     
+	      </div>
+	      <p class="clearfix"></p>
+	  </div>
+	<!-- 上部导航菜单 menu_end-->    
+	</div>
+	<!-- 下部导航菜单 --> 
+ 	<div class="menu_box_nav">
+	    <div class="menu2">
+	        <ul class="second_menu f12">								 
+				<li class=""><a id="" href=""  title="会员机制">会员机制</a></li>									 
+				<li class=""><a id="" href=""  title="vivian女装">vivian女装</a></li>	
+			</ul>
+	        <ul class="menu_box_list">    	   
+				<li class="mm0">
+					<a id="menu_m0" href="" title="外套"  >
+						<span id="imgdropmenu0">外套</span> 
+						<i class="arr"></i>
+					</a>
+				</li>  
+				<li class="mm1">
+					<a id="menu_m1" href="" title="T恤"  >
+						<span id="imgdropmenu0">T恤</span> 
+						<i class="arr"></i>
+					</a>
+				</li>  
+				<li class="mm2">
+					<a id="menu_m2" href="" title="衬衫"  >
+						<span id="imgdropmenu0">衬衫</span> 
+						<i class="arr"></i>
+					</a>
+				</li>	   
+				<li class="mm3">
+					<a id="menu_m3" href="" title="裤子"  >
+						<span id="imgdropmenu0">裤子</span> 
+						<i class="arr"></i>
+					</a>
+				</li>    
+				<li class="mm4">
+					<a id="menu_m4" href="" title="男鞋"  >
+						<span id="imgdropmenu0">男鞋</span> 
+						<i class="arr"></i>
+					</a>
+				</li>   
+				<li class="mm5">
+					<a id="menu_m5" href="" title="针织衫"  >
+						<span id="imgdropmenu0">针织衫</span> 
+						<i class="arr"></i>
+					</a>
+				</li>
+				<li class="mm6">
+					<a id="menu_m6" href="" title="内衣"  >
+						<span id="imgdropmenu0">内衣</span> 
+						<i class="arr"></i>
+					</a>
+				</li> 
+				<li class="mm7">
+					<a id="menu_m7" href="" title="皮包"  >
+						<span id="imgdropmenu0">皮包</span> 
+						<i class="arr"></i>
+					</a>
+				</li><li class="mm8">
+					<a id="menu_m8" href="" title="皮带"  >
+						<span id="imgdropmenu0">皮带</span> 
+						<i class="arr"></i>
+					</a>
+				</li> 
+				<li class="mm9">
+					<a id="menu_m9" href="" title="饰品"  >
+						<span id="imgdropmenu0">饰品</span> 
+						<i class="arr"></i>
+					</a>
+				</li>
+	         </ul>
+	     </div>
+	     <p class="clearfix"></p>     
+     
+     	<!--弹出菜单-->     
+         <div class="maso_nav">
+            <div class="masa_nav_ali">
+                <a href=""  ><img src="../css/img/masa_nav_add.jpg"></a>
+            </div>                        
+			<ul class="" index="0">
+				<li><a href=""  >个性便装</a></li>
+				<li><a href=""  >皮衣</a></li>
+				<li><a href=""  >时尚夹克</a></li>
+				<li><a href=""  >牛仔外套</a></li>
+				<li><a href=""  >冬装外套</a></li>
+				<li><a href=""  >卫衣</a></li>
+		  	</ul>
+			<ul class="" index="1">
+				<li><a href=""  >短袖T恤</a></li>
+				<li><a href=""  >长袖T恤</a></li>
+				<li><a href=""  >打底衫</a></li>
+		  	</ul>
+			<ul class="" index="2">
+				<li><a href=""  >牛仔衬衫</a></li>
+				<li><a href=""  >牛津纺/亚麻</a></li>
+				<li><a href=""  >极简系列</a></li>
+				<li><a href=""  >格纹系列</a></li>
+				<li><a href=""  >品质系列</a></li>
+				<li><a href=""  >短袖衬衫</a></li>
+		  	</ul>
+		  	<ul class="" index="3">
+				<li><a href=""  >休闲裤</a></li>
+				<li><a href=""  >牛仔裤</a></li>
+				<li><a href=""  >休闲短裤</a></li>
+				<li><a href=""  >西裤</a></li>
+		  	</ul>
+		  	<ul class="" index="4">
+				<li><a href=""  >休闲鞋</a></li>
+				<li><a href=""  >运动鞋</a></li>
+				<li><a href=""  >正装鞋</a></li>
+				<li><a href=""  >皮靴</a></li>
+				<li><a href=""  >编织鞋</a></li>
+				<li><a href=""  >凉鞋</a></li>
+		  	</ul>
+			<ul class="" index="5">
+				<li><a href=""  >长袖毛衫</a></li>
+				<li><a href=""  >长袖开衫</a></li>
+				<li><a href=""  >毛背心</a></li>
+		  	</ul>		  
+			<ul class="" index="6">
+				<li><a href=""  >男内衣</a></li>
+				<li><a href=""  >家居服</a></li>
+				<li><a href=""  >内裤</a></li>
+				<li><a href=""  >袜子</a></li>
+		  	</ul>
+			<ul class="" index="7">
+				<li><a href=""  >包</a></li>
+				<li><a href=""  >皮夹</a></li>
+			</ul>						  
+			<ul class="" index="8">
+				<li><a href=""  >正装皮带</a></li>
+				<li><a href=""  >休闲皮带</a></li>
+			</ul>						  
+			<ul class="" index="9">
+				<li><a href=""  >围巾</a></li>
+				<li><a href=""  >方巾</a></li>
+		  	</ul>	
+		  	<p class="clearfix"></p>
+         </div>
+         <div class="menu_box_nav_bg"></div>
+     </div>
+     
+	<!-- 下部菜单，结束 menu_end --> 
+	</div>
+	
+	</body>
+</html>

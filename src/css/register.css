@@ -1,0 +1,52 @@
+/*用户注册*/
+.register_case{clear:both; margin-top:25px; overflow:hidden;}
+.register_case table td{padding:5px 1px;text-align:left;line-height:20px;}
+.register_case table td.left_title{width:90px;text-align:right;font-weight:bold;color:#000}
+.register_case table td.mid_con{width:170px;}
+.area_agree{width:95%; height:138px; margin:0 auto; overflow-x:hidden; overflow-y:auto; line-height:20px; resize:none; outline:none}
+/*密码*/
+.password_off{border-bottom: 5px solid #b2b2b2;  text-align:center !important;}
+.password_on{border-bottom: 5px solid #cd3333; text-align:center !important;}
+.register_txt{text-align:left; color:#333;}
+.register_txt p.btn{clear:both;margin:5px 0px;text-align:center;}
+.register_txt div.register_title{clear:both;font-weight:bold;line-height:25px;}
+.register_txt div.register_con {clear:both;line-height:20px; color:#323232; margin-top:15px;}
+
+.psword_box{clear:both;margin:25px auto;width:760px; overflow:hidden;text-align:center;}
+.password{padding:15px 0;text-align:center;line-height:20px;}
+.password_t1{font-size:14px;font-weight:bold;line-height:25px;text-align:center;}
+.password_t2{color:#666666;text-align:center;line-height:25px;}
+.password_btn{padding-top:10px;text-align:center;}
+
+.zcdl_box{float:right; width:420px; overflow:hidden; padding-left:30px;border-left:1px dashed #CCCCCC;}
+.zcdl_ad{clear:both;width:420px;overflow:hidden;margin-top:10px;}
+.zcdl_ad img{clear:both;width:420px;overflow:hidden;margin-top:10px;}
+/*end*/
+.web_title .title_l{ width:100px;}
+.web_title .w203{ width:203px;}
+
+
+.masa_login { width:1200px; height:550px; margin:auto; color:#888; font-size:12px;}
+.login_top { color:#343434; margin:40px 0 20px; overflow:hidden;}
+.c_gary { color:#888}
+.f12 { font-size:12px;}
+.f14 { font-size:14px;}
+.login_red { color:#cb3330;}
+.login_int { width:228px; border:1px solid #888; height:33px; padding-left:10px; font:12px/33px Tahoma, Geneva, sans-serif; outline:none;}
+
+/*阅读协议*/
+.reg_checkbox { float:left; margin:3px 5px 0 0; *margin:0;}
+.login_left {width:420px; float:left; margin-left:150px;}
+.login_right { width:466px; float:left; margin-top:104px;}
+.login_texta textarea { color:#888;}
+
+.login_icon { background:url(../css/img/email_b1.jpg) no-repeat; width:135px; height:35px; line-height:35px; float:left; margin-top:10px; overflow:hidden; cursor:pointer;}
+
+.email_t1 { background:url(../css/img/email_t1.png) no-repeat; width:20px; height:14px; float:left; margin:11px 18px 0 8px}
+.phone_t1 { background:url(../css/img/phone_t1.png) no-repeat; width:13px; height:24px; float:left; margin:6px 20px 0 11px;}
+.notice { width: 420px; overflow: hidden; }
+.notice .tab-hd .on { background:url(../css/img/email_b2.jpg) no-repeat; color:#972a41;}
+
+
+
+

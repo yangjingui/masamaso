@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>右侧导航栏</title>
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/right.css" />
+		
+		<script src="../assets/jquery-1.12.0.js"></script>
+		<script>
+			jQuery(function(){
+				var $tip = $('.tip');
+				
+				$('.tabs').on('mouseenter','li',function(){
+					var idx = $(this).index();
+					$tip.css({left:-150});
+					$tip.eq(idx).show().animate({left:-130});
+				}).on('mouseleave','li',function(){
+					var idx = $(this).index();
+					$tip.eq(idx).hide();
+				});
+								
+			});
+		</script>
+	</head>
+	<body>
+			
+		<!--右侧导航栏-->
+		<div class="mui_outer" style="display:block;"> 
+			<div class="tabs">
+				<ul class="top" style="top: 6px;">
+					<li index="cart">
+						<a href="#">
+							<div class="tab_cart">
+								<div class="tab_logo_cart"></div>
+								<div class="tab_txt">购物车</div>
+								<div class="tab_sup_bd">0</div>
+							</div>
+							<div class="tip" style="display:none;">
+								我的购物车(<span>0</span>)
+								<div class="arrow">◆</div>
+							</div>
+						</a>
+						
+					</li>
+					<li index="assets">
+						<a href="#">
+							<div class="tab_asset">
+								<div class="tab_logo_asset"></div> 
+								<div class="asset_txt">资产</div>
+								<div class="tab_sup_bd">0</div>
+							</div>
+							<div class="tip" style="display:none;">
+								我的资产(<span>0</span>)
+								<div class="arrow">◆</div>
+							</div>
+						</a> 
+					</li>
+					<li>
+						<a href="">
+							<div class="tab_ord">
+								<div class="tab_logo_ord"></div>
+								<div class="ord_txt">订单</div>
+							</div>
+							<div class="tip" style="display:none;">
+								我的订单
+								<div class="arrow">◆</div>
+							</div>
+						</a>
+					</li>
+					<li index="fav">
+						<a href="#">
+							<div class="tab_favor">
+								<div class="tab_logo_favor"></div>
+								<div class="favor_txt">收藏</div>
+							</div>
+							<div class="tip" style="display:none;">
+								我的收藏
+								<div class="arrow">◆</div>
+							</div>
+						</a>
+					</li>
+					<li index="weixin">
+						<a href="#">
+							<div class="tab_weixin" style="height:53px;">
+								<div class="tab_logo_weixin"></div>
+								<div class="weixin_txt" style="width: 24px;margin-left:6px;">手机</div>
+							</div>
+							<div class="tip" style="margin-left: -34px; margin-top: -300px; width: 162px; height: 641px; display:none;">
+								<img src="../css/img/weixin_two.jpg" width="162px"><br>						
+							</div>
+						</a>				
+					</li>
+		
+				<!--</ul>-->
+				<!--<ul>-->
+					<li class="bottom">
+						<a href="#">
+							<div class="tab_serv">
+								<div class="tab_logo_serv"></div>
+								<div class="serv_txt">客服</div>
+							</div>
+							<div class="tip" style="height: 48px; margin-top:120px;display:none;">
+								咨询客服
+								<p style="font-size:12px; color:#dba80e; margin-top:-10px; line-height:22px">每日9：00-18：00</p>
+								<div class="arrow">◆</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="tab_top">
+								<div class="tab_logo_top"></div>
+							</div>
+							<div class="tip" style="display:none;">
+								返回顶部
+								<div class="arrow">◆</div>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--右侧导航栏end-->
+	</body>
+</html>
