@@ -10,76 +10,20 @@
 		<script src="../assets/jquery-1.12.0.js"></script>
 		<script src="../js/common.js"></script>
 	<script>
-		jQuery(function($){
-			var $ul = $('.bd ul');
-			var $bdli = $('.bd li');
-			var $hdli = $('.hd li');
-			
-			var imgWidth = $(".bd img:first-child").eq(0).width();
-			var _index = 0;
-			var timer = null;
-			var flag = true;
-			$('next').on("click", function() {
-			    //右箭头
-			    flag = false;
-			    clearInterval(timer);
-			    _index++;
-			    selectPic(_index);
-			})
-			$('prev').on("click", function() {
-			    //左箭头
-			    flag = false;
-			    clearInterval(timer);
-			    if (_index == 0) {
-			        _index = innerGroup.length - 1;
-			       $ul.css("left", -($bdli.length - 1) * imgWidth);
-			    }
-			    _index--;
-			    selectPic(_index);
-			})
-			$hdli.on("click", function() {
-			    //导航切换
-			    _index = $hdli.index($(this));
-			    selectPic(_index);
-			})
-			
-			$(".fullSlide").hover(function() {
-			    //鼠标移入
-			    clearInterval(timer);
-			    flag = false;
-			}, function() {
-			    flag = true;
-			    timer = setInterval(go, 3000);
-			});
-			
-			function autoGo(bol) {
-			    //自动行走
-			    if (bol) {
-			        timer = setInterval(go, 3000);
-			    }
-			}
-			autoGo(flag);
-			
-			function go() {
-			    //计时器的函数
-			    _index++;
-			    selectPic(_index);
-			}
-			
-			function selectPic(num) {
-			    $hdli.eq(num).addClass("on").siblings().removeClass("on");
-			    $ul.animate({
-			        left: -num * imgWidth,
-			    }, 1000, function() {
-			        //检查是否到最后一张
-			        if (_index == $bdli.length - 1) {
-			            _index %= 8;
-			            $ul.css("left", "0px");
-			            $hdli.eq(0).addClass("on").siblings().removeClass("on");
-			        }
-			    })
-			}
-			
+		jQuery(function($){						
+			var $window = $(window);			
+				//给window绑定滚动事件
+		    $window.scroll(function(){
+				
+				if($window.scrollTop() > 750){
+			      	//当滚动条滚到大于750时，开始显示
+			       	$('menu_2_nav_bg').addClass('btns_bar');
+			       			       			        
+		      	}else{
+		       		$('menu_2_nav_bg').removeClass('btns_bar');
+		      	}
+		      
+		    });
 		});
 	</script>
 	</head>
@@ -110,7 +54,7 @@
 		
 		<!--浮动菜单-->
 		<div class="" style="position:relative; z-index:999; margin-top:20px;">
-			<div class="menu_2_nav_bg btns_bar" id="btns_bar" style="position: relative; top: 0px; left: 0px;">
+			<div class="menu_2_nav_bg" style="position: relative; top: 0px; left: 0px;">
 				<div class="menu_2_nav btns_con vcate_menu"> 
 					<ul class="menu_r">												
 						<li><a class="menu2_btn " href=""><span class="acc_top"></span>默认</a></li>

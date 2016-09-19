@@ -3,7 +3,6 @@
 .in_banner .fullSlide .bd{ margin:0 auto;  z-index:0; overflow:hidden;  }
 .in_banner .fullSlide .bd li{  overflow:hidden; text-align:center; }
 .in_banner .fullSlide .bd li a{ display:block; height:600px; }
-.in_banner .fullSlide .bd li img{width:1349px;height:600px;}
 
 .in_banner .fullSlide .hd{ width:100%;  position:absolute; z-index:1; bottom:10px; left:0;}
 .in_banner .fullSlide .hd ul{ text-align:center; }
@@ -18,7 +17,8 @@
 .in_banner .fullSlide .bd li { height:625px;}
 .in_banner .bd li img { background:url(..css/img/loading.gif) top center no-repeat ; position:relative; left:50%; margin-left:-950px; float:left; display:block;}
 
-/*浮动菜单		*/
+/*浮动菜单*/
+.btns_bar{position: fixed; top: 0px;}
 .menu_2_nav_bg { background:rgb(30, 30, 30); height:55px; line-height:55px; margin-bottom:20px; width:100%;} 
 .menu_2_nav { width:1200px; margin:auto ;}
 .menu_2_nav li { float:left; text-align:center}
