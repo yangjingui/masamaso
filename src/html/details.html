@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/details.css" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/right.css" />
+		<link rel="stylesheet" href="../css/jquery.lxzoom.css">
+
+		<script src="../assets/jquery-1.12.0.js"></script>
+		<script src="../js/common.js"></script>
+		<script src="../js/jquery.lxzoom.js"></script>
+	<script>
+		jQuery(function($){
+			// 实现放大镜效果
+			$('#box').lxzoom({
+				width:500,
+				height:300
+			});
+		});
+	</script>
+	</head>
+	<body>
+	<div class="container">
+		<!--商品详情页-->
+		<div class="wrap-bg">
+			<div class="goods_part"> 
+				<p class="info_nav">
+					<a href="">首页</a> &gt; 
+					<a class="ch_1" href="">外套</a> &gt; 
+                    <a class="ch_1" href="">薄便装</a> &gt; 
+                    <span class="ch_3">时尚环保pu夹克系列/防风保暖环保/pu/黑色/净色/夹克</span>                             
+			    </p>
+				<div class="goods_info_box clearfix"> 
+				<!-- 左上侧图片循环展示  --> 
+				<div class="goods_tp_box"> 
+					<div style="float:left;">	    								
+						<ul class="s_tpc clearfix">
+                     		<li> <a href="javascript:void(0);"><img src="../css/img/s1.jpg"></a> </li>
+                     		<li> <a href="javascript:void(0);"><img src="../css/img/s2.jpg"></a> </li>
+                     		<li> <a href="javascript:void(0);"><img src="../css/img/s3.jpg"></a> </li>
+                     		<li> <a href="javascript:void(0);"><img src="../css/img/s4.jpg"></a> </li>
+                     		<li> <a href="javascript:void(0);"><img src="../css/img/s5.jpg"></a> </li>
+                     		<li> <a href="javascript:void(0);"><img src="../css/img/s6.jpg"></a> </li>
+						</ul>
+						<!--<a href="" class="b_tp lxbzoom" ><img src="../css/img/ss.jpg"/></a>-->
+						<div id="box" class="lxbzoom"><img src="../css/img/ss.jpg"/></div>
+					</div>
+				    <p class="clearfix"></p>
+				</div>							
+				<!--尺码弹出展示部分--> 
+				<div class="show_div_box" style="display: none; width: 390px;" id="size_select_dialog">
+				    <div class="show_title"> 
+				        <span class="title" style="display: inline; float: left">选择尺码</span> 
+				        <span class="close"></span> 
+				    </div>                
+				    <div class="show_div gray"> 
+					    <strong class="title">选择尺码：</strong>
+					    <ul class="size" style="margin-top: 15px;">
+					      	<div class="sizeBox">
+					      		<div class="layer">最佳体型：<br>身高165-170cm<br>体重55-60kg</div>	
+					      		<ul>		
+					      			<li class=""><p>S</p><em>165/88A</em></li>	
+					      		</ul>
+					      	</div>
+					      	<div class="sizeBox">
+					      		<div class="layer">最佳体型：<br>身高170-175cm<br>体重62-68kg</div>	
+					      		<ul>		
+					      			<li class=""><p>M</p><em>170/92A</em></li>	
+					      		</ul>
+					      	</div>
+					      	<div class="sizeBox"><div class="layer">最佳体型：<br>身高175-180cm<br>体重70-75kg</div>	
+					      	<ul>		
+					      		<li class=""><p>L</p><em>175/96A</em></li>	
+					      	</ul>
+					      	</div>
+					      	<div class="sizeBox"><div class="layer">最佳体型：<br>身高175-180cm<br>体重80-85kg</div>	
+					      	<ul>		
+					      		<li class=""><p>XL</p><em>180/100A</em> </li>	
+					      	</ul>
+					      	</div>
+					    </ul>
+					    <p class="clear"></p>
+					        <form action="" onsubmit="return false;">
+				        <legend class="blink"></legend>
+				        <fieldset>
+				            <input type="image" src="" value="确定" class="btn" >
+				        </fieldset>
+				      </form>
+				    </div>
+			    	<p class="clearfix"></p>
+				</div>  
+					
+			<!-- 商品基础信息 --> 
+			<div class="goods_tp_rbox">
+				<form id="submit_product" method="post">
+					<div class="goods_gary">
+						<!--原来-->
+						<div class="goods_ri_p1" id="tagtop">
+							<h1 class="goods_title"><em>时尚环保pu夹克系列/防风保暖环保/pu/黑色/净色/夹克</em></h1>
+							<div class="goods_ri_p2 price_color"> 					    
+				    			<input type="hidden" id="productCodeNoSize" name="productCodeNoSize" value="20223">
+				    			<div class="fl" style="width:200px">					                     
+					                <span class="yuan">特价：¥</span><strong class="price24">399</strong>
+					                <div class="fr"><span>吊牌价:￥1699.00</span></div>
+					            </div>					     
+								<p class="goods_artNo" style="float: right;">商品款号：20223</p>
+								<div class="goods_vip" style="float: left; width: 100%;">
+									(<span class="vip_col"></span>请<a href="javascript:void(0);" id="loginlv3">登录</a>查看是否享受会员优惠)
+								</div>
+							</div>	
+						</div>
+						<div class="spe_info">
+	    					<!-- 特别优惠 -->
+		    				<h3 class="bold">优惠信息：</h3>               
+							<ul class="spe_cn">                     
+        						<li><span>换购</span>1. 秋季新品<font color="red">满399赠围巾</font></li>
+					            <li><span>包邮 </span>2.本商品包邮 </li> 
+					    		<li class="m_what"><span>98折 </span>3.在线支付特享<font color="red">9.8</font>折</li>
+							</ul> 
+						</div>
+						<div class="goods_ri_p3 ">
+							<h3 class="bold">产品特性：</h3>
+							<span>面料：100%PU</span> <span>里料：100%聚酯纤维</span>
+						</div>  		
+						<div class="goods_color productscore" style="display: block;">
+							<strong class="fl">商品评分：</strong> 
+							<div class="goods_ri_p3_r" id="productscore">
+						     <div class="scorestar fl">
+						        <div class="scorestar_show" style="width: 80px;"></div>
+						     </div>
+							 <div style="line-height:13px;color:#003c8a" class="fl">
+							 	<span id="scorerate">5.0</span>(已有<span id="scorenum">20</span>人评价)</div>
+							</div>									
+						</div>  
+						<div class="goods_ri_p3  goods_color">
+							<strong class="fl">选择颜色：</strong>
+							<div class="goods_ri_p3_r">
+								<ul>
+									<li class="">
+										<a href="" alt="蓝色">
+											<div class="fl overflow"><img src="../css/img/m1.jpg" height="35" title="蓝色"></div>蓝色
+										</a>
+									</li> 
+							   	    <li class="color_red">
+							   	    	<a href="javascript:void(0)" alt="黑色">
+										     <div class="goods_cor"></div>
+										     <div class="fl overflow"><img src="../css/img/m2.jpg" height="35" title="黑色"></div>黑色
+									    </a>
+									</li> 
+							   	    <li class="">
+								       	<a href="" alt="蓝色">
+										<div class="fl overflow"><img src="../css/img/m4.jpg" height="35" title="蓝色"></div>蓝色
+										</a>
+									</li> 
+							   	    <li class="">
+								       	<a href="" alt="咖色">
+											<div class="fl overflow"><img src="../css/img/m5.jpg" height="35" title="咖色"></div>咖色
+										</a>
+									</li> 
+							   	    <li class="">
+								       	<a href="" alt="黑色">
+											<div class="fl overflow"><img src="../css/img/m6.jpg" height="35" title="黑色"></div>黑色
+										</a>
+									</li>   		 
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="size_img_box clearfix" id="select_size">
+					    <h3 class="bold fl">选择尺码：</h3>
+					    <div id="selectSizeBox">
+					    	<div class="sizeBox">
+					    		<div class="layer" style="display: none;">最佳体型：<br>身高165-170cm<br>体重55-60kg</div>	
+					    		<ul>		
+					    			<li class=""><p>S</p><em>165/88A</em></p></li>	
+					    		</ul>
+					    	</div>
+					    	<div class="sizeBox">
+					    		<div class="layer" style="display: none;">最佳体型：<br>身高170-175cm<br>体重62-68kg</div>	
+					    		<ul>		
+					    			<li class=""><p>M</p><em>170/92A</em></p></li>	
+					    		</ul>
+					    	</div>
+					    	<div class="sizeBox"><div class="layer" style="display: none;">最佳体型：<br>身高175-180cm<br>体重70-75kg</div>	
+						    	<ul>		
+						    		<li class=""><p>L</p><em>175/96A</em></p></li>	
+						    	</ul>
+					    	</div>
+					    	<div class="sizeBox"><div class="layer" style="display: none;">最佳体型：<br>身高175-180cm<br>体重80-85kg</div>	
+						    	<ul>		
+						    		<li class=""><p>XL</p><em>180/100A</em></p></li>	
+						    	</ul>
+					    	</div>
+					    </div>
+					</div>
+					<p class="num_box">
+				   		 购买数量： <a href="javascript:;">
+				    	<img src="../css/img/tg2_goods_cut.gif"></a>     
+				    	<input type="text" value="1" defaultnumber="1" name="product_num" class="input"> 
+				    	<a href="javascript:;"><img src="../css/img/tg2_goods_add.gif"></a>         
+				    	<span>数量有限，欲购从速</span>        
+				    	<span id="arrival" style="color: rgb(234, 77, 79);">今天下单，配送至广州市，预计2日内送达</span>     
+					</p>									
+              
+					<div class="clearfix pt30">
+					    <input value="0" type="hidden" id="skip">
+			            <!--<span class="predict_newgoods">
+	                       <em>
+	                           <span style="font-size:16px">预售商品&nbsp;</span>
+	                           <span style="font-size:12px">下单7天后发货</span>
+	                       </em>
+	                   </span> -->
+	                    <input value="" type="button" class="goods_buy_btn fl" id="submit_btn">
+                   		<input value="" type="button" class="goods_ri_btn fl" id="submit_btn2">
+			            <p class="collect_goods">
+							<a href="javascript:;">收藏此商品</a> 
+							<a href="javascript:;">在线咨询</a>
+						</p>
+					<div class="masa_page">
+						<div class="page_l">100%放心服务：</div>
+						<div class="page_r">
+							<div class="page_time"><span class="page_time_icon"></span>100分钟闪电出库</div>
+							<div class="page_sf"><span class="page_sf_icon"></span>优选顺丰速运</div>
+							<div class="page_icon"><span class="page_icon_icon"></span><span class="red">30</span>天无障碍退换货</div>
+							<div class="page_year"><span class="page_year_icon"></span>全年<span class="red">365</span>天客户服务</div>
+						</div>
+					</div>
+				</div>
+				<p id="submit_btn_msg"></p>
+			</form>	
+			</div>
+				</div>
+			</div>
+			
+			<!--看过这个商品的人还看过-->
+			<div class="mayaluo">
+				<h3 class="index_tit_lin">看过这个商品的人还看过</h3>
+			</div>
+			<div class="tab-bd clearfix" >
+			<div class="in_masa">
+				<ul>
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img class="lazyload_bk" src="../css/img/j1.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">时尚环保pu夹克系列/防风保暖/pu/黑色/净色/夹克</a>
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>229</span></em> 
+							</div>		
+						</div>
+					</li>   
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img class="lazyload_bk" src="../css/img/j2.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">时尚环保pu夹克系列/防风保暖/pu/黑色/净色/夹克</a>
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>329</span></em> 
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img class="lazyload_bk" src="../css/img/j3.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">时尚环保pu夹克系列/防风保暖/pu/黑色/净色/夹克/a>
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>429</span></em>   
+							</div>
+						</div>
+					</li>   
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img class="lazyload_bk" src="../css/img/j4.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">时尚环保pu夹克系列/防风保暖/pu/黑色/净色/夹克</a>
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>529</span></em>  
+							</div>
+						</div>
+					</li>      
+					<li class="no-right">
+						<div class="in_masa_up"> 								 				  
+							<a class="in_pic" href=""><img class="lazyload_bk" src="../css/img/j1.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">时尚环保pu夹克系列/防风保暖/pu/黑色/净色/夹克</a>
+							 
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>429</span></em> 
+							</div>
+						</div>
+					</li>     
+		        </ul>
+		    </div>
+		    <p class="clear"></p>			
+		</div>
+		
+		<!--看过这个商品的人还看过end-->
+		
+		<!--百分点推荐-->          
+		<p class="clear"></p>
+			<p class="baifendian"><a href=""><img src="../css/img/logo_bfd.gif" width="100" height="13"></a></p>
+		<p class="clear"></p>
+		<!--百分点推荐end-->
+		
+		<div class="goods_ad3">
+		    <a href=""><img src="../css/img/b1.jpg"></a>
+		    <a href=""><img src="../css/img/b2.jpg"></a>
+		    <a href=""></a><img src="../css/img/b3.jpg"></a>
+		</div>			 
+		<!--买过这个商品的人还买过-->
+		<div class="mayaluo">
+			<h3 class="index_tit_lin">买过这个商品的人还买过</h3>
+		</div>
+		<div class="tab-bd clearfix" >
+			<div class="in_masa">
+				<ul>
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img class="lazyload_bk" src="../css/img/j1.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">时尚环保pu夹克系列/防风保暖/pu/黑色/净色/夹克</a>
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>229</span></em> 
+							</div>		
+						</div>
+					</li>   
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img class="lazyload_bk" src="../css/img/j2.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">时尚环保pu夹克系列/防风保暖/pu/黑色/净色/夹克</a>
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>329</span></em> 
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img class="lazyload_bk" src="../css/img/j3.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">时尚环保pu夹克系列/防风保暖/pu/黑色/净色/夹克/a>
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>429</span></em>   
+							</div>
+						</div>
+					</li>   
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img class="lazyload_bk" src="../css/img/j4.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">时尚环保pu夹克系列/防风保暖/pu/黑色/净色/夹克</a>
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>529</span></em>  
+							</div>
+						</div>
+					</li>      
+					<li class="no-right">
+						<div class="in_masa_up"> 								 				  
+							<a class="in_pic" href=""><img class="lazyload_bk" src="../css/img/j1.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">时尚环保pu夹克系列/防风保暖/pu/黑色/净色/夹克</a>
+							 
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>429</span></em> 
+							</div>
+						</div>
+					</li>     
+		        </ul>
+		    </div>
+		    <p class="clear"></p>			
+		</div>				
+		<!--买过这个商品的人还买过end-->
+		<!--百分点推荐-->          
+		<p class="clear"></p>
+			<p class="baifendian"><a href=""><img src="../css/img/logo_bfd.gif" width="100" height="13"></a></p>
+		<p class="clear"></p>
+		<!--百分点推荐end-->
+		
+		<!--商品描述-->
+		<div class="mayaluo">
+			<h3 class="index_tit_lin">商品描述</h3>
+		</div>
+		<div class="goods_niuzai_img">  
+	      <img class="lazyload_bk" style="float: left; display: block;" src="../css/img/20223_ndb_3.jpg">	     
+	      <img class="lazyload_bk" style="float: left; display: block;" src="../css/img/20223_ndx_4.jpg">	     
+	      <img class="lazyload_bk" style="float: left; display: block;" src="../css/img/20223_ndx_5.jpg">	     
+	      <img class="lazyload_bk" style="float: left; display: block;" src="../css/img/20223_ndd_6.jpg"> 
+		</div>
+		<p class="clearfix"></p>
+		<!--商品描述end-->
+		
+		<!--试穿尺码-->
+		<div class="mayaluo">
+			<h3 class="index_tit_lin">试穿尺码</h3>
+		</div>
+		<div class="goods_part_size">    	
+			<div class="show_size">
+	
+			<!--start 上衣类，如衬衫 - -->
+				<p class="show_size_title">
+					<span>试穿尺码计算器：</span>
+				</p>
+				<div class="goods_size_js">
+					<label>身高： 
+						<select id="sel1">
+							<option>---请选择---</option>
+	                       <option value="160-165CM">160-165CM</option>
+                           <option value="165-170CM">165-170CM</option>
+                           <option value="170-175CM">170-175CM</option>
+                           <option value="175-180CM">175-180CM</option>
+                           <option value="180-185CM">180-185CM</option>
+                           <option value="185-190CM">185-190CM</option>
+                    	</select>
+					</label> 					
+					<label>体重： 
+						<select id="sel2">
+							<option>---请选择---</option>
+	                       <option value="55-60KG">55-60KG</option>
+                           <option value="60-65KG">60-65KG</option>
+                           <option value="65-70KG">65-70KG</option>
+                           <option value="70-75KG">70-75KG</option>
+                           <option value="75-80KG">75-80KG</option>
+                           <option value="80-85KG">80-85KG</option>
+                           <option value="85-90KG">85-90KG</option>
+                           <option value="90-95KG">90-95KG</option>
+                           <option value="95-100KG">95-100KG</option>
+            			</select>
+					</label> 
+					<button id="but1">计算</button>					
+				</div>
+		
+				<div class="show_size_title">
+					<p class="fr">
+						<span><img src="../css/img/color_01.gif">合体</span>
+						<span><img src="../css/img/color_02.gif">修身</span>
+						<span><img src="../css/img/color_03.gif">宽松</span>
+					</p>
+					<p class="floatleft">产品标准尺码</p>
+				</div>
+				<div class="size_form font_zt">
+					<table width="1000" cellspacing="1" cellpadding="0" border="0" id="table1">
+					<tbody>
+					    <!-- 第一行 表头-->
+					    <tr class="form_title">
+	                        <td class="size_title"></td>
+				            <td><p>55-60KG</p></td>
+				            <td><p>60-65KG</p></td>
+				            <td><p>65-70KG</p></td>
+				            <td><p>70-75KG</p></td>
+				            <td><p>75-80KG</p></td>
+				            <td><p>80-85KG</p></td>
+				            <td><p>85-90KG</p></td>
+				            <td><p>90-95KG</p></td>
+				            <td><p>95-100KG</p></td>
+					    </tr> 
+					    <tr>    
+	                        <td>160-165CM</td>
+	                        <td class="160-165CM55-60KG" tit="#CEC1BD">S</td>
+	                        <td class="160-165CM60-65KG" tit="#CEC1BD">M</td>
+	                        <td class="160-165CM65-70KG" tit="">/</td>
+	                        <td class="160-165CM70-75KG" tit="">/</td>
+	                        <td class="160-165CM75-80KG" tit="">/</td>
+	                        <td class="160-165CM80-85KG" tit="">/</td>
+	                        <td class="160-165CM85-90KG" tit="">/</td>
+	                        <td class="160-165CM90-95KG" tit="">/</td>
+	                        <td class="160-165CM95-100KG" tit="">/</td>
+	                	</tr>
+	                    <tr class="trow_bg">                         
+	                        <td>165-170CM</td>
+	                        <td class="165-170CM55-60KG" tit="#b5dcc9">S</td>
+	                        <td class="165-170CM60-65KG" tit="#CEC1BD">M</td>
+	                        <td class="165-170CM65-70KG" tit="#bfd6ed">M</td>
+	                        <td class="165-170CM70-75KG" tit="#bfd6ed">L</td>
+	                        <td class="165-170CM75-80KG" tit="#bfd6ed">XL</td>
+	                        <td class="165-170CM80-85KG" tit="#bfd6ed">XL</td>
+	                        <td class="165-170CM85-90KG" tit="">/</td>
+	                        <td class="165-170CM90-95KG" tit="">/</td>
+	                        <td class="165-170CM95-100KG" tit="">/</td>
+	                	</tr>
+	                    <tr>    
+	                        <td>170-175CM</td>
+	                        <td class="170-175CM55-60KG" tit="#CEC1BD">M</td>
+	                        <td class="170-175CM60-65KG" tit="#b5dcc9">M</td>
+	                        <td class="170-175CM65-70KG" tit="#b5dcc9">M</td>
+	                        <td class="170-175CM70-75KG" tit="#bfd6ed">L</td>
+	                        <td class="170-175CM75-80KG" tit="#bfd6ed">XL</td>
+	                        <td class="170-175CM80-85KG" tit="#bfd6ed">XL</td>
+	                        <td class="170-175CM85-90KG" tit="#bfd6ed">XXL</td>
+	                        <td class="170-175CM90-95KG" tit="">/</td>
+	                        <td class="170-175CM95-100KG" tit="">/</td>
+	                	</tr>
+	                    <tr class="trow_bg"> 
+	                        <td>175-180CM</td>
+	                        <td class="175-180CM55-60KG" tit="">/</td>
+	                        <td class="175-180CM60-65KG" tit="#CEC1BD">L</td>
+	                        <td class="175-180CM65-70KG" tit="#b5dcc9">L</td>
+	                        <td class="175-180CM70-75KG" tit="#b5dcc9">L</td>
+	                        <td class="175-180CM75-80KG" tit="#b5dcc9">XL</td>
+	                        <td class="175-180CM80-85KG" tit="#b5dcc9">XL</td>
+	                        <td class="175-180CM85-90KG" tit="#bfd6ed">XXL</td>
+	                        <td class="175-180CM90-95KG" tit="#bfd6ed">XXL</td>
+	                        <td class="175-180CM95-100KG" tit="">/</td>
+	                    </tr>
+	                    <tr>                             
+	                        <td>180-185CM</td>
+	                        <td class="180-185CM55-60KG" tit="">/</td>
+	                        <td class="180-185CM60-65KG" tit="">/</td>
+	                        <td class="180-185CM65-70KG" tit="#CEC1BD">L</td>
+	                        <td class="180-185CM70-75KG" tit="#CEC1BD">L</td>
+	                        <td class="180-185CM75-80KG" tit="#b5dcc9">XL</td>
+	                        <td class="180-185CM80-85KG" tit="#b5dcc9">XL</td>
+	                        <td class="180-185CM85-90KG" tit="#b5dcc9">XXL</td>
+	                        <td class="180-185CM90-95KG" tit="#b5dcc9">XXL</td>
+	                        <td class="180-185CM95-100KG" tit="#b5dcc9">XXXL</td>
+		                </tr>
+		                <tr class="trow_bg">
+	                        <td>185-190CM</td>
+	                        <td class="185-190CM55-60KG" tit="">/</td>
+	                        <td class="185-190CM60-65KG" tit="">/</td>
+	                        <td class="185-190CM65-70KG" tit="#CEC1BD">XL</td>
+	                        <td class="185-190CM70-75KG" tit="#CEC1BD">XL</td>
+	                        <td class="185-190CM75-80KG" tit="#CEC1BD">XL</td>
+	                        <td class="185-190CM80-85KG" tit="#CEC1BD">XL</td>
+	                        <td class="185-190CM85-90KG" tit="#b5dcc9">XXL</td>
+	                        <td class="185-190CM90-95KG" tit="#b5dcc9">XXL</td>
+	                        <td class="185-190CM95-100KG" tit="#b5dcc9">XXXL</td>
+	                	</tr>
+	                </tbody>
+				</table>
+			</div>
+	        <!--end 上衣类，如衬衫 -->      
+			<p class="clear"></p>
+		</div>
+	    <div class="goods_part"> 
+	    	<div class="size_form"><p><img src="../css/img/chicun.jpg"></p></div>
+			<div id="goods_div_1">
+				<!--尺码表-->
+				<div class="show_size">	                
+			        <p class="show_size_title"><span>产品标准尺码</span></p>
+			        <div class="size_form font_zt">
+			        <table width="100%" border="0" cellspacing="1" cellpadding="0">
+			        	<tbody>
+			        		<tr class="form_title">
+			          			<td class="size_title1"></td>
+			          			<td><p>XS</p><p>(160/84A)</p></td>
+		                        <td><p>S</p><p>(165/88A)</p></td>
+		                        <td><p>M</p><p>(170/92A)</p></td>
+		                        <td><p>L</p><p>(175/96A)</p></td>
+		                        <td><p>XL</p><p>(180/100A)</p></td>
+		                        <td><p>XXL</p><p>(185/104A)</p></td>
+		                        <td><p>XXXL</p><p>(190/108A)</p></td>                                
+		                   </tr>
+		                   <tr>
+		                        <td>肩宽 </td>                                					    
+		                        <td> / </td>                                					    
+		                        <td>44.5 </td>                                					    
+		                        <td>46 </td>                                					    
+		                        <td>47.5 </td>                                					    
+		                        <td>49 </td>                                					    
+		                        <td> / </td>                                					    
+		                        <td> / </td>                                 
+		                    </tr>
+		                    <tr class="trow_bg"> 	                                                        					    
+		                        <td>胸围 </td>                               					    
+		                        <td> / </td>                                					    
+		                        <td>106 </td>                                					    
+		                        <td>110 </td>                                					    
+		                        <td>114 </td>                                					    
+		                        <td>118 </td>                                					    
+		                        <td> / </td>                               					    
+		                        <td> / </td>                                
+		                    </tr>
+		                    <tr>                        	                                					    
+		                        <td>摆围 </td>                                					    
+		                        <td> / </td>                               					    
+		                        <td>76 </td>                               					    
+		                        <td>80 </td>                               					    
+		                        <td>84 </td>                              					    
+		                        <td>88 </td>                                					    
+		                        <td> / </td>                                					    
+		                        <td> / </td>                                 
+		                    </tr>
+		                   <tr class="trow_bg">                         	                                					    
+		                        <td>袖长 </td>                                					    
+		                        <td> / </td>                               					    
+		                        <td>63 </td>                              					    
+		                        <td>64 </td>                               					    
+		                        <td>65 </td>                                					    
+		                        <td>66 </td>                                					    
+		                        <td> / </td>                                					    
+		                        <td> / </td>                                 
+		                    </tr>
+		                    <tr>                                   
+		                    	<td>衣长 </td>                               					    
+		                        <td> / </td>                               					    
+		                        <td>62 </td>                                					    
+		                        <td>64 </td>                                					    
+		                        <td>66 </td>                                					    
+		                        <td>68 </td>                                					    
+		                        <td> / </td>                                					    
+		                        <td> / </td>                                
+		                    </tr>
+		                </tbody>
+			        </table>
+		        </div>
+		        <p class="clearfix"></p>
+		       </div>
+	 		</div>
+		</div>
+	</div>
+	<!--试穿尺码end-->
+	
+	<!--顾客评论-->
+	<div class="mayaluo">
+		<h3 class="index_tit_lin">顾客评论</h3>
+	</div>
+	<div class="comment_box">
+    	<div class="comment_main" id="menu0" flag="1">
+			<div class="ztpf">
+	  			<div class="ztpf_1">
+			        <div class="pingfen">
+				        <table cellpadding="0" cellspacing="0" border="0">
+			      		<tbody>
+			      			<tr>
+				      			<td valign="top">
+				      				<div class="txt">
+				         				<p>综合评分：</p>
+				        			</div> 
+				      			</td>
+				      			<td class="pingfe_star">
+					      			<p class="clearfix">
+					      				<sub class="SpriteStar2_on"></sub>
+					      				<sub class="SpriteStar2_on"></sub>
+					      				<sub class="SpriteStar2_on"></sub>
+					      				<sub class="SpriteStar2_on"></sub>
+					      				<sub class="SpriteStar2_on"></sub>
+								     	<sup>
+										  	<strong>&nbsp;</strong>
+										  	<strong>&nbsp;</strong>
+											  	<strong>&nbsp;</strong>
+											  	<strong>&nbsp;</strong>
+											  	<strong>&nbsp;</strong>
+											  	<strong>&nbsp;</strong>
+											  	<strong>&nbsp;</strong>
+											  	<strong>&nbsp;</strong>
+											  	<strong>&nbsp;</strong>
+											  	<strong>&nbsp;</strong>			     	
+									     	</sup>
+									     	<a>20</a>
+								     	</p>
+								     	
+								        <p class="clearfix">
+								         	<sub class="SpriteStar2_on"></sub>
+								         	<sub class="SpriteStar2_on"></sub>
+								         	<sub class="SpriteStar2_on"></sub>
+								         	<sub class="SpriteStar2_on"></sub>
+								         	<sub class="SpriteStar2_off"></sub>
+									        <sup></sup>
+						     				<a>0</a>
+					         			</p>
+					         
+					         			<p class="clearfix">
+					         				<sub class="SpriteStar2_on"></sub>
+					         				<sub class="SpriteStar2_on"></sub>
+					         				<sub class="SpriteStar2_on"></sub>
+					         				<sub class="SpriteStar2_off"></sub>
+					         				<sub class="SpriteStar2_off"></sub>
+					            			<sup></sup>
+									     	<a>0</a>
+								        </p>
+								        <p class="clearfix">
+					         				<sub class="SpriteStar2_on"></sub>
+					         				<sub class="SpriteStar2_on"></sub>
+					         				<sub class="SpriteStar2_on"></sub>
+					         				<sub class="SpriteStar2_off"></sub>
+					         				<sub class="SpriteStar2_off"></sub>
+					            			<sup></sup>
+									     	<a>0</a>
+								        </p>			             
+					      			</td>
+				      			</tr>
+				        	</tbody>
+			        	</table>        
+		    		</div> 
+		    	</div>
+			    <div class="ztpf_1">
+				    <p class="ztpf_p">
+				    	<img src="../css/img/commentall.png">已购买用户可在当前页以及"我的账户"中进行评论</p>
+				    <p class="ztpf_p">
+				    	<img src="../css/img/fractiondesc.png">查看详细积分使用规则 </p>
+				    <p></p>
+			    </div>
+		
+			    <div class="ztpf_r">
+			    	<p>与其他人分享您的观点</p>
+			        <p><a class="btn_comm" href="">我要写评论</a></p>
+		            <p class="zc"><a href="">注册</a><a href="">登录</a></p>
+		        </div>
+			</div>
+			<p class="clear"></p>
+			<div id="comment_date">
+				<div id="datelist" flag="1">
+					<form id="submitCommentList" name="submitCommentList">
+						<div class="comment_mainT">
+		  					<div class="clearfix comment_mainT_tit">
+							  	<span>评论时间：2016-09-12</span>
+								<span>来自：****</span>
+								<h3>
+			  			  			<strong class="vms">综合评分：</strong>
+				 				 	<sub class="SpriteStar_on"></sub>
+				 				 	<sub class="SpriteStar_on"></sub>
+				 				 	<sub class="SpriteStar_on"></sub>
+				 				 	<sub class="SpriteStar_on"></sub>
+				 				 	<sub class="SpriteStar_on"></sub>
+								</h3>
+		  					</div>
+		  					<input type="hidden" name="CommID" id="CommID" value="930728">
+		    				<p class="comment_title" style="color:#000;">评论内容：衣服合身，做工精细。</p>
+		    				<p><span>身高(cm)：166-170</span>
+							<span>体重(kg)：40-45</span></p>
+							<!-- 	<span>商品尺码：</span></p> -->
+						</div>
+						
+						<div class="comment_mainT">
+							<div class="clearfix comment_mainT_tit">
+							  	<span>评论时间：2016-09-08</span>
+								<span>来自：501****@masamaso.com</span>
+								<h3 class="bold">
+								  	<strong class="vms">综合评分：</strong>
+								 	<sub class="SpriteStar_on"></sub>
+								 	<sub class="SpriteStar_on"></sub>
+								 	<sub class="SpriteStar_on"></sub>
+								 	<sub class="SpriteStar_on"></sub>
+								 	<sub class="SpriteStar_on"></sub>
+									标题：客服怎么打不通 一直
+								</h3>
+							</div>
+						  	<input type="hidden" name="CommID" id="CommID" value="930599">
+						    <p class="comment_title" style="color:#000;">评论内容：之前的订单 一个退货 一个换货 没有填退货单希望客服回个电话</p>
+    					</div>
+		    	    	<div class="fengxiang" id="comm_930599" flag="0">
+		    	    		<span>这条评论对您有用吗？</span>
+						    <span><input id="commuse_btn_useful_930599" type="button" value="有用 (0)"></span>
+							<span><input id="commuse_btn_Nouseful_930599" type="button" value="没用 (0)"></span>
+						<!-- 	<span><a href="/action/comment/comment_reply.php?id=930599&procode=20222" target="_blank">回复()</a></span>-->
+		 				</div> 			
+					</form>
+				</div>
+			</div>	
+		</div>
+	</div>
+	<!--顾客评论end-->
+	
+	<!--购买咨询-->
+	<div class="mayaluo">
+		<h3 class="index_tit_lin">购买咨询</h3>
+	</div>
+	<div class="comment">
+		<div class="comment_box">
+			<div id="menu1">
+				<form id="submitQuestionForm" name="submitQuestionForm">
+					<input type="hidden" id="proCodeOfQue" name="proCodeOfQue" value="">
+					<table cellpadding="5" cellspacing="5" border="0" width="100%">
+						<tbody>
+							<tr>
+						    	<td class="comment_title"><strong>发表咨询</strong></td>
+						        <td class="comment_title">温馨提示：感谢您的关注！我们将在12小时内作出回复。如需立即回复，请咨询<a href="javascript:ntcall_openInPageChat('');" style="font-weight:bold">在线客服</a></td>
+						    </tr>
+						    <tr>
+						    	<td class="comment_title">咨询内容：</td>
+						        <td><textarea class="queContent" id="queContent" name="queContent" style="width: 850px; height: 100px;"></textarea></td>
+						    </tr>
+						    <tr>
+						    	<td colspan="2" align="right"><div><span id="counter">请输入8-500个字符.</span></div></td>
+						    </tr>
+						    <tr>
+						    	<td class="comment_title">用户信息：</td>
+						        <td>
+							        <span class="comment_title">身高
+								        <select id="queheight" name="queheight">
+								        <option value="0"></option>
+								        <option value="160-165">160-165CM</option>
+								        <option value="166-170">166-170CM</option><option value="170-175">171-175CM</option>
+								        <option value="176-180">176-180CM</option><option value="181-185">181-185CM</option>
+								        <option value="186-190">186-190CM</option></select>
+							        </span>
+							        <span class="comment_title">体重
+								        <select id="queweight" name="queweight">
+								        <option value="0"></option>
+								        <option value="40-45">40-45kg</option><option value="46-50">46-50kg</option>
+								        <option value="51-55">51-55kg</option><option value="56-60">56-60kg</option>
+								        <option value="40-45">61-65kg</option><option value="66-70">66-70kg</option>
+								        <option value="40-45">71-75kg</option><option value="76-80">76-80kg</option>
+								        <option value="40-45">81-85kg</option><option value="86-80">86-90kg</option>
+								        </select>
+							        </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;提示：如果您填写了此项，将被发布在您的咨询中。
+						        </td>
+						    </tr>
+						    <tr>
+						    	<td></td>
+						        <td align="right">
+							        <span><input type="image" src="../css/img/btn_question.gif" id="btnComment" onclick="javascript: submitQuestion();return false;"></span>
+							        <span><a href="">清空</a></span>
+						        </td>
+						    </tr>
+						</tbody>
+					</table>
+				</form>
+
+				<div class="question_mainF">
+					<ul class="question_nav">
+						<li class="bold">按最新发表时间排序</li>
+					</ul>
+				</div>				
+			</div>		
+		</div>
+	</div>
+	<!--购买咨询end-->
+	
+	<!--中秋嘉年华-->
+	<div class="foot_add maso_transclass">
+    	<a class="add_03" href=""><img src="../css/img/bottom.jpg"></a>
+	    <div class="text hottext">
+	       <p class="hottexttitle">中秋嘉年华</p>
+	       <p class="hottextcontent">第二件五折</p>
+	   </div>
+	   <p class="clearfix"></p>
+	</div>
+	<!--中秋嘉年华end-->
+	
+	</div>	
+	<!--商品详情页end-->
+	</div>
+		
+	</body>
+</html>

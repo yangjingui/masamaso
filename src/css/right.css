@@ -1,0 +1,77 @@
+/*右侧导航栏*/
+.tabs li { position:relative;}
+.top { position:absolute; top:200px; width:36px;padding-top:300px;}
+.mui_outer { background:#000; position:fixed; top:0; right:0; bottom:0; width:36px; z-index:9999;}
+.tabs a { color:#95abb8; text-decoration:none;}
+
+.tabs a:hover { color:#fff}
+.tab_cart { text-align:center; border:1px solid #47516a; border-width:1px 0; padding:18px 0; overflow:hidden; zoom:1;}
+
+.tab_logo_cart { background:url(../css/img/nav_icon.png) no-repeat 0 0; width:14px; height:14px; margin:0 0 3px 11px; float:left;}
+.tab_txt { width:20px; height:50px; line-height:16px; padding:0; margin:0 auto; clear:both;}
+.tab_sup_bd { font:700 12px/21px Microsoft YaHei; border-radius:10px; background:#c40000; color:#fff; width:21px; height:21px; text-align:center; margin:4px auto 0;}
+
+.tab_asset { text-align:center;  border-bottom:1px solid #47516a; padding:12px 0}
+.tab_logo_asset { background:url(../css/img/nav_icon.png) no-repeat -1px -42px; width:16px; height:11px; margin:0 auto 3px;}
+.tab_ord,.tab_favor,.tab_weixin,.tab_top,.tab_ques { height:32px; text-align:center; padding:8px 0}
+.tab_logo_ord { background:url(../css/img/nav_icon.png) no-repeat 0 -83px; width:10px; height:14px; margin:0 auto 3px;}
+.tab_favor,.tab_weixin,.tab_top { height:30px;}
+.tab_logo_favor { background:url(../css/img/nav_icon.png) no-repeat -1px -118px; width:14px; height:12px; margin:0 auto 3px;}
+.tab_logo_weixin { background:url(../css/img/nav_icon.png) no-repeat -1px -161px; width:18px; height:14px; margin:0 auto 3px;}
+.tab_logo_weixin { background:url(../css/img/weixin2_icon.png) no-repeat 0 0; width:11px; height:20px; margin:0 auto 3px;}
+
+.bottom { bottom:20px; position:absolute; width:36px; padding-top:120px;}
+.tab_serv { height:48px; padding:8px 0; text-align:center;}
+.tab_logo_serv { background:url(../css/img/nav_icon.png) no-repeat -1px -210px; width:14px; height:18px; margin:0 auto 3px;}
+.tab_logo_top { background:url(../css/img/nav_icon.png) no-repeat 0px -265px; width:16px; height:21px; margin:auto}
+
+.tabs li .tab_cart:hover,
+.tabs li .tab_asset:hover,
+.tabs li .tab_ord:hover,
+.tabs li .tab_favor:hover,
+.tabs li .tab_weixin:hover,
+.tabs li .tab_ques:hover,
+.tabs li .tab_serv:hover,
+.tabs li .tab_top:hover { background:#900}
+.tabs li .tab_cart:hover .tab_sup_bd,.tabs li .tab_asset:hover .tab_sup_bd { background:#fff; color:#002841}
+
+/*三角形*/
+.tip { display:none; z-index:1000; position:absolute; top:8px; left:-130px;width:123px; height:33px; 
+color:#fff; font-size:14px; line-height:33px;text-align:center; background:#900; *top:22px;
+font-family:tahoma,arial,'Hiragino Sans GB',simsun,sans-serif; }
+.arrow {position:absolute; right:-4px; top:0; color:#900;}
+.arrow2 { right:-4px;} 
+
+.bg { position:fixed; top:0; left:0; right:36px; height:100%; width:100%; background:#000; filter:alpha(opacity=40); opacity:0.4; z-index:9998; display:none;}
+
+/*-- 我的购物车 --*/
+.close,.close2 { background:url(../css/img/nav_icon.png) no-repeat 0 -318px; width:13px; height:13px; display:block; position:absolute; top:10px; right:13px;}
+.plugin_cart,.plugin_assets,.plugin_favor { width:296px; position:fixed; top:0; bottom:0;z-index:99999; background:#fff;
+-webkit-box-shadow:-10px 0 50px #333 ; -moz-box-shadow:-10px 0 50px #333; box-shadow:-10px 0 50px #333; }
+.plugin_top,.assets_top,.favor_top  { background:url(../css/img/nav_icon.png) no-repeat; width:267px; height:37px; margin:45px auto 0;}
+.mcList { width:267px; margin:21px auto 0;}
+.mcBundleList { border:1px solid #dbdbdb; margin-top:-1px; overflow:hidden; display:none;}
+.list_mcPic { float:left;}
+.list_txt { float:left; margin:10px 0 0 8px; color:#666; width:105px; overflow:hidden;}
+.txt_mcSku { height:30px; overflow:hidden;}
+.txt_numb { margin-top:18px; color:#000;}
+.mcPrice { float:left; margin:10px 0 0 20px; width:70px; overflow:hidden;}
+.price_txt { color:#ff3333; font:12px/22px Microsoft YaHei; text-align:right;} 
+.mcPrice a { margin-top:26px; color:#999; float:right; text-decoration:none}
+.shop_btn { float:right; margin-top:15px; background:url(../css/img/nav_icon.png) repeat-x; height:42px; line-height:42px; text-align:center; width:152px; color:#fff; text-decoration:none; font-size:14px;}
+a.shop_btn:hover { color:#fff;}
+.plugin_cart .toolbar_item_arrow { color:#fff; top:115px;}
+
+/*-- 我的收藏 --*/
+.favor_top { background:url(../css/img/nav_icon.png) no-repeat;}
+.plugin_favor .toolbar_item_arrow { color:#fff; top:334px;}
+.mbarp_favor_item_list { width:240px; margin:auto;}
+.mbarp_favor_item_list ul { overflow:hidden;}
+.mbarp_favor_item_list ul li { float:left; margin-left:7px; border:1px solid #d6d4d5; margin-bottom:18px;}
+.mui_price_font { height:30px; font:18px/30px "黑体",  Arial, Helvetica, sans-serif; color:#e1002e; padding-left:10px;}
+.mui_price_font span { font:14px/30px Microsoft YaHei;}
+
+/*-- 微信 --*/
+.maso_weixin { position:fixed;  right:36px; top:40%; z-index:99999; display:none;}
+.maso_weixin .toolbar_item_arrow { color:#fff; top:10px;}
+.mcproducts,.asset_coupon_item,.mbarp_favor_item_list{overflow:hidden;}

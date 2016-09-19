@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登录界面</title>
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/login.css" />
+		<link rel="stylesheet" href="../css/common.css" />
+		
+		<script src="../assets/jquery-1.12.0.js"></script>
+	<script>
+		jQuery(function($){
+			// load的第二种用法：
+			// 加载远程文件
+
+			// 1、先生成一个div
+			// 2、加载header.html
+			// 3、把div写入页面
+			$('<div/>').load('header.html',function(){
+				$(this).insertBefore('.container');
+			});
+
+			$('<div/>').load('footer.html',function(){
+				$(this).insertAfter('.container');
+			});		
+		});
+	</script>
+	</head>
+	<body>
+	<div class="container">
+		<!--用户登录界面-->
+		<div class="login_log_in">
+			<div class="masa_login">
+				<div class="login_log_info">
+					<div class="register_case shadow">
+						<div class="log_case">
+							<div class="log_tit f14">会员登录</div>
+							<table id="form1" width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tbody><tr>
+									<td class="mid_con">
+									   <div>
+										<input type="text" id="login_customer" class="input login_int" value="" placeholder="Email/手机号">
+										<div id="login_customer_msg" class="red"></div>
+									   </div>
+									</td> 
+									<td></td> 
+								</tr>
+								 
+								<tr>
+									<td class="mid_con">
+									    <div>
+										<input type="password" id="login_password" class="input login_int" placeholder="密码">
+										<div id="login_password_msg" class="red"></div>
+										 </div>
+									</td>
+									<td></td> 
+								</tr> 
+								<tr id="login_code">
+									<td>
+									   <div>
+										<input type="text" id="log_verifycode" class="input login_int" style="width: 60px;" placeholder="验证码"> 
+										<span id="span1"></span>								
+										<div id="log_verify_code_msg" class="red"></div>
+										</div>
+									</td>
+									<td>
+									</td>
+								</tr>
+								
+								<tr>
+									<td class="mid_con">
+										<label><input type="checkbox" style="cursor: pointer; vertical-align: middle; margin-top: 0; *margin-top: -1px;" value="1" id="remember_email">记住用户名 </label>
+										<a href="" class="c_gary" style="margin-left: 10px; text-decoration: underline;">忘记密码？</a> | 
+										<a class="login_red" href="">免费注册</a>
+									</td>
+									<td>&nbsp;</td>
+								</tr>
+								<tr>
+									<td class="mid_con">
+										<div>
+											<span id="loading"> 
+												<input type="image" src="../css/img/log_btn.jpg" id="logsubmit" value="" align="absmiddle"> 
+											</span>
+											<div id="login_msg" class="red"></div>
+										</div>
+									</td>
+									<td></td>
+								</tr>
+							</tbody>
+							</table> 
+							<div id="union_login_sign" class="union_login_cc">
+								<div class="log_title">使用合作方登录：</div>
+								<div class="list"><div>
+									<a href="" sitename="qq">
+										<span class="icon_qq"></span>
+										<p>腾讯QQ</p>
+									</a>
+								</div>
+								<div>
+									<a href="" sitename="weibo">
+										<span class="icon_weibo"></span>
+										<p>新浪微博</p>
+									</a>
+								</div>
+								<div>
+									<a href="" sitename="alipay">
+										<span class="icon_alipay"></span>
+										<p>支付宝</p>
+									</a>
+								</div>
+								<div>
+									<a href="" sitename="kaixin">
+									<span class="icon_kaixin"></span>
+									<p>开心网</p>
+									</a>
+								</div>
+								<div>
+									<a href="" sitename="q360">
+										<span class="icon_q360"></span>
+										<p>360</p>
+									</a>
+								</div>
+								<div>
+									<a href="" sitename="renren">
+										<span class="icon_renren"></span>
+										<p>人人网</p>
+									</a>
+								</div>
+								<div>
+									<a href="" sitename="139">
+										<span class="icon_139"></span>
+										<p>139邮箱</p>
+									</a>
+								</div>
+								<div>
+									<a href="" sitename="163">
+										<span class="icon_163"></span>
+										<p>163邮箱</p>
+									</a>
+								</div>
+								</div>
+								<p class="clearfix"></p>
+							</div>
+						</div>					
+					</div>	
+				</div>
+			</div>
+		</div>
+	<div>
+	</body>
+</html>

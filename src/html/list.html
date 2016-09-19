@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>列表页</title>
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/list.css" />
+		
+		<script src="../assets/jquery-1.12.0.js"></script>
+		<script src="../js/common.js"></script>
+	<script>
+		
+	</script>
+	</head>
+	<body>
+	<div class="container">
+		<!--轮播图-->
+		<div class="in_banner">
+			<div class="fullSlide" style="height:472px"> 
+				<div class="bd">
+					<div class="tempWrap" style="overflow:hidden; position:relative; width:1349px">
+						<ul style="width: 5396px; position: relative; overflow: hidden; padding: 0px; margin: 0px; left:0px;">
+							<li class="clone" style="float: left; width: 1349px;"><a href=""><img src="../img/l1.jpg"></a></li>							 
+							<li class="clone" style="float: left; width: 1349px;"><a href=""><img src="../img/l2.jpg"></a></li>
+						</ul>
+					</div>
+				</div>  
+				<div class="hd">
+					<ul>
+						<li class="">1</li>
+						<li class="on">2</li>							
+					</ul>
+				</div>
+				<span class="prev" style="opacity: 1; display: block;"></span> 
+				<span class="next" style="opacity: 1; display: block;"></span>
+			</div>
+		</div>	
+		<!--轮播图end-->
+		
+		<!--浮动菜单-->
+		<div class="" style="position:relative; z-index:999; margin-top:20px;">
+			<div class="menu_2_nav_bg btns_bar" id="btns_bar" style="position: relative; top: 0px; left: 0px;">
+				<div class="menu_2_nav btns_con vcate_menu"> 
+					<ul class="menu_r">												
+						<li><a class="menu2_btn " href=""><span class="acc_top"></span>默认</a></li>
+						<li><a class="menu2_btn " href=""><span class="acc_top"></span>新品</a></li>
+						<li><a class="menu2_btn " href=""><span class="acc_down"></span>销量</a></li>    
+						<li><a class="menu2_btn menu_selt" href=""><span class="acc_top"></span>价格</a></li>
+                    </ul>
+					<!-- 有置顶推荐 -->
+                        <li><a class="menu_selt" href="#hoprd">热销推荐</a></li>                                
+                        <li><a href="#"> 新品上市</a></li>
+                        <li><a href="#">商务夹克</a></li>
+					    <li><a href="#">超轻运动夹克</a></li>
+					    <li><a href="#">个性便装</a></li>
+					    <li><a href="#">棒球夹克</a></li>
+					    <li><a href="#">弹力针织夹克</a></li>
+                        <li><a class="none_br" href="#">时尚夹克</a></li>
+                   </ul>							
+				</div>					
+			</div>
+		</div>
+		<!--浮动菜单end-->
+		
+		<!--商品列表页-->
+		<div class="list-wrap">
+			<!--热销推荐-->
+			<div class="in_recom in_recom2">
+				<div class="in_recom_txt">热销推荐</div>
+				<div class="in_pur in_purbg">
+					<ul class="in_masa_ul">						
+						<li class="in_pur_li">
+							<div class="maso_in">
+								<ul class="in_pur_pic" id="in_pur_pic_list">
+									<li>
+										<div class="in_masa_up">
+											<span class="tips_icon"><img src=""></span>
+			                                <a class="in_pic href20590" href=""> 
+			                                <img id="product20590" src="../css/img/j1.jpg" title="20590|时尚环保pu夹克系列/防风保暖/pu/黑色/净色/夹克" width="100%">            
+			                                <img class="float" src="" style="display: none; opacity: 1;"></a>
+		                				</div>
+									</li>  
+								</ul>
+								
+			    				<div class="in_pur_nav" style="display:none;">  
+				 		  		    <ul id="focus_smaillPic_list" style="../css/img/j1.jpg">  
+								        <li><a><img width="25" src="" style="display: inline;"></a><b>▲</b></li> 				    
+				  					</ul>  		   
+				 				</div>
+			  
+							</div>
+							<div class="in_masa_info" style="padding:20px 15px 22px;">
+								<a class="gray href20590" href="">时尚环保pu夹克系列/防风保暖/pu/黑色/净色/夹克</a>
+		        				<div class="in_txt"> 
+									<div class=" comment">等待评价</div>
+								</div>
+								<div class="in_price">
+					 			 	<em class="fr"><span class="yuan">¥</span><span>399</span></em>
+		                        	<div class="fl  comment">吊牌价:￥1699</div>                               
+								</div>
+							</div> 
+						</li>
+						<li class="in_pur_li">
+							<div class="maso_in">
+								<ul class="in_pur_pic" id="in_pur_pic_list">
+									<li>
+										<div class="in_masa_up">
+											<span class="tips_icon"><img src=""></span>
+			                                <a class="in_pic href20590" href=""> 
+			                                <img id="product20590" src="../css/img/j2.jpg" title="20590|时尚环保pu夹克系列/防风保暖/pu/黑色/净色/夹克" width="100%">            
+			                                <img class="float" src="" style="display: none; opacity: 1;"></a>
+		                				</div>
+									</li>  
+								</ul>
+								
+			    				<div class="in_pur_nav" style="display:none;">  
+				 		  		    <ul id="focus_smaillPic_list" style="../css/img/j2.jpg">  
+								        <li><a><img width="25" src="" style="display: inline;"></a><b>▲</b></li> 				    
+				  					</ul>  		   
+				 				</div>
+			  
+							</div>
+							<div class="in_masa_info" style="padding:20px 15px 22px;">
+								<a class="gray href20590" href="">时尚环保pu夹克系列/防风保暖/pu/黑色/净色/夹克</a>
+		        				<div class="in_txt"> 
+									<div class="comment">已有<span class="fb">2</span>人评价</div>
+								</div>
+								<div class="in_price">
+					 			 	<em class="fr"><span class="yuan">¥</span><span>399</span></em>
+		                        	<div class="fl  comment">吊牌价:￥1699</div>                               
+								</div>
+							</div> 
+						</li>    
+						<li class="in_pur_li">
+							<div class="maso_in">
+								<ul class="in_pur_pic" id="in_pur_pic_list">
+									<li>
+										<div class="in_masa_up">
+											<span class="tips_icon"><img src=""></span>
+			                                <a class="in_pic href20590" href=""> 
+			                                <img id="product20590" src="../css/img/j3.jpg" title="20590|时尚环保pu夹克系列/防风保暖/pu/黑色/净色/夹克" width="100%">            
+			                                <img class="float" src="" style="display: none; opacity: 1;"></a>
+		                				</div>
+									</li>  
+								</ul>
+								
+			    				<div class="in_pur_nav" style="display:none;">  
+				 		  		    <ul id="focus_smaillPic_list" style="../css/img/j3.jpg">  
+								        <li><a><img width="25" src="" style="display: inline;"></a><b>▲</b></li> 				    
+				  					</ul>  		   
+				 				</div>
+			  
+							</div>
+							<div class="in_masa_info" style="padding:20px 15px 22px;">
+								<a class="gray href20590" href="">时尚环保pu夹克系列/防风保暖/pu/黑色/净色/夹克</a>
+		        				<div class="in_txt"> 
+									<div class="comment">已有<span class="fb">3</span>人评价</div>
+								</div>
+								<div class="in_price">
+					 			 	<em class="fr"><span class="yuan">¥</span><span>399</span></em>
+		                        	<div class="fl  comment">吊牌价:￥1699</div>                               
+								</div>
+							</div> 
+						</li>    
+						<li class="in_pur_li">
+							<div class="maso_in">
+								<ul class="in_pur_pic" id="in_pur_pic_list">
+									<li>
+										<div class="in_masa_up">
+											<span class="tips_icon"><img src=""></span>
+			                                <a class="in_pic href20590" href=""> 
+			                                <img id="product20590" src="../css/img/j4.jpg" title="20590|时尚环保pu夹克系列/防风保暖/pu/黑色/净色/夹克" width="100%">            
+			                                <img class="float" src="" style="display: none; opacity: 1;"></a>
+		                				</div>
+									</li>  
+								</ul>
+								
+			    				<div class="in_pur_nav" style="display:none;">  
+				 		  		    <ul id="focus_smaillPic_list" style="../css/img/j4.jpg">  
+								        <li><a><img width="25" src="" style="display: inline;"></a><b>▲</b></li> 				    
+				  					</ul>  		   
+				 				</div>
+			  
+							</div>
+							<div class="in_masa_info" style="padding:20px 15px 22px;">
+								<a class="gray href20590" href="">时尚环保pu夹克系列/防风保暖/pu/黑色/净色/夹克</a>
+		        				<div class="in_txt"> 
+									<div class=" comment">等待评价</div>
+								</div>
+								<div class="in_price">
+					 			 	<em class="fr"><span class="yuan">¥</span><span>399</span></em>
+		                        	<div class="fl  comment">吊牌价:￥1699</div>                               
+								</div>
+							</div> 
+						</li>    
+	            	</ul>
+	            </div>
+           </div>
+			<!--热销推荐end-->
+						
+			<!--新品上市-->
+			<div class="mayaluo"> 
+	            <h3 class="index_tit_lin">新品上市</h3>
+	        </div>
+			<div class="tab-bd clearfix" >
+				<div class="in_masa">
+				<ul>
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img src="../css/img/j1.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">时尚环保pu夹克系列/防风保暖/pu/黑色/净色/夹克</a>
+							<div class="comment">已有<span class="fb">3</span>人评价</div>
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>229</span></em> 
+								<div class="fl comment">吊牌价:￥899</div>   
+							</div>		
+						</div>
+					</li>   
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img src="../css/img/j2.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">时尚环保pu夹克系列/防风保暖/pu/黑色/净色/夹克</a>
+							<div class="comment">等待评价</div>
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>329</span></em> 
+								<div class="fl comment">吊牌价:￥899</div>   
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img src="../css/img/j3.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">时尚环保pu夹克系列/防风保暖/pu/黑色/净色/夹克</a>
+							<div class="comment">等待评价</div>
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>329</span></em> 
+								<div class="fl comment">吊牌价:￥899</div>   
+							</div>
+						</div>
+					</li>   
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img src="../css/img/j4.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">时尚环保pu夹克系列/防风保暖/pu/黑色/净色/夹克</a>
+							<div class="comment">已有<span class="fb">20</span>人评价</div>
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>529</span></em> 
+								<div class="fl comment">吊牌价:￥1699</div>   
+							</div>
+						</div>
+					</li>   
+					<li class="no-right">
+						<div class="in_masa_up"> 								 				  
+							<a class="in_pic" href=""><img src="../css/img/j5.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+							<div class="comment">已有<span class="fb">8</span>人评价</div>
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>429</span></em> 
+								<div class="fl comment">吊牌价:￥1099</div>   
+							</div>
+						</div>
+					</li>   
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img src="../css/img/j1.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+							<div class="comment">已有<span class="fb">7</span>人评价</div>
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>829</span></em> 
+								<div class="fl comment">吊牌价:￥1899</div>   
+							</div>
+						</div>
+					</li> 
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img src="../css/img/j2.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+							<div class="comment">等待评价</div>
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>429</span></em> 
+								<div class="fl comment">吊牌价:￥1399</div>   
+							</div>
+						</div>
+					</li>   
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img src="../css/img/j3.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+							<div class="comment">等待评价</div>
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>429</span></em> 
+								<div class="fl comment">吊牌价:￥1699</div>   
+							</div>
+						</div>
+					</li>   
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img src="../css/img/j4.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+							<div class="comment">已有<span class="fb">3</span>人评价</div>
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>429</span></em> 
+								<div class="fl comment">吊牌价:￥1699</div>   
+							</div>
+						</div>
+					</li>   
+					<li class="no-right">
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img src="../css/img/j5.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+							<div class="comment">已有<span class="fb">3</span>人评价</div>
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>629</span></em> 
+								<div class="fl comment">吊牌价:￥1799</div>   
+							</div>
+						</div>
+					</li>
+					<p class="clearfix"></p>
+				</ul>
+			</div> 
+			</div>
+			<!--新品上市end-->
+			
+			<!--商务夹克-->
+			<div class="mayaluo"> 
+	            <h3 class="index_tit_lin">商务夹克</h3>
+	        </div>
+			<div class="tab-bd clearfix" >
+				<div class="in_masa">
+				<ul>
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img src="../css/img/j1.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">时尚环保pu夹克系列/防风保暖/pu/黑色/净色/夹克</a>
+							<div class="comment">已有<span class="fb">3</span>人评价</div>
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>229</span></em> 
+								<div class="fl comment">吊牌价:￥899</div>   
+							</div>		
+						</div>
+					</li>   
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img src="../css/img/j2.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">时尚环保pu夹克系列/防风保暖/pu/黑色/净色/夹克</a>
+							<div class="comment">等待评价</div>
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>329</span></em> 
+								<div class="fl comment">吊牌价:￥899</div>   
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img src="../css/img/j3.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">时尚环保pu夹克系列/防风保暖/pu/黑色/净色/夹克</a>
+							<div class="comment">已有<span class="fb">6</span>人评价</div>
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>429</span></em> 
+								<div class="fl comment">吊牌价:￥1299</div>   
+							</div>
+						</div>
+					</li>   
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img src="../css/img/j4.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">时尚环保pu夹克系列/防风保暖/pu/黑色/净色/夹克</a>
+							<div class="comment">已有<span class="fb">20</span>人评价</div>
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>529</span></em> 
+								<div class="fl comment">吊牌价:￥1699</div>   
+							</div>
+						</div>
+					</li>   
+					<li class="no-right">
+						<div class="in_masa_up"> 								 				  
+							<a class="in_pic" href=""><img src="../css/img/j5.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+							<div class="comment">已有<span class="fb">8</span>人评价</div>
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>429</span></em> 
+								<div class="fl comment">吊牌价:￥1099</div>   
+							</div>
+						</div>
+					</li>   
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img src="../css/img/j1.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+							<div class="comment">已有<span class="fb">7</span>人评价</div>
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>829</span></em> 
+								<div class="fl comment">吊牌价:￥1899</div>   
+							</div>
+						</div>
+					</li> 
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img src="../css/img/j2.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+							<div class="comment">等待评价</div>
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>429</span></em> 
+								<div class="fl comment">吊牌价:￥1399</div>   
+							</div>
+						</div>
+					</li>   
+					<li class="li_464">								 				  
+						<a href=""><img src="../css/img/xj.jpg"></a> 
+					</li>   					  					
+					<p class="clearfix"></p>
+				</ul>
+			</div> 
+			</div>
+			<!--商务夹克end-->
+			
+			<!--超轻运动夹克-->
+			<div class="mayaluo"> 
+	            <h3 class="index_tit_lin">超轻运动夹克</h3>
+	        </div>
+			<div class="tab-bd clearfix" >
+				<div class="in_masa">
+					<ul>						
+						<li>
+							<div class="in_masa_up"> 									 				  
+								<a class="in_pic" href=""><img src="../css/img/12.jpg"></a> 
+							</div>
+							<div class="in_masa_info">					
+								<a class="gray" href="">时尚环保pu夹克系列/防风保暖/pu/黑色/净色/夹克</a>
+								<div class="comment">已有<span class="fb">20</span>人评价</div>
+								<div class="in_price">							
+									<em><span class="yuan">¥</span><span>529</span></em> 
+									<div class="fl comment">吊牌价:￥1699</div>   
+								</div>
+							</div>
+						</li>   
+						<li class="no-right">
+							<div class="in_masa_up"> 								 				  
+								<a class="in_pic" href=""><img src="../css/img/13.jpg"></a> 
+							</div>
+							<div class="in_masa_info">					
+								<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+								<div class="comment">已有<span class="fb">8</span>人评价</div>
+								<div class="in_price">							
+									<em><span class="yuan">¥</span><span>429</span></em> 
+									<div class="fl comment">吊牌价:￥1099</div>   
+								</div>
+							</div>
+						</li>   
+						<li>
+							<div class="in_masa_up"> 									 				  
+								<a class="in_pic" href=""><img src="../css/img/14.jpg"></a> 
+							</div>
+							<div class="in_masa_info">					
+								<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+								<div class="comment">已有<span class="fb">7</span>人评价</div>
+								<div class="in_price">							
+									<em><span class="yuan">¥</span><span>829</span></em> 
+									<div class="fl comment">吊牌价:￥1899</div>   
+								</div>
+							</div>
+						</li> 
+						<li>
+							<div class="in_masa_up"> 									 				  
+								<a class="in_pic" href=""><img src="../css/img/15.jpg"></a> 
+							</div>
+							<div class="in_masa_info">					
+								<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+								<div class="comment">等待评价</div>
+								<div class="in_price">							
+									<em><span class="yuan">¥</span><span>429</span></em> 
+									<div class="fl comment">吊牌价:￥1399</div>   
+								</div>
+							</div>
+						</li>   
+						<li>
+							<div class="in_masa_up"> 									 				  
+								<a class="in_pic" href=""><img src="../css/img/16.jpg"></a> 
+							</div>
+							<div class="in_masa_info">					
+								<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+								<div class="comment">等待评价</div>
+								<div class="in_price">							
+									<em><span class="yuan">¥</span><span>429</span></em> 
+									<div class="fl comment">吊牌价:￥1699</div>   
+								</div>
+							</div>
+						</li>   
+						<li>
+							<div class="in_masa_up"> 									 				  
+								<a class="in_pic" href=""><img src="../css/img/17.jpg"></a> 
+							</div>
+							<div class="in_masa_info">					
+								<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+								<div class="comment">已有<span class="fb">3</span>人评价</div>
+								<div class="in_price">							
+									<em><span class="yuan">¥</span><span>429</span></em> 
+									<div class="fl comment">吊牌价:￥1699</div>   
+								</div>
+							</div>
+						</li>   
+						<li class="no-right">
+							<div class="in_masa_up"> 									 				  
+								<a class="in_pic" href=""><img src="../css/img/18.jpg"></a> 
+							</div>
+							<div class="in_masa_info">					
+								<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+								<div class="comment">已有<span class="fb">3</span>人评价</div>
+								<div class="in_price">							
+									<em><span class="yuan">¥</span><span>629</span></em> 
+									<div class="fl comment">吊牌价:￥1799</div>   
+								</div>
+							</div>
+						</li>
+						<li class="li_464">								 				  
+							<a href=""><img src="../css/img/xj.jpg"></a> 
+						</li>   
+						<p class="clearfix"></p>
+					</ul>
+				</div> 
+			</div>
+			<!--超轻运动夹克end-->
+			
+			<!--个性便装-->
+			<div class="mayaluo"> 
+	            <h3 class="index_tit_lin">个性便装</h3>
+	        </div>
+			<div class="tab-bd clearfix" >
+				<div class="in_masa">
+				<ul>
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img src="../css/img/1.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+							<div class="comment">已有<span class="fb">3</span>人评价</div>
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>229</span></em> 
+								<div class="fl comment">吊牌价:￥899</div>   
+							</div>		
+						</div>
+					</li>   
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img src="../css/img/2.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+							<div class="comment">等待评价</div>
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>329</span></em> 
+								<div class="fl comment">吊牌价:￥899</div>   
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img src="../css/img/1.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+							<div class="comment">已有<span class="fb">6</span>人评价</div>
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>429</span></em> 
+								<div class="fl comment">吊牌价:￥1299</div>   
+							</div>
+						</div>
+					</li>   
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img src="../css/img/3.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+							<div class="comment">已有<span class="fb">20</span>人评价</div>
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>529</span></em> 
+								<div class="fl comment">吊牌价:￥1699</div>   
+							</div>
+						</div>
+					</li>   
+					<li class="no-right">
+						<div class="in_masa_up"> 								 				  
+							<a class="in_pic" href=""><img src="../css/img/4.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+							<div class="comment">已有<span class="fb">8</span>人评价</div>
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>429</span></em> 
+								<div class="fl comment">吊牌价:￥1099</div>   
+							</div>
+						</div>
+					</li>   
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img src="../css/img/5.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+							<div class="comment">已有<span class="fb">7</span>人评价</div>
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>829</span></em> 
+								<div class="fl comment">吊牌价:￥1899</div>   
+							</div>
+						</div>
+					</li> 
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img src="../css/img/1.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+							<div class="comment">等待评价</div>
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>429</span></em> 
+								<div class="fl comment">吊牌价:￥1399</div>   
+							</div>
+						</div>
+					</li>   
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img src="../css/img/6.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+							<div class="comment">等待评价</div>
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>429</span></em> 
+								<div class="fl comment">吊牌价:￥1699</div>   
+							</div>
+						</div>
+					</li>   
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img src="../css/img/7.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+							<div class="comment">已有<span class="fb">3</span>人评价</div>
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>429</span></em> 
+								<div class="fl comment">吊牌价:￥1699</div>   
+							</div>
+						</div>
+					</li>   
+					<li class="no-right">
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img src="../css/img/8.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+							<div class="comment">已有<span class="fb">3</span>人评价</div>
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>629</span></em> 
+								<div class="fl comment">吊牌价:￥1799</div>   
+							</div>
+						</div>
+					</li>
+					<li>
+							<div class="in_masa_up"> 									 				  
+								<a class="in_pic" href=""><img src="../css/img/16.jpg"></a> 
+							</div>
+							<div class="in_masa_info">					
+								<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+								<div class="comment">等待评价</div>
+								<div class="in_price">							
+									<em><span class="yuan">¥</span><span>429</span></em> 
+									<div class="fl comment">吊牌价:￥1699</div>   
+								</div>
+							</div>
+						</li>   
+						<li>
+							<div class="in_masa_up"> 									 				  
+								<a class="in_pic" href=""><img src="../css/img/17.jpg"></a> 
+							</div>
+							<div class="in_masa_info">					
+								<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+								<div class="comment">已有<span class="fb">3</span>人评价</div>
+								<div class="in_price">							
+									<em><span class="yuan">¥</span><span>429</span></em> 
+									<div class="fl comment">吊牌价:￥1699</div>   
+								</div>
+							</div>
+						</li>   
+						<li class="no-right">
+							<div class="in_masa_up"> 									 				  
+								<a class="in_pic" href=""><img src="../css/img/18.jpg"></a> 
+							</div>
+							<div class="in_masa_info">					
+								<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+								<div class="comment">已有<span class="fb">3</span>人评价</div>
+								<div class="in_price">							
+									<em><span class="yuan">¥</span><span>629</span></em> 
+									<div class="fl comment">吊牌价:￥1799</div>   
+								</div>
+							</div>
+						</li>
+						<li class="li_464">								 				  
+							<a href=""><img src="../css/img/xj.jpg"></a> 
+						</li>   
+					<p class="clearfix"></p>
+				</ul>
+			</div> 
+			</div>
+			<!--个性便装end-->
+			
+			<!--猜您喜欢-->
+			<div class="mayaluo"> 
+	            <h3 class="index_tit_lin">猜您喜欢</h3>
+	        </div>
+			<div class="tab-bd clearfix" >
+				<div class="in_masa">
+				<ul>
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img src="../css/img/j1.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">时尚环保pu夹克系列/防风保暖/pu/黑色/净色/夹克</a>
+							<div class="comment">已有<span class="fb">3</span>人评价</div>
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>229</span></em> 
+								<div class="fl comment">吊牌价:￥899</div>   
+							</div>		
+						</div>
+					</li>   
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img src="../css/img/j2.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">时尚环保pu夹克系列/防风保暖/pu/黑色/净色/夹克</a>
+							<div class="comment">等待评价</div>
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>329</span></em> 
+								<div class="fl comment">吊牌价:￥899</div>   
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img src="../css/img/j3.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">时尚环保pu夹克系列/防风保暖/pu/黑色/净色/夹克</a>
+							<div class="comment">等待评价</div>
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>329</span></em> 
+								<div class="fl comment">吊牌价:￥899</div>   
+							</div>
+						</div>
+					</li>   
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img src="../css/img/j4.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">时尚环保pu夹克系列/防风保暖/pu/黑色/净色/夹克</a>
+							<div class="comment">已有<span class="fb">20</span>人评价</div>
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>529</span></em> 
+								<div class="fl comment">吊牌价:￥1699</div>   
+							</div>
+						</div>
+					</li>   
+					<li class="no-right">
+						<div class="in_masa_up"> 								 				  
+							<a class="in_pic" href=""><img src="../css/img/j5.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+							<div class="comment">已有<span class="fb">8</span>人评价</div>
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>429</span></em> 
+								<div class="fl comment">吊牌价:￥1099</div>   
+							</div>
+						</div>
+					</li>   					
+					<p class="clearfix"></p>
+				</ul>
+			</div> 
+			</div>
+			<!--猜您喜欢end-->
+		</div>
+		<!--商品列表页end-->
+	</div>
+	</body>
+</html>
