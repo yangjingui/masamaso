@@ -1,0 +1,65 @@
+
+.cart_header{width:100%; height:92px;}
+
+/* nav */
+.top_nav{height:37px}
+.top_nav li{float:left}
+
+.bc_nav{overflow:hidden;height:22px;padding:8px 0 0 10px;font-size:14px; border-bottom:2px solid #000;}
+.bc_nav *{display:inline;float:left;color:#333}
+.bc_nav dt{padding-right:11px}
+.bc_nav dd strong.cur{color:#ff2628;}
+.bc_nav span{margin:0 8px 0 9px}
+
+#direction{width:1002px;margin:0 auto}
+/* container */
+#container{padding-bottom:50px;font-size:12px}
+#container h2{float:left;width:99px;height:23px;padding:9px 0 0 10px;color:#ff2628;font:bold 14px SimSun}
+#container .tips{float:right;width:553px;height:20px;margin-top:15px;padding-left:5px;background:#f7f8f8;
+	border:1px solid #dedede;line-height:20px;color:#ff2628}
+#container .btn_over{color:gray;}
+
+/* footer */
+#footer{width:100%;height:38px;border-top:1px solid #b8b7bc;text-align:center}
+#footer address{padding:10px 0;color:#727171;font-size:12px;font-family:arial}
+.nav_box,#container{width:1002px;margin:0 auto}
+
+
+/*shopping_box*/
+.shopping_box {border: 1px solid #dedede;}
+.shopping_box table {width: 100%;font-family: arial;}
+table {border-collapse: collapse;}
+.shopping_box thead {vertical-align: middle;border-color: inherit;}
+.shopping_box table th {height: 26px;color: #fff;background: #9e9e9e;
+border: 1px solid #f3f3f3;font-weight: normal; line-height: 26px;}
+.shopping_box table td {height: 80px;border: 1px solid #f3f3f3;color: #666;text-align: center;}
+.poreat {position: relative;float: left;}
+.shopping_box table td.pro .proa img {float: left;padding: 6px 18px 0;vertical-align: middle;}
+.shopping_box table td.pro p {float: left;width: 237px;height: 63px;padding: 17px 0 0 5px;
+    border-left: 1px solid #f3f3f3;text-align: left;}
+.shopping_total { width: 100%;height: 55px;margin-top: 1px;background: #e4e4e4;}
+.shopping_box table td.pro p span {display: block;}
+.shopping_total td.tips, .shopping_total td em {color: #ff2628;}
+.shopping_total td p {line-height: 26px;}
+.shopping_total td {padding-left: 19px; font-family: arial;}
+
+.pay_box {overflow: hidden;float: right;height: 75px; padding: 8px 0 13px;}
+.pay_box div a {display: inline; float: left; margin-left: 10px;line-height: 41px; color: #727171;font-size: 14px;}
+
+.coupon {display: inline;float: left;width: 494px; background: #f7f8f8;border: 1px solid #dedede;font-size: 13px;}
+.coupon fieldset.hidden { padding: 10px 8px;}
+.blank {overflow: hidden;display: none;position: absolute;top: 0;
+    left: 0;width: 0;height: 0;visibility: hidden;}
+.coupon fieldset.hidden input.checkbox {width: 16px;height: 16px;vertical-align: middle;}
+.coupon fieldset.hidden label, .coupon fieldset.hidden span {height: 16px;font-weight: bold;vertical-align: middle;}
+
+
+
+
+
+
+
+
+
+
+

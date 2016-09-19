@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车</title>		
+		<link rel="stylesheet" href="../css/cart.css" />
+	</head>
+	<body>
+		<!--头部-->
+		<div class="cart_header"><img src="../img/masamaso_logo.jpg" alt="" /></div>
+		<!--头部end-->
+		
+		<!--结算步骤-->
+		<div id="direction">
+			<dl class="bc_nav">
+				<dt>结算步骤:</dt>
+				<dd><strong class="cur">我的购物车</strong><span>&gt;&gt;</span></dd>
+				<dd><strong>结算中心</strong><span>&gt;&gt;</span></dd>
+				<dd><strong>订单完成</strong></dd>
+			</dl>
+		</div>
+	    <!--结算步骤end-->
+	    
+		<!--购物车内容-->
+		<div id="container">
+    		<h2 class="title gou_iocn">我的购物车</h2>
+		    <p class="tips"><em>温馨提示：</em>目前购物尚未完成，请您尽快完成订单提交，以便我们为您确认库存状态，并及时配送。
+		    <a title="关闭" class="btn_over">&times;</a> </p>
+	    <!--shopping box-->
+	    <div class="shopping_box">
+	        <table summary="我的购物车">		            
+		        <thead>
+		          <tr>
+		            <th>款号</th>
+		            <th>商品</th>
+		            <th>尺寸</th>
+		            <th>原价</th>
+		            <th>现价</th>
+		            <th>数量</th>
+		            <th>小计</th>
+		            <th>操作</th>
+		          </tr>
+		        </thead>
+		        <tbody>
+		          <!--普通商品-->
+		            <tr>
+			            <td>
+			            	18621 <span style="display:none" class="productcode">18621-M</span> 
+			            	<span style="display:none" class="id">3644968</span> 
+			            	<span style="display:none" class="product_level">1</span>
+			            </td>
+			            <td class="pro">
+						    <div class="poreat">
+							    <a class="proa" href="" style="color:#796353;">
+							    	<img src="../css/img/shopping.jpg" width="52" height="70" alt="">
+							    </a>
+							    <div class="poreImg"><img src=""></div>
+						    </div>
+		            		<p><a href=""style="color:#796353;"><span>弹力针织夹克系列/拼接/聚酯纤维/黑色/纯色/薄便装</span></a></p>
+			            </td>
+			            <td>M</td>
+			            <td>¥719</td>
+			            <td>¥359</td>
+			            <td>
+			            	<div style="position:relative">
+				                <span class="button btn_cut_cart_product_num" style="cursor :pointer"><img src="" width="11" height="11"> </span>
+				                <input type="" class="num" value="1">
+				                <span class="button btn_add_cart_product_num" style="cursor :pointer"> 
+				                	<img src="" width="11" height="11" alt=""> 
+				                </span>
+			                <div class="red inventory">库存紧张</div>			  </div>
+						</td>
+			            <td>¥359</td>
+			            <td><a href="" class="delete btn_delete">删除</a></td>
+			        </tr>
+		                
+		        	<!--套装-->
+		            <!--超值换购或赠品-->
+		        </tbody>        
+	        </table>
+	    </div>
+	    	<table summary="购物结算" class="shopping_total">	        
+		        <tbody>
+			        <tr>
+			            <td><a href="" id="btn_clear_cart_product_info">清空购物车</a>&nbsp;&nbsp;
+				          	<span style="display: none" id="all_product_code"></span>&nbsp;&nbsp;
+				          	<a href="" id="btn_delete_cart_product_info">点击查看刚删除商品</a>
+			            </td>
+			            <td>实际支付金额满<span>￥200.00</span>免运费</td>
+			            <td>
+				          	<p style="text-align: left">优惠券折扣：<span>¥0</span></p>
+				            <p style="text-align: left">积分折扣：<em>¥0</em></p>
+			            </td>
+			            <td>
+				          	<p style="text-align: left">商品原价：<span>¥719</span></p>
+				            <p style="text-align: left">优惠金额：<em>¥360</em></p>
+			            </td>
+			            <td>
+				          	<p style="text-align: left">运费：<span>0</span></p>
+				            <p style="text-align: left; font-size:14px; font-weight:bold;">商品总金额：
+				            	<em class="end">¥359</em>
+				            </p>
+			            </td>
+			        </tr>
+		        </tbody>
+		    </table>    
+		    <div class="pay_box">       
+		    	<div> 
+		    		<a href=""><img src="../css/img/jx_gou.jpg" width="138" height="41" alt=""></a> 
+		            <a href=""><img src="../css/img/btn_settlement.jpg" width="138" height="41" alt=""></a> 
+		    	</div>
+		    </div>
+
+    		<div class="clearfix"></div>            
+	        <div class="clearfix"></div> 
+	        
+	        <div class="coupon" style="margin-right:10px">        
+		        <fieldset class="hidden">
+			        <legend class="blank">使用优惠券</legend>
+			        <input type="checkbox" value="" class="checkbox">
+			        <label for="">使用优惠券(礼品卡/代金券)</label>
+		        </fieldset>
+		        <fieldset id="coupon" class="coupon_code" style="display:none">
+			        <legend class="blank">输入优惠码</legend>
+			        <p>
+				        <label for="in_code">请输入新优惠券的密码：</label>
+				        <input type="text" id="in_coupon_code" value="">
+			        </p>
+			        <p style="padding-bottom:26px">
+				        <label for="in_vercode">请输入验证码：</label>
+				        <span class="in_vercode">
+				        <input type="text" value="" id="in_vercode" class="vercode">
+				        <img id="checkNum" src="" style="vertical-align:middle" value=""></span>         
+				        <input type="image" src="" name="addNewCoupon" title="验证并使用" class="img">
+			        </p>
+			        <p>
+				        <label for="">请您选择已有优惠券<span>(0)</span>：</label>
+				        <span class="select_box"><select name="coupon_list" id="coupon_list"></select></span>
+				        <input type="image" src="" name="addCoupon" id="addCoupon" title="验证并使用" class="img">
+			        </p>
+		        </fieldset>
+	        	<div class="clearfix"></div>
+	    	</div>
+	    	
+            <div class="coupon">
+		        <fieldset class="hidden">
+		        	<legend class="blank">使用积分</legend>
+		            <input type="checkbox" value="" class="checkbox">
+		            <label for="">使用积分</label>
+		        	<span>账户积分：<a href="javascript:void(0);">0</a></span>
+		        </fieldset>
+	            <fieldset id="bonus_area" class="used" style="display:none">
+	        		<legend class="blank">请选择使用积分数量</legend>
+			        <p>
+			        	<label for="">请选择积分使用数量：</label>
+				        <span class="select_box">
+					        <select name="" id="choose_bonus">
+					            <option value="用户积分不够500分，不能使用">用户积分不够500分，不能使用</option>
+					        </select>
+				        </span>
+			        </p>
+			        <dl>
+				        <dt>客服提示：</dt>
+				        <dd>1.积分每次使用的数量为500的整数倍;(如：500、1000、1500...)</dd>
+				        <dd>2.500积分可抵用现金￥25.00。</dd>
+				        <dd>3.灰色字体是超出订单金额的积分使用量。</dd>
+			        </dl>
+	            </fieldset>
+	        </div>
+        
+	        <div class="clearfix"></div>
+	    	<div style="clear:both; height:1px; overflow:hidden;"></div>
+		    <!--满赠活动　-->
+		    <div id="giftProduct"></div>
+		    <div id="exchangeProduct"></div>
+	    </div>
+		<!--购物车内容end-->
+		
+		<!--底部-->
+		<div id="footer" style="margin-top:12px">
+		    <address>
+		  		Copyright © 2008-2050 MasaMaso.com All Right Reserved 京ICP证080088号
+		    </address>
+		</div>
+	</body>
+</html>

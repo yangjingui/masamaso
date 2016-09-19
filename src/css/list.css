@@ -10,9 +10,9 @@
 	margin:1px 12px 0 0; overflow:hidden; background:url(..css/img/in_d2.png) no-repeat;line-height:999px; }
 .in_banner .fullSlide .hd ul .on{ background:url(..css/img/in_d1.png) no-repeat; }
 
-.in_banner .fullSlide .prev,
-.in_banner .fullSlide .next{  display:block;  position:absolute; z-index:1; top:50%; margin-top:-70px; left:15%;  z-index:1;
-	 width:44px; height:120px; background:url(..css/img/in_l.png) no-repeat;  cursor:pointer;   }
+.in_banner .fullSlide .prev,.in_banner .fullSlide .next{  display:block;  position:absolute; z-index:1; top:50%; margin-top:-70px;
+ left:15%;  z-index:1;width:44px; height:120px;  cursor:pointer;   }
+.in_banner .fullSlide .prev{background:url(..css/img/in_l.png) no-repeat; }
 .in_banner .fullSlide .next{ left:auto; right:15%; background:url(..css/img/in_r.png) no-repeat;}
 .in_banner .fullSlide .bd li { height:625px;}
 .in_banner .bd li img { background:url(..css/img/loading.gif) top center no-repeat ; position:relative; left:50%; margin-left:-950px; float:left; display:block;}

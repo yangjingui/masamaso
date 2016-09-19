@@ -9,22 +9,58 @@
 		
 		<script src="../assets/jquery-1.12.0.js"></script>
 		<script src="../js/common.js"></script>
+		
 	<script>
-		jQuery(function($){						
-			var $window = $(window);			
-				//给window绑定滚动事件
-		    $window.scroll(function(){
+		jQuery(function($){
+			var $ul = $('.bd ul');
+			var $bdLi = $('.bd li');
+			var $hdLi = $('.hd li');		
+			// 默认显示第一张
+			var index = 0;
+			// 轮播				
+			var timer;
+
+			$('.fullSlide').on('mouseenter',function(){
+				clearInterval(timer);
+			}).on('mouseleave',function(){
+				timer = setInterval(function(){
+					index++;
+					showPic();
+				},3000);
+			}).trigger('mouseleave')
+			
+			// 上一张
+			.on('click','.prev',function(){
+				index--;
+				showPic();
+			})
+			// 下一张
+			.on('click','.next',function(){
+				index++;
+				showPic();
+			})
+
+			// 小图切换
+			.on('click','.hd li',function(){
+				index = $(this).index();
+				showPic();
+			});
 				
-				if($window.scrollTop() > 750){
-			      	//当滚动条滚到大于750时，开始显示
-			       	$('menu_2_nav_bg').addClass('btns_bar');
-			       			       			        
-		      	}else{
-		       		$('menu_2_nav_bg').removeClass('btns_bar');
-		      	}
-		      
-		    });
-		});
+				
+			// 图片显示
+			function showPic(){
+				if(index>=$bdLi.length){
+					index = 0;
+				}else if(index<0){
+					index = $bdLi.length -1;
+				}
+				$ul.animate({left:-1349},function(){
+					$ul.append.($ul.clone(true));
+				});
+				$hdLi.eq(index).addClass('on').siblings('li').removeClass('on');
+			}
+
+       });
 	</script>
 	</head>
 	<body>
@@ -34,7 +70,7 @@
 			<div class="fullSlide" style="height:472px"> 
 				<div class="bd">
 					<div class="tempWrap" style="overflow:hidden; position:relative; width:1349px">
-						<ul style="width:1349px;position: relative; overflow: hidden; padding: 0px; margin: 0px; left:0px;">
+						<ul style="width:2698px;position: relative; overflow: hidden; padding: 0px; margin: 0px; left:0px;">
 							<li style="float: left; width: 1349px;"><a href=""><img src="../img/l1.jpg"></a></li>							 
 							<li style="float: left; width: 1349px;"><a href=""><img src="../img/l2.jpg"></a></li>							
 						</ul>
@@ -46,8 +82,8 @@
 						<li class="on">2</li>							
 					</ul>
 				</div>
-				<span class="prev" style="opacity: 1; display: block;"></span> 
-				<span class="next" style="opacity: 1; display: block;"></span>
+				<a class="prev" style="opacity: 1; display: block;"></a> 
+				<a class="next" style="opacity: 1; display: block;"></a>
 			</div>
 		</div>	
 		<!--轮播图end-->
