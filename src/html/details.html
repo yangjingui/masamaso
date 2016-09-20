@@ -2,16 +2,18 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>详情页</title>
 		<link rel="stylesheet" href="../css/reset.css" />
 		<link rel="stylesheet" href="../css/details.css" />
 		<link rel="stylesheet" href="../css/common.css" />
 		<link rel="stylesheet" href="../css/right.css" />
 		<link rel="stylesheet" href="../css/jquery.lxzoom.css">
+		<link rel="stylesheet" href="../css/jquery.jqzoom.css" />
 
 		<script src="../assets/jquery-1.12.0.js"></script>
 		<script src="../js/common.js"></script>
 		<script src="../js/jquery.lxzoom.js"></script>
+		<script src="../js/jquery.jqzoom-core-pack.js"></script>
 	<script>
 		jQuery(function($){
 			// 实现放大镜效果
@@ -44,10 +46,18 @@
                      		<li> <a href="javascript:void(0);"><img src="../css/img/s4.jpg"></a> </li>
                      		<li> <a href="javascript:void(0);"><img src="../css/img/s5.jpg"></a> </li>
                      		<li> <a href="javascript:void(0);"><img src="../css/img/s6.jpg"></a> </li>
-						</ul>
-						<!--<a href="" class="b_tp lxbzoom" ><img src="../css/img/ss.jpg"/></a>-->
-						<div id="box" class="lxbzoom"><img src="../css/img/ss.jpg"/></div>
-					</div>
+						</ul>					
+						<div id="box" class="lxzoom">
+							<ul>
+								<li><img height="599" src="../css/img/big.jpg"/></li>
+								<li><img height="599" src="../css/img/big2.jpg"/></li>
+								<li><img height="599" src="../css/img/big3.jpg"/></li>
+								<li><img height="599" src="../css/img/big4.jpg"/></li>
+								<li><img height="599" src="../css/img/big5.jpg"/></li>
+								<li><img height="599" src="../css/img/big6.jpg"/></li>
+							</ul>						
+						</div>
+					</div>			
 				    <p class="clearfix"></p>
 				</div>							
 				<!--尺码弹出展示部分--> 

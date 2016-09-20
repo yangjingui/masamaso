@@ -15,7 +15,6 @@
 		//获取页面元素
 		var $bd = $('.bd');
 		var $bdLi = $('.bd li');
-		var $hdLi = $('.hd li');
 		
 		//i是作为li 的下标
 		var i = -1;
@@ -33,25 +32,11 @@
 		}
 		function scrollBg(index){
 			//大图渐隐渐现
-			$bdLi.eq(index).fadeIn(100).siblings().fadeOut(100);
-			
-			//当前小图显示红框
-			$hdLi.eq(index).addClass('on').siblings('li').removeClass('on');
+			$bdLi.eq(index).fadeIn(100).siblings().fadeOut(100);			
 		}
 		//设置定时器，让图片自动轮播
 		timer = setInterval(carousel,5000);
-		
-	   	//给底部小图绑定移入事件
-	    $hdLi.on('mouseenter',function(){
-	    	clearInterval(timer);
-	    	//将当前的索引值赋给i
-			i = $(this).index();
-			
-			scrollBg(i);
-			
-	    }).on('mouseleave',function(){
-	      timer = setInterval(carousel,100);	
-	    });
+
 	    //给底部大图绑定移入事件
 	    $bdLi.on('mouseenter',function(){
 	    	clearInterval(timer);
