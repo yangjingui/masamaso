@@ -94,7 +94,7 @@
 .in_masa_up {position: relative; height: 320px;z-index: 5;overflow: hidden;zoom: 1;}
 .in_masa_info .gray {color: #666666;height: 40px;overflow: hidden;zoom: 1;display: block; width: 202px; line-height: 18px;}
 .in_price{width:200px; height:30px;}
-.in_masa_info .in_price em {font: 18px/24px Verdana, Geneva, sans-serif; color:#f66; float:left;}
+.in_masa_info .in_price span{font: 14px/24px Verdana, Geneva, sans-serif; color:#f66; float:left;}
 .seven_btn { width: 482px;height: 40px;font: 18px/40px Microsoft Yahei;color: #fc2a2a;text-align: center;
 margin: 0 auto;display: block; text-decoration: none;background: url("../css/img/more.png") no-repeat center;}
 .in_masa_info .comment{color:#999;}
