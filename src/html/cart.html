@@ -68,10 +68,11 @@
 				                <span class="button btn_add_cart_product_num" style="cursor :pointer"> 
 				                	<img src="" width="11" height="11" alt=""> 
 				                </span>
-			                <div class="red inventory">库存紧张</div>			  </div>
+			                	<div class="red">库存紧张</div>			  
+			            	</div>
 						</td>
 			            <td>¥359</td>
-			            <td><a href="" class="delete btn_delete">删除</a></td>
+			            <td><a href="" class="gray">删除</a></td>
 			        </tr>
 		                
 		        	<!--套装-->
@@ -82,11 +83,11 @@
 	    	<table summary="购物结算" class="shopping_total">	        
 		        <tbody>
 			        <tr>
-			            <td><a href="" id="btn_clear_cart_product_info">清空购物车</a>&nbsp;&nbsp;
+			            <td><a href="" class="gray">清空购物车</a>&nbsp;&nbsp;
 				          	<span style="display: none" id="all_product_code"></span>&nbsp;&nbsp;
-				          	<a href="" id="btn_delete_cart_product_info">点击查看刚删除商品</a>
+				          	<a href="" class="gray">点击查看刚删除商品</a>
 			            </td>
-			            <td>实际支付金额满<span>￥200.00</span>免运费</td>
+			            <td class="red">实际支付金额满<span>￥200.00</span>免运费</td>
 			            <td>
 				          	<p style="text-align: left">优惠券折扣：<span>¥0</span></p>
 				            <p style="text-align: left">积分折扣：<em>¥0</em></p>
@@ -112,69 +113,245 @@
 		    </div>
 
     		<div class="clearfix"></div>            
-	        <div class="clearfix"></div> 
-	        
-	        <div class="coupon" style="margin-right:10px">        
-		        <fieldset class="hidden">
-			        <legend class="blank">使用优惠券</legend>
-			        <input type="checkbox" value="" class="checkbox">
-			        <label for="">使用优惠券(礼品卡/代金券)</label>
-		        </fieldset>
-		        <fieldset id="coupon" class="coupon_code" style="display:none">
-			        <legend class="blank">输入优惠码</legend>
-			        <p>
-				        <label for="in_code">请输入新优惠券的密码：</label>
-				        <input type="text" id="in_coupon_code" value="">
-			        </p>
-			        <p style="padding-bottom:26px">
-				        <label for="in_vercode">请输入验证码：</label>
-				        <span class="in_vercode">
-				        <input type="text" value="" id="in_vercode" class="vercode">
-				        <img id="checkNum" src="" style="vertical-align:middle" value=""></span>         
-				        <input type="image" src="" name="addNewCoupon" title="验证并使用" class="img">
-			        </p>
-			        <p>
-				        <label for="">请您选择已有优惠券<span>(0)</span>：</label>
-				        <span class="select_box"><select name="coupon_list" id="coupon_list"></select></span>
-				        <input type="image" src="" name="addCoupon" id="addCoupon" title="验证并使用" class="img">
-			        </p>
-		        </fieldset>
-	        	<div class="clearfix"></div>
-	    	</div>
+	        <!--<div class="maso_coupon">		        
+		        <div class="coupon" style="margin-right:10px">        
+			        <fieldset class="hidden">
+				        <legend class="blank">使用优惠券</legend>
+				        <input type="checkbox" value="" class="checkbox">
+				        <label for="">使用优惠券(礼品卡/代金券)</label>
+			        </fieldset>
+			        <fieldset class="coupon_code" style="display:none">
+				        <legend class="blank">输入优惠码</legend>
+				        <p>
+					        <label for="in_code">请输入新优惠券的密码：</label>
+					        <input type="text" id="in_coupon_code" value="">
+				        </p>
+				        <p style="padding-bottom:26px">
+					        <label for="in_vercode">请输入验证码：</label>
+					        <span class="in_vercode">
+					        <input type="text" value="" id="in_vercode" class="vercode">
+					        <img id="checkNum" src="" style="vertical-align:middle" value=""></span>         
+					        <input type="image" src="" name="addNewCoupon" title="验证并使用" class="img">
+				        </p>
+				        <p>
+					        <label for="">请您选择已有优惠券<span>(0)</span>：</label>
+					        <span class="select_box"><select name="coupon_list" id="coupon_list"></select></span>
+					        <input type="image" src="" name="addCoupon" id="addCoupon" title="验证并使用" class="img">
+				        </p>
+			        </fieldset>
+		        	<div class="clearfix"></div>
+		    	</div>
 	    	
-            <div class="coupon">
-		        <fieldset class="hidden">
-		        	<legend class="blank">使用积分</legend>
-		            <input type="checkbox" value="" class="checkbox">
-		            <label for="">使用积分</label>
-		        	<span>账户积分：<a href="javascript:void(0);">0</a></span>
-		        </fieldset>
-	            <fieldset id="bonus_area" class="used" style="display:none">
-	        		<legend class="blank">请选择使用积分数量</legend>
-			        <p>
-			        	<label for="">请选择积分使用数量：</label>
-				        <span class="select_box">
-					        <select name="" id="choose_bonus">
-					            <option value="用户积分不够500分，不能使用">用户积分不够500分，不能使用</option>
-					        </select>
-				        </span>
-			        </p>
-			        <dl>
-				        <dt>客服提示：</dt>
-				        <dd>1.积分每次使用的数量为500的整数倍;(如：500、1000、1500...)</dd>
-				        <dd>2.500积分可抵用现金￥25.00。</dd>
-				        <dd>3.灰色字体是超出订单金额的积分使用量。</dd>
-			        </dl>
-	            </fieldset>
-	        </div>
-        
-	        <div class="clearfix"></div>
-	    	<div style="clear:both; height:1px; overflow:hidden;"></div>
-		    <!--满赠活动　-->
-		    <div id="giftProduct"></div>
-		    <div id="exchangeProduct"></div>
+	            <div class="coupon">
+			        <fieldset class="hidden">
+			        	<legend class="blank">使用积分</legend>
+			            <input type="checkbox" value="" class="checkbox">
+			            <label for="">使用积分</label>
+			        	<span>账户积分：<a href="">0</a></span>
+			        </fieldset>
+		            <fieldset id="bonus_area" class="used" style="display:none">
+		        		<legend class="blank">请选择使用积分数量</legend>
+				        <p>
+				        	<label for="">请选择积分使用数量：</label>
+					        <span class="select_box">
+						        <select name="" id="choose_bonus">
+						            <option value="用户积分不够500分，不能使用">用户积分不够500分，不能使用</option>
+						        </select>
+					        </span>
+				        </p>
+				        <dl>
+					        <dt>客服提示：</dt>
+					        <dd>1.积分每次使用的数量为500的整数倍;(如：500、1000、1500...)</dd>
+					        <dd>2.500积分可抵用现金￥25.00。</dd>
+					        <dd>3.灰色字体是超出订单金额的积分使用量。</dd>
+				        </dl>
+		            </fieldset>
+		        </div>
+	        </div> -->
+	        <div class="clearfix"></div>	 		   
 	    </div>
 		<!--购物车内容end-->
+		
+		<!--中间内容部分-->
+		<div id="product"> 
+			<div class="section_ttl">
+				<a href="" class="close_btn">收/展</a>
+				<h3>订单换购<span></span></h3>				
+			</div>
+			<ul class="tabbing" id="points_tab">
+			    <li><a href="" class="tab_cur">&gt;&gt; 满300元换购</a></li>
+			</ul>
+			<div class="giftBox">
+				
+				<div class="gift"> 	 
+					<div class="gift_con tabbing_box_2" style="display:inline-block;"> 
+						<a href="" class="arrow left_arrow mart105"></a>
+						<div class="gift_box gift_box2">
+							<ul style="width: 1000px;">
+							    <li>              
+					              	<div class="listBox exch_gray">
+										<div class="right"> 
+											<a href="" style="color:#796353;" class="good_name">渲染迷彩...</a> 
+						                   	 售价：<span class="exchange_product_price exchange_line">89</span>元<br>                    
+										    <div class="exch_gray">
+										  	节省<span class="plus_count">49</span>元&nbsp;
+										  	换购价：<span class="plus_count">40</span>元
+										    </div>
+										    <span>选择尺码：</span>
+										    <select class="exchange_product">
+												<option value="17636-M">M</option>
+												<option value="17636-L">L</option>
+											</select>
+										  	<br>
+										    <a style="margin-top:6px; display:block" href="" class="add_exchange_product">
+										   	<img src="../css/img/btn_buy.jpg"></a>  
+					                    </div>
+									    <div class="leftImgbox">
+					                        <a href="" style="color:#796353;">
+					                      	<img src="../css/img/p1.jpg" width="56" height="75"></a>
+										</div>
+					                </div> 
+					                <div class="right"> 
+										<a href="" style="color:#796353;" class="good_name">渲染迷彩...</a> 
+					                   	 售价：<span class="exchange_product_price exchange_line">89</span>元<br>                    
+									    <div class="exch_gray">
+									  	节省<span class="plus_count">49</span>元&nbsp;
+									  	换购价：<span class="plus_count">40</span>元
+									    </div>
+									    <span>选择尺码：</span>
+									    <select class="exchange_product">
+											<option value="17636-M">M</option>
+											<option value="17636-L">L</option>
+										</select>
+									  	<br>
+									    <a style="margin-top:6px; display:block" href="" class="add_exchange_product">
+									   	<img src="../css/img/btn_buy.jpg"></a>  
+				                    </div>
+								    <div class="leftImgbox">
+				                        <a href="" style="color:#796353;">
+				                      	<img src="../css/img/p1.jpg" width="56" height="75"></a>
+									</div>
+							    </li>
+							    <li>              
+					              	<div class="listBox exch_gray">
+										<div class="right"> 
+											<a href="" style="color:#796353;" class="good_name">渲染迷彩...</a> 
+						                   	 售价：<span class="exchange_product_price exchange_line">89</span>元<br>                    
+										    <div class="exch_gray">
+										  	节省<span class="plus_count">49</span>元&nbsp;
+										  	换购价：<span class="plus_count">40</span>元
+										    </div>
+										    <span>选择尺码：</span>
+										    <select class="exchange_product">
+												<option value="17636-M">M</option>
+												<option value="17636-L">L</option>
+											</select>
+										  	<br>
+										    <a style="margin-top:6px; display:block" href="" class="add_exchange_product">
+										   	<img src="../css/img/btn_buy.jpg"></a>  
+					                    </div>
+									    <div class="leftImgbox">
+					                        <a href="" style="color:#796353;">
+					                      	<img src="../css/img/p1.jpg" width="56" height="75"></a>
+										</div>
+					                </div> 
+					                <div class="right"> 
+										<a href="" style="color:#796353;" class="good_name">渲染迷彩...</a> 
+					                   	 售价：<span class="exchange_product_price exchange_line">89</span>元<br>                    
+									    <div class="exch_gray">
+									  	节省<span class="plus_count">49</span>元&nbsp;
+									  	换购价：<span class="plus_count">40</span>元
+									    </div>
+									    <span>选择尺码：</span>
+									    <select class="exchange_product">
+											<option value="17636-M">M</option>
+											<option value="17636-L">L</option>
+										</select>
+									  	<br>
+									    <a style="margin-top:6px; display:block" href="" class="add_exchange_product">
+									   	<img src="../css/img/btn_buy.jpg"></a>  
+				                    </div>
+								    <div class="leftImgbox">
+				                        <a href="" style="color:#796353;">
+				                      	<img src="../css/img/p1.jpg" width="56" height="75"></a>
+									</div>
+							    </li>
+							    <li>              
+					              	<div class="listBox exch_gray">
+										<div class="right"> 
+											<a href="" style="color:#796353;" class="good_name">渲染迷彩...</a> 
+						                   	 售价：<span class="exchange_product_price exchange_line">89</span>元<br>                    
+										    <div class="exch_gray">
+										  	节省<span class="plus_count">49</span>元&nbsp;
+										  	换购价：<span class="plus_count">40</span>元
+										    </div>
+										    <span>选择尺码：</span>
+										    <select class="exchange_product">
+												<option value="17636-M">M</option>
+												<option value="17636-L">L</option>
+											</select>
+										  	<br>
+										    <a style="margin-top:6px; display:block" href="" class="add_exchange_product">
+										   	<img src="../css/img/btn_buy.jpg"></a>  
+					                    </div>
+									    <div class="leftImgbox">
+					                        <a href="" style="color:#796353;">
+					                      	<img src="../css/img/p1.jpg" width="56" height="75"></a>
+										</div>
+					                </div> 
+					                <div class="right"> 
+										<a href="" style="color:#796353;" class="good_name">渲染迷彩...</a> 
+					                   	 售价：<span class="exchange_product_price exchange_line">89</span>元<br>                    
+									    <div class="exch_gray">
+									  	节省<span class="plus_count">49</span>元&nbsp;
+									  	换购价：<span class="plus_count">40</span>元
+									    </div>
+									    <span>选择尺码：</span>
+									    <select class="exchange_product">
+											<option value="17636-M">M</option>
+											<option value="17636-L">L</option>
+										</select>
+									  	<br>
+									    <a style="margin-top:6px; display:block" href="" class="add_exchange_product">
+									   	<img src="../css/img/btn_buy.jpg"></a>  
+				                    </div>
+								    <div class="leftImgbox">
+				                        <a href="" style="color:#796353;">
+				                      	<img src="../css/img/p1.jpg" width="56" height="75"></a>
+									</div>
+							    </li>
+							    <li>              
+					              	<div class="listBox exch_gray">
+										<div class="right"> 
+											<a href="" style="color:#796353;" class="good_name">渲染迷彩...</a> 
+						                   	 售价：<span class="exchange_product_price exchange_line">89</span>元<br>                    
+										    <div class="exch_gray">
+										  	节省<span class="plus_count">49</span>元&nbsp;
+										  	换购价：<span class="plus_count">40</span>元
+										    </div>
+										    <span>选择尺码：</span>
+										    <select class="exchange_product">
+												<option value="17636-M">M</option>
+												<option value="17636-L">L</option>
+											</select>
+										  	<br>
+										    <a style="margin-top:6px; display:block" href="" class="add_exchange_product">
+										   	<img src="../css/img/btn_buy.jpg"></a>  
+					                    </div>
+									    <div class="leftImgbox">
+					                        <a href="" style="color:#796353;">
+					                      	<img src="../css/img/p1.jpg" width="56" height="75"></a>
+										</div>
+					               </div> 					                
+							    </li>
+							</ul>
+				        </div> 				           		
+            			<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--中间部分end-->
 		
 		<!--底部-->
 		<div id="footer" style="margin-top:12px">

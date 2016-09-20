@@ -1,6 +1,10 @@
+a{text-decoration: none;}
+*{font-style: normal; font-size:12px;}
+ul, ol, li {list-style: none outside none;}
 
 .cart_header{width:100%; height:92px;}
-
+.gray{color:#666;}
+.red{color:red;}
 /* nav */
 .top_nav{height:37px}
 .top_nav li{float:left}
@@ -50,16 +54,33 @@ border: 1px solid #f3f3f3;font-weight: normal; line-height: 26px;}
 .coupon fieldset.hidden { padding: 10px 8px;}
 .blank {overflow: hidden;display: none;position: absolute;top: 0;
     left: 0;width: 0;height: 0;visibility: hidden;}
+
+.maso_coupon{width:1000px;height:39px;}
+.coupon{float:left;width:496px;}
 .coupon fieldset.hidden input.checkbox {width: 16px;height: 16px;vertical-align: middle;}
 .coupon fieldset.hidden label, .coupon fieldset.hidden span {height: 16px;font-weight: bold;vertical-align: middle;}
 
+#product{width:1000px; margin:0 auto;}
+.section_ttl {cursor: pointer;background-color: #fff;margin-top: 20px;height: 24px;
+    margin-bottom: 10px;clear: both; position: relative;border-bottom: 2px solid #000;}
+.section_ttl .close_btn {float: right;line-height: 24px;padding: 0 8px;color: #000;text-decoration: none;margin-right: 5px;}
 
+.tabbing {padding:0;margin:0;list-style-type:none;height:36px;width:130px;}
+.tabbing li {float:left; margin-right:10px; border:1px solid #dedede; border-bottom:none}
+.tabbing li a {display:block;float:left;padding:0 20px 0 13px;height:36px;line-height:36px;background:#dedede;color:#333}
+.tabbing li .tab_cur {border-bottom:none;background:#f7f8f8; color: #ff2628;}
 
+.giftBox {position: relative;border-top: 1px solid #dedede;}
+.gift_box ul li {float: left;margin-right: 5px;padding: 2px;margin-top: 12px;width: 226px;}
+.gift_box ul li .right {float: right;line-height: 22px;width: 150px;}
+.gift_box2 ul li {border: none;}
+.gift_box2 ul .listBox { width: 226px; overflow: hidden; float: none;margin: 5px 0;height: 115px;}
+.gift_box2 ul .listBox{width:226px;overflow:hidden;float:none;margin:5px 0;height:115px;}
+.gift_box2 .leftImgbox{width:68px;float:left;display:inline;margin-top:13px;}
+.mart105{margin-top:105px;}
 
-
-
-
-
+.exch_gray {color: #666;}
+.plus_count{color:#f66;}
 
 
 

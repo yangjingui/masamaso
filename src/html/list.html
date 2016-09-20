@@ -11,55 +11,15 @@
 		<script src="../js/common.js"></script>
 		
 	<script>
-		jQuery(function($){
-			var $ul = $('.bd ul');
-			var $bdLi = $('.bd li');
-			var $hdLi = $('.hd li');		
-			// 默认显示第一张
-			var index = 0;
-			// 轮播				
-			var timer;
-
-			$('.fullSlide').on('mouseenter',function(){
-				clearInterval(timer);
-			}).on('mouseleave',function(){
-				timer = setInterval(function(){
-					index++;
-					showPic();
-				},3000);
-			}).trigger('mouseleave')
-			
-			// 上一张
-			.on('click','.prev',function(){
-				index--;
-				showPic();
-			})
-			// 下一张
-			.on('click','.next',function(){
-				index++;
-				showPic();
-			})
-
-			// 小图切换
-			.on('click','.hd li',function(){
-				index = $(this).index();
-				showPic();
-			});
-				
-				
-			// 图片显示
-			function showPic(){
-				if(index>=$bdLi.length){
-					index = 0;
-				}else if(index<0){
-					index = $bdLi.length -1;
-				}
-				$ul.animate({left:-1349},function(){
-					$ul.append.($ul.clone(true));
-				});
-				$hdLi.eq(index).addClass('on').siblings('li').removeClass('on');
-			}
-
+       jQuery(function($){console.log(1111)
+       		$('.in_masa_up').on('mouseenter',function(){console.log(111)
+       			$(this).find('.float').show();
+       			$(this).find('.toppic').hide();
+       		}).on('mouseleave',function(){
+       			$(this).find('.float').hide();
+       			$(this).find('.toppic').show();
+       		});
+       		
        });
 	</script>
 	</head>
@@ -122,26 +82,20 @@
 					<ul class="in_masa_ul">						
 						<li class="in_pur_li">
 							<div class="maso_in">
-								<ul class="in_pur_pic" id="in_pur_pic_list">
+								<ul class="in_pur_pic" >
 									<li>
 										<div class="in_masa_up">
 											<span class="tips_icon"><img src=""></span>
-			                                <a class="in_pic href20590" href=""> 
-			                                <img id="product20590" src="../css/img/j1.jpg" title="20590|时尚环保pu夹克系列/防风保暖/pu/黑色/净色/夹克" width="100%">            
-			                                <img class="float" src="" style="display: none; opacity: 1;"></a>
+			                                <a class="in_pic" href=""> 
+				                                <img class="toppic" src="../css/img/j1.jpg" title="20590|时尚环保pu夹克系列/防风保暖/pu/黑色/净色/夹克" width="100%">            
+				                                <img class="float" src="../css/img/j11.jpg" style="display: none; opacity: 1;">
+			                                </a>
 		                				</div>
 									</li>  
-								</ul>
-								
-			    				<div class="in_pur_nav" style="display:none;">  
-				 		  		    <ul id="focus_smaillPic_list" style="../css/img/j1.jpg">  
-								        <li><a><img width="25" src="" style="display: inline;"></a><b>▲</b></li> 				    
-				  					</ul>  		   
-				 				</div>
-			  
+								</ul>									    				
 							</div>
 							<div class="in_masa_info" style="padding:20px 15px 22px;">
-								<a class="gray href20590" href="">时尚环保pu夹克系列/防风保暖/pu/黑色/净色/夹克</a>
+								<a class="gray" href="">时尚环保pu夹克系列/防风保暖/pu/黑色/净色/夹克</a>
 		        				<div class="in_txt"> 
 									<div class=" comment">等待评价</div>
 								</div>
@@ -153,26 +107,20 @@
 						</li>
 						<li class="in_pur_li">
 							<div class="maso_in">
-								<ul class="in_pur_pic" id="in_pur_pic_list">
+								<ul class="in_pur_pic" >
 									<li>
 										<div class="in_masa_up">
 											<span class="tips_icon"><img src=""></span>
-			                                <a class="in_pic href20590" href=""> 
-			                                <img id="product20590" src="../css/img/j2.jpg" title="20590|时尚环保pu夹克系列/防风保暖/pu/黑色/净色/夹克" width="100%">            
-			                                <img class="float" src="" style="display: none; opacity: 1;"></a>
+			                                <a class="in_pic" href=""> 
+				                                <img class="toppic" src="../css/img/j2.jpg" title="20590|时尚环保pu夹克系列/防风保暖/pu/黑色/净色/夹克" width="100%">            
+				                                <img class="float" src="../css/img/j21.jpg" style="display: none; opacity: 1;">
+			                                </a>
 		                				</div>
 									</li>  
-								</ul>
-								
-			    				<div class="in_pur_nav" style="display:none;">  
-				 		  		    <ul id="focus_smaillPic_list" style="../css/img/j2.jpg">  
-								        <li><a><img width="25" src="" style="display: inline;"></a><b>▲</b></li> 				    
-				  					</ul>  		   
-				 				</div>
-			  
+								</ul>							
 							</div>
 							<div class="in_masa_info" style="padding:20px 15px 22px;">
-								<a class="gray href20590" href="">时尚环保pu夹克系列/防风保暖/pu/黑色/净色/夹克</a>
+								<a class="gray" href="">时尚环保pu夹克系列/防风保暖/pu/黑色/净色/夹克</a>
 		        				<div class="in_txt"> 
 									<div class="comment">已有<span class="fb">2</span>人评价</div>
 								</div>
@@ -184,26 +132,20 @@
 						</li>    
 						<li class="in_pur_li">
 							<div class="maso_in">
-								<ul class="in_pur_pic" id="in_pur_pic_list">
+								<ul class="in_pur_pic" >
 									<li>
 										<div class="in_masa_up">
 											<span class="tips_icon"><img src=""></span>
-			                                <a class="in_pic href20590" href=""> 
-			                                <img id="product20590" src="../css/img/j3.jpg" title="20590|时尚环保pu夹克系列/防风保暖/pu/黑色/净色/夹克" width="100%">            
-			                                <img class="float" src="" style="display: none; opacity: 1;"></a>
+			                                <a class="in_pic" href=""> 
+				                                <img class="toppic" src="../css/img/j3.jpg" title="20590|时尚环保pu夹克系列/防风保暖/pu/黑色/净色/夹克" width="100%">            
+				                                <img class="float" src="../css/img/j31.jpg" style="display: none; opacity: 1;">
+			                                </a>
 		                				</div>
 									</li>  
-								</ul>
-								
-			    				<div class="in_pur_nav" style="display:none;">  
-				 		  		    <ul id="focus_smaillPic_list" style="../css/img/j3.jpg">  
-								        <li><a><img width="25" src="" style="display: inline;"></a><b>▲</b></li> 				    
-				  					</ul>  		   
-				 				</div>
-			  
+								</ul>							
 							</div>
 							<div class="in_masa_info" style="padding:20px 15px 22px;">
-								<a class="gray href20590" href="">时尚环保pu夹克系列/防风保暖/pu/黑色/净色/夹克</a>
+								<a class="gray" href="">时尚环保pu夹克系列/防风保暖/pu/黑色/净色/夹克</a>
 		        				<div class="in_txt"> 
 									<div class="comment">已有<span class="fb">3</span>人评价</div>
 								</div>
@@ -215,26 +157,20 @@
 						</li>    
 						<li class="in_pur_li">
 							<div class="maso_in">
-								<ul class="in_pur_pic" id="in_pur_pic_list">
+								<ul class="in_pur_pic" >
 									<li>
 										<div class="in_masa_up">
 											<span class="tips_icon"><img src=""></span>
-			                                <a class="in_pic href20590" href=""> 
-			                                <img id="product20590" src="../css/img/j4.jpg" title="20590|时尚环保pu夹克系列/防风保暖/pu/黑色/净色/夹克" width="100%">            
-			                                <img class="float" src="" style="display: none; opacity: 1;"></a>
+			                                <a class="in_pic" href=""> 
+				                                <img class="toppic" src="../css/img/j4.jpg" title="20590|时尚环保pu夹克系列/防风保暖/pu/黑色/净色/夹克" width="100%">            
+				                                <img class="float" src="../css/img/j41.jpg" style="display: none; opacity: 1;">
+			                                </a>
 		                				</div>
 									</li>  
 								</ul>
-								
-			    				<div class="in_pur_nav" style="display:none;">  
-				 		  		    <ul id="focus_smaillPic_list" style="../css/img/j4.jpg">  
-								        <li><a><img width="25" src="" style="display: inline;"></a><b>▲</b></li> 				    
-				  					</ul>  		   
-				 				</div>
-			  
 							</div>
 							<div class="in_masa_info" style="padding:20px 15px 22px;">
-								<a class="gray href20590" href="">时尚环保pu夹克系列/防风保暖/pu/黑色/净色/夹克</a>
+								<a class="gray" href="">时尚环保pu夹克系列/防风保暖/pu/黑色/净色/夹克</a>
 		        				<div class="in_txt"> 
 									<div class=" comment">等待评价</div>
 								</div>
