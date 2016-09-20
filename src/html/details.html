@@ -11,22 +11,10 @@
 
 		<script src="../assets/jquery-1.12.0.js"></script>
 		<script src="../js/common.js"></script>
-		<script src="../js/jquery.lxzoom.js"></script>
+		<script src="../js/jquery.lxzoom.js"></script> 
+		<script src="../js/detail.js"></script>
 	<script>
-		jQuery(function($){
-			var $boxLi = $('#box li');
-			$('.s_tpc').on('click','li',function(){console.log(111)
-				var idx = $(this).index();
-				$boxLi.eq(idx).show().siblings('li').hide();
-				$(this).addClass('on').siblings('li').removeClass('on');
-			})
-			
-			// 实现放大镜效果
-			$('#box').lxzoom({
-				width:500,
-				height:500
-			});
-		});
+		
 	</script>
 	</head>
 	<body>
@@ -52,13 +40,13 @@
                      		<li><img src="../css/img/s5.jpg"></li>
                      		<li><img src="../css/img/s6.jpg"></li>
 						</ul>					
-						<ul id="box" class="lxzoom">
-							<li><img height="599" src="../css/img/big.jpg"/></li>
-							<li><img height="599" src="../css/img/big2.jpg"/></li>
-							<li><img height="599" src="../css/img/big3.jpg"/></li>
-							<li><img height="599" src="../css/img/big4.jpg"/></li>
-							<li><img height="599" src="../css/img/big5.jpg"/></li>
-							<li><img height="599" src="../css/img/big6.jpg"/></li>
+						<ul id="box">
+							<li class="lxzoom"><img height="599" src="../css/img/big.jpg"/></li>
+							<li class="lxzoom"><img height="599" src="../css/img/big2.jpg"/></li>
+							<li class="lxzoom"><img height="599" src="../css/img/big3.jpg"/></li>
+							<li class="lxzoom"><img height="599" src="../css/img/big4.jpg"/></li>
+							<li class="lxzoom"><img height="599" src="../css/img/big5.jpg"/></li>
+							<li class="lxzoom"><img height="599" src="../css/img/big6.jpg"/></li>
 						</ul>						
 					</div>			
 				    <p class="clearfix"></p>
