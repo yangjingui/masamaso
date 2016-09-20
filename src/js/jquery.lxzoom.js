@@ -53,7 +53,7 @@
 					y:e.pageY - $smallPic.offset().top
 				};
 				
-				var bigPos = {left:pos.x/ratio,top:pos.y/ratio};
+				var bigPos = {left:pos.x*ratio,top:pos.y*ratio};
 		
 				// 判断大图到底后不再移动
 				if(bigPos.top >= $bigPic.outerHeight()-$bigWrap.outerHeight()){
@@ -124,7 +124,7 @@
 		
 				$minZoom = $('<span/>').addClass('minzoom').appendTo($self);
 		
-				ratio = $smallPic.outerWidth()/$bigPic.outerWidth();
+				ratio = $bigPic.outerWidth()/$smallPic.outerWidth();
 						
 			}
 			function remove(){
