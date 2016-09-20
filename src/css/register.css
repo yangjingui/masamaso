@@ -1,3 +1,4 @@
+label.error { color: red;}
 /*用户注册*/
 .register_case{clear:both; margin-top:25px; overflow:hidden;}
 .register_case table td{padding:5px 1px;text-align:left;line-height:20px;}
