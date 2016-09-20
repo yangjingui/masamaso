@@ -70,15 +70,19 @@ a {color: #666;}
 .overflow {overflow:hidden;} 
 .goods_color strong{font-weight:bold;color:#000;}
 #selectSizeBox{width:500px; height:50px; }
+#selectSizeBox ul{width:400px;height:50px;}
+#selectSizeBox ul li{float:left; margin-right:10px}
 .sizeBox{float:left; padding:0 5px;}
 .sizeBox ul li { position:relative; border:1px dashed #999;}
 .sizeBox .layer{z-index:11;}
+.sizeBox .layer {background: url(../css/img/sizeLayerBg1.png) no-repeat;color: #878787;width: 100px;height: 68px;
+   padding: 7px 0 0 10px;line-height: 18px;}
 .size_img_box {padding:15px 6px;}
 #select_size li{text-align: center;}
 #select_size li em {background:none; color:#999;border-top:1px solid #ccc;}
 #select_size li.cur em {background:none; }
 #select_size li.cur {border:1px solid #e4393c}
- 
+
 #select_size li  .phover,.goods_ri_p3 li.phover{border:1px solid #e4393c;}
 .scorestar{background:url(../css/img/star-off.png);height:16px;width:80px;cursor:pointer;}
 .scorestar_show{width:0px; background:url(../css/img/star-on.png);height:16px;}
