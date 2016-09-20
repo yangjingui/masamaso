@@ -153,13 +153,20 @@ jQuery(function($){
 			"marginLeft": "0px"
 		}, 1000);	
 	});
+});
 
-			
-		$("#nav-reflection a").hover(function() {
-		    $(this).stop().animate({ marginTop: "-10px" }, 200);
-		    $(this).parent().find("span").stop().animate({ marginTop: "18px", opacity: 0.25 }, 200);
-		},function(){
-		    $(this).stop().animate({ marginTop: "0px" }, 300);
-		    $(this).parent().find("span").stop().animate({ marginTop: "1px", opacity: 1 }, 300);
-		});
+
+//顶部菜单显示
+jQuery(function($){
+	var $window = $(window);
+	var $bar = $('#btns_bar1');
+		//给window绑定滚动事件
+    $window.scroll(function(){				
+		if($window.scrollTop() > 180){
+	      	//当滚动条滚到大于180时，开始固定
+	       	$bar.show(); 			       			       			        
+      	}else{
+       		$bar.hide();
+      	}		      
+    });
 });
