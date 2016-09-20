@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="../css/common.css" />
 		
 		<script src="../assets/jquery-1.12.0.js"></script>
+		<script src="../js/cookie.js"></script>
 	<script>
 		jQuery(function($){
 			// load的第二种用法：
@@ -24,6 +25,39 @@
 				$(this).insertAfter('.container');
 			});		
 		});
+
+		onload = function() 
+		{
+			var oUser = document.getElementById("username");
+			var oPsw = document.getElementById("password");
+		
+			var oCheck = document.getElementById("check");
+		
+			var oBtn = document.getElementById("logsubmit");
+		
+			var user = getCookie("username");
+			var psw = getCookie("password");
+		
+			if (user && psw)
+			{
+				oUser.value = user;
+				oPsw.value = psw;
+				alert("登录成功！");
+			}
+		
+			oBtn.onclick = function()
+			{
+				if (oCheck.checked)
+				{
+					var username = oUser.value;
+					var password = oPsw.value;
+		
+					setCookie("username",username,7);
+					setCookie("password",password,7);
+				}
+				alert("登录成功！");
+			}		
+		}
 	</script>
 	</head>
 	<body>
@@ -39,8 +73,7 @@
 								<tbody><tr>
 									<td class="mid_con">
 									   <div>
-										<input type="text" id="login_customer" class="input login_int" value="" placeholder="Email/手机号">
-										<div id="login_customer_msg" class="red"></div>
+										<input type="text" id="username" class="input login_int" value="" placeholder="Email/手机号">
 									   </div>
 									</td> 
 									<td></td> 
@@ -49,27 +82,14 @@
 								<tr>
 									<td class="mid_con">
 									    <div>
-										<input type="password" id="login_password" class="input login_int" placeholder="密码">
-										<div id="login_password_msg" class="red"></div>
+										<input type="password" id="password" class="input login_int" placeholder="密码">
 										 </div>
 									</td>
 									<td></td> 
-								</tr> 
-								<tr id="login_code">
-									<td>
-									   <div>
-										<input type="text" id="log_verifycode" class="input login_int" style="width: 60px;" placeholder="验证码"> 
-										<span id="span1"></span>								
-										<div id="log_verify_code_msg" class="red"></div>
-										</div>
-									</td>
-									<td>
-									</td>
-								</tr>
-								
+								</tr> 						
 								<tr>
 									<td class="mid_con">
-										<label><input type="checkbox" style="cursor: pointer; vertical-align: middle; margin-top: 0; *margin-top: -1px;" value="1" id="remember_email">记住用户名 </label>
+										<label><input type="checkbox" id="check" style="cursor: pointer; vertical-align: middle; margin-top: 0; *margin-top: -1px;" value="1" id="remember_email">记住用户名 </label>
 										<a href="" class="c_gary" style="margin-left: 10px; text-decoration: underline;">忘记密码？</a> | 
 										<a class="login_red" href="">免费注册</a>
 									</td>
@@ -79,9 +99,8 @@
 									<td class="mid_con">
 										<div>
 											<span id="loading"> 
-												<input type="image" src="../css/img/log_btn.jpg" id="logsubmit" value="" align="absmiddle"> 
-											</span>
-											<div id="login_msg" class="red"></div>
+												<input type="image" id="logsubmit" src="../css/img/log_btn.jpg" value="" align="absmiddle"> 
+											</span>						
 										</div>
 									</td>
 									<td></td>
