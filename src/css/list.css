@@ -18,9 +18,9 @@
 .in_banner .bd li img { background:url(..css/img/loading.gif) top center no-repeat ; position:relative; left:50%; margin-left:-950px; float:left; display:block;}
 
 /*浮动菜单*/
-.btns_bar{position: fixed; top: 0px;}
-.menu_2_nav_bg { background:rgb(30, 30, 30); height:55px; line-height:55px; margin-bottom:20px; width:100%;} 
-.menu_2_nav { width:1200px; margin:auto ;}
+.btns_bar{position: fixed; top: 0px;left:0;}
+.menu_2_nav_bg { background:#1e1e1e; height:55px; line-height:55px; margin-bottom:20px; width:100%;} 
+.menu_2_nav { width:1200px; height:55px;margin:auto ;background:#1e1e1e;}
 .menu_2_nav li { float:left; text-align:center}
 .menu_2_nav a { padding:0 22px; color:#fff; display:block; float:left; font-size:14px;}
 .menu_2_nav a:hover { background:#900; color:#fff; text-decoration:none; }

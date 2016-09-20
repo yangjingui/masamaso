@@ -11,6 +11,8 @@
 		<script src="../js/common.js"></script>
 		
 	<script>
+	
+		//列表页鼠标滑过切换图片效果
        jQuery(function($){console.log(1111)
        		$('.in_masa_up').on('mouseenter',function(){console.log(111)
        			$(this).find('.float').show();
@@ -18,8 +20,22 @@
        		}).on('mouseleave',function(){
        			$(this).find('.float').hide();
        			$(this).find('.toppic').show();
-       		});
-       		
+       		});       		
+       });
+       
+       //浮动菜固定在顶部效果
+       jQuery(function($){
+       		var $window = $(window);
+			var $menu = $('.menu_2_nav_bg');
+				//给window绑定滚动事件
+		    $window.scroll(function(){				
+				if($window.scrollTop() > 750){
+			      	//当滚动条滚到大于750时，开始固定
+			       	$menu.css({position:"fixed"}); 			       			       			        
+		      	}else{
+		       		$menu.css({position:"relative"});
+		      	}		      
+		    });
        });
 	</script>
 	</head>
@@ -49,27 +65,28 @@
 		<!--轮播图end-->
 		
 		<!--浮动菜单-->
-		<div class="" style="position:relative; z-index:999; margin-top:20px;">
-			<div class="menu_2_nav_bg" style="position: relative; top: 0px; left: 0px;">
-				<div class="menu_2_nav btns_con vcate_menu"> 
-					<ul class="menu_r">												
-						<li><a class="menu2_btn " href=""><span class="acc_top"></span>默认</a></li>
-						<li><a class="menu2_btn " href=""><span class="acc_top"></span>新品</a></li>
-						<li><a class="menu2_btn " href=""><span class="acc_down"></span>销量</a></li>    
-						<li><a class="menu2_btn menu_selt" href=""><span class="acc_top"></span>价格</a></li>
-                    </ul>
-					<!-- 有置顶推荐 -->
-                        <li><a class="menu_selt" href="#hoprd">热销推荐</a></li>                                
-                        <li><a href="#"> 新品上市</a></li>
-                        <li><a href="#">商务夹克</a></li>
-					    <li><a href="#">超轻运动夹克</a></li>
-					    <li><a href="#">个性便装</a></li>
-					    <li><a href="#">棒球夹克</a></li>
-					    <li><a href="#">弹力针织夹克</a></li>
-                        <li><a class="none_br" href="#">时尚夹克</a></li>
-                   </ul>							
-				</div>					
-			</div>
+		<div style="position:relative; z-index:999; margin-top:20px;">
+		<div class="menu_2_nav_bg" style="position: relative; top: 0px; left: 0px;">
+			<div class="menu_2_nav"> 
+				<ul class="menu_r">												
+					<li><a class="menu2_btn " href=""><span class="acc_top"></span>默认</a></li>
+					<li><a class="menu2_btn " href=""><span class="acc_top"></span>新品</a></li>
+					<li><a class="menu2_btn " href=""><span class="acc_down"></span>销量</a></li>    
+					<li><a class="menu2_btn menu_selt" href=""><span class="acc_top"></span>价格</a></li>
+                </ul>
+				<!-- 有置顶推荐 -->
+				<ul>
+                    <li><a class="menu_selt" href="#hoprd">热销推荐</a></li>                                
+                    <li><a href="#"> 新品上市</a></li>
+                    <li><a href="#">商务夹克</a></li>
+				    <li><a href="#">超轻运动夹克</a></li>
+				    <li><a href="#">个性便装</a></li>
+				    <li><a href="#">棒球夹克</a></li>
+				    <li><a href="#">弹力针织夹克</a></li>
+                    <li><a class="none_br" href="#">时尚夹克</a></li>
+               </ul>							
+			</div>					
+		</div>
 		</div>
 		<!--浮动菜单end-->
 		
