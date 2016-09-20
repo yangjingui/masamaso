@@ -9,6 +9,61 @@
    		});       		
    });
    
+   
+   jQuery(function($){	
+		//banner图轮播
+		//获取页面元素
+		var $bd = $('.bd');
+		var $bdLi = $('.bd li');
+		var $hdLi = $('.hd li');
+		
+		//i是作为li 的下标
+		var i = -1;
+		var timer = 0;
+		
+		function carousel(){				
+			//表示图片不断往后移
+			i ++;
+			//当图片移动到最后一张的时候，使其回到第一张
+			if(i >= $bdLi.length){
+				i = 0;
+			}
+			scrollBg(i);
+	
+		}
+		function scrollBg(index){
+			//大图渐隐渐现
+			$bdLi.eq(index).fadeIn(100).siblings().fadeOut(100);
+			
+			//当前小图显示红框
+			$hdLi.eq(index).addClass('on').siblings('li').removeClass('on');
+		}
+		//设置定时器，让图片自动轮播
+		timer = setInterval(carousel,5000);
+		
+	   	//给底部小图绑定移入事件
+	    $hdLi.on('mouseenter',function(){
+	    	clearInterval(timer);
+	    	//将当前的索引值赋给i
+			i = $(this).index();
+			
+			scrollBg(i);
+			
+	    }).on('mouseleave',function(){
+	      timer = setInterval(carousel,100);	
+	    });
+	    //给底部大图绑定移入事件
+	    $bdLi.on('mouseenter',function(){
+	    	clearInterval(timer);
+	    }).on('mouseleave',function(){
+	      timer = setInterval(carousel,5000);	
+	    });	
+	    		   		   
+	});
+
+   
+   
+   
    //浮动菜固定在顶部效果
    jQuery(function($){
    		var $window = $(window);
@@ -47,6 +102,8 @@
 				</li> 
 				*/
 				var $ul = $('<ul/>');
+				var $in_masa = $('.in_masa');
+								
 				$.each(res,function(idx,item){
 					var $imgurl = item.imgurl;//图片地址
 					var $title = item.title;//内容
@@ -78,9 +135,24 @@
 					$li.appendTo($ul);
 					
 				});
-				$ul.appendTo($('.in_masa'));
+				$ul.appendTo($in_masa);				
 			}
 		})
+		
+		//懒加载
+		$(window).on('scroll',function(){
+			var scrollTop = $(window).scrollTop();
+	
+			// 懒加载：滚动《快到底部》的时候再加载
+			if(scrollTop >= $(document).height() - $(window).height() - 100){
+				$.ajax();
+			}
+		});
+	
+		// 手动触发滚动事件
+		$(window).trigger('scroll');
 	});
+	
+
 
 
