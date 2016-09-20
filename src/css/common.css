@@ -91,7 +91,7 @@ span.icon-basket.mark {color: #c73333;}
 .menu_box_nav_bg { background-color:#fff;position:absolute; left:0; top:22px; z-index:1;  height:254px;  width:1200px;opacity: 0;}
 
 /*弹出菜单*/
-.maso_nav {  width:1200px; height:254px; margin:0 auto;display: none;}
+.maso_nav {  width:1200px; height:254px; margin:0 auto;display: none;position:absolute;z-index:100;background-color:#fff;}
 .maso_nav .masa_nav_ali{float:right;}
 /*.maso_nav { position:absolute; left:0; top:0;  width:1200px; height:254px; z-index:2;background-color: #fff;display: none;}*/
 .maso_nav ul { float:left; width:66px; padding-left:17px; margin-top:20px; height:212px;

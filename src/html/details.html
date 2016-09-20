@@ -8,18 +8,23 @@
 		<link rel="stylesheet" href="../css/common.css" />
 		<link rel="stylesheet" href="../css/right.css" />
 		<link rel="stylesheet" href="../css/jquery.lxzoom.css">
-		<link rel="stylesheet" href="../css/jquery.jqzoom.css" />
 
 		<script src="../assets/jquery-1.12.0.js"></script>
 		<script src="../js/common.js"></script>
 		<script src="../js/jquery.lxzoom.js"></script>
-		<script src="../js/jquery.jqzoom-core-pack.js"></script>
 	<script>
 		jQuery(function($){
+			var $boxLi = $('#box li');
+			$('.s_tpc').on('click','li',function(){console.log(111)
+				var idx = $(this).index();
+				$boxLi.eq(idx).show().siblings('li').hide();
+				$(this).addClass('on').siblings('li').removeClass('on');
+			})
+			
 			// 实现放大镜效果
 			$('#box').lxzoom({
 				width:500,
-				height:300
+				height:500
 			});
 		});
 	</script>
@@ -30,33 +35,31 @@
 		<div class="wrap-bg">
 			<div class="goods_part"> 
 				<p class="info_nav">
-					<a href="">首页</a> &gt; 
+					<a href="#">首页</a> &gt; 
 					<a class="ch_1" href="">外套</a> &gt; 
                     <a class="ch_1" href="">薄便装</a> &gt; 
                     <span class="ch_3">时尚环保pu夹克系列/防风保暖环保/pu/黑色/净色/夹克</span>                             
 			    </p>
-				<div class="goods_info_box clearfix"> 
+				<div class="goods_info_box"> 
 				<!-- 左上侧图片循环展示  --> 
 				<div class="goods_tp_box"> 
 					<div style="float:left;">	    								
-						<ul class="s_tpc clearfix">
-                     		<li> <a href="javascript:void(0);"><img src="../css/img/s1.jpg"></a> </li>
-                     		<li> <a href="javascript:void(0);"><img src="../css/img/s2.jpg"></a> </li>
-                     		<li> <a href="javascript:void(0);"><img src="../css/img/s3.jpg"></a> </li>
-                     		<li> <a href="javascript:void(0);"><img src="../css/img/s4.jpg"></a> </li>
-                     		<li> <a href="javascript:void(0);"><img src="../css/img/s5.jpg"></a> </li>
-                     		<li> <a href="javascript:void(0);"><img src="../css/img/s6.jpg"></a> </li>
+						<ul class="s_tpc">
+                     		<li><img src="../css/img/s1.jpg"></li>
+                     		<li><img src="../css/img/s2.jpg"></li>
+                     		<li><img src="../css/img/s3.jpg"></li>
+                     		<li><img src="../css/img/s4.jpg"></li>
+                     		<li><img src="../css/img/s5.jpg"></li>
+                     		<li><img src="../css/img/s6.jpg"></li>
 						</ul>					
-						<div id="box" class="lxzoom">
-							<ul>
-								<li><img height="599" src="../css/img/big.jpg"/></li>
-								<li><img height="599" src="../css/img/big2.jpg"/></li>
-								<li><img height="599" src="../css/img/big3.jpg"/></li>
-								<li><img height="599" src="../css/img/big4.jpg"/></li>
-								<li><img height="599" src="../css/img/big5.jpg"/></li>
-								<li><img height="599" src="../css/img/big6.jpg"/></li>
-							</ul>						
-						</div>
+						<ul id="box" class="lxzoom">
+							<li><img height="599" src="../css/img/big.jpg"/></li>
+							<li><img height="599" src="../css/img/big2.jpg"/></li>
+							<li><img height="599" src="../css/img/big3.jpg"/></li>
+							<li><img height="599" src="../css/img/big4.jpg"/></li>
+							<li><img height="599" src="../css/img/big5.jpg"/></li>
+							<li><img height="599" src="../css/img/big6.jpg"/></li>
+						</ul>						
 					</div>			
 				    <p class="clearfix"></p>
 				</div>							
@@ -118,7 +121,7 @@
 					            </div>					     
 								<p class="goods_artNo" style="float: right;">商品款号：20223</p>
 								<div class="goods_vip" style="float: left; width: 100%;">
-									(<span class="vip_col"></span>请<a href="javascript:void(0);" id="loginlv3">登录</a>查看是否享受会员优惠)
+									(<span class="vip_col"></span>请<a href="#"  id="loginlv3">登录</a>查看是否享受会员优惠)
 								</div>
 							</div>	
 						</div>
@@ -150,7 +153,7 @@
 							<div class="goods_ri_p3_r">
 								<ul>
 									<li class="">
-										<a href="" alt="蓝色">
+										<a href="#" alt="蓝色">
 											<div class="fl overflow"><img src="../css/img/m1.jpg" height="35" title="蓝色"></div>蓝色
 										</a>
 									</li> 
@@ -161,17 +164,17 @@
 									    </a>
 									</li> 
 							   	    <li class="">
-								       	<a href="" alt="蓝色">
+								       	<a href="#" alt="蓝色">
 										<div class="fl overflow"><img src="../css/img/m4.jpg" height="35" title="蓝色"></div>蓝色
 										</a>
 									</li> 
 							   	    <li class="">
-								       	<a href="" alt="咖色">
+								       	<a href="#" alt="咖色">
 											<div class="fl overflow"><img src="../css/img/m5.jpg" height="35" title="咖色"></div>咖色
 										</a>
 									</li> 
 							   	    <li class="">
-								       	<a href="" alt="黑色">
+								       	<a href="#" alt="黑色">
 											<div class="fl overflow"><img src="../css/img/m6.jpg" height="35" title="黑色"></div>黑色
 										</a>
 									</li>   		 
@@ -317,14 +320,14 @@
 		
 		<!--百分点推荐-->          
 		<p class="clear"></p>
-			<p class="baifendian"><a href=""><img src="../css/img/logo_bfd.gif" width="100" height="13"></a></p>
+			<p class="baifendian"><a href="#"><img src="../css/img/logo_bfd.gif" width="100" height="13"></a></p>
 		<p class="clear"></p>
 		<!--百分点推荐end-->
 		
 		<div class="goods_ad3">
-		    <a href=""><img src="../css/img/b1.jpg"></a>
-		    <a href=""><img src="../css/img/b2.jpg"></a>
-		    <a href=""></a><img src="../css/img/b3.jpg"></a>
+		    <a href="#"><img src="../css/img/b1.jpg"></a>
+		    <a href="#"><img src="../css/img/b2.jpg"></a>
+		    <a href="#"></a><img src="../css/img/b3.jpg"></a>
 		</div>			 
 		<!--买过这个商品的人还买过-->
 		<div class="mayaluo">
@@ -396,7 +399,7 @@
 		<!--买过这个商品的人还买过end-->
 		<!--百分点推荐-->          
 		<p class="clear"></p>
-			<p class="baifendian"><a href=""><img src="../css/img/logo_bfd.gif" width="100" height="13"></a></p>
+			<p class="baifendian"><a href="#"><img src="../css/img/logo_bfd.gif" width="100" height="13"></a></p>
 		<p class="clear"></p>
 		<!--百分点推荐end-->
 		
@@ -718,7 +721,7 @@
 			    <div class="ztpf_r">
 			    	<p>与其他人分享您的观点</p>
 			        <p><a class="btn_comm" href="">我要写评论</a></p>
-		            <p class="zc"><a href="">注册</a><a href="">登录</a></p>
+		            <p class="zc"><a href="#">注册</a><a href="#">登录</a></p>
 		        </div>
 			</div>
 			<p class="clear"></p>
@@ -824,7 +827,7 @@
 						    	<td></td>
 						        <td align="right">
 							        <span><input type="image" src="../css/img/btn_question.gif" id="btnComment" onclick="javascript: submitQuestion();return false;"></span>
-							        <span><a href="">清空</a></span>
+							        <span><a href="#">清空</a></span>
 						        </td>
 						    </tr>
 						</tbody>
