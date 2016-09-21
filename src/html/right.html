@@ -8,19 +8,7 @@
 		
 		<script src="../assets/jquery-1.12.0.js"></script>
 		<script>
-			jQuery(function(){
-				var $tip = $('.tip');
-				
-				$('.tabs').on('mouseenter','li',function(){
-					var idx = $(this).index();
-					$tip.css({left:-150});
-					$tip.eq(idx).show().animate({left:-130});
-				}).on('mouseleave','li',function(){
-					var idx = $(this).index();
-					$tip.eq(idx).hide();
-				});
-								
-			});
+			
 		</script>
 	</head>
 	<body>
