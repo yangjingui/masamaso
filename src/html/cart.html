@@ -4,8 +4,50 @@
 		<meta charset="UTF-8">
 		<title>购物车</title>		
 		<link rel="stylesheet" href="../css/cart.css" />
+		<script src="../js/mycookie.js"></script>
+		
+		<script>
+//		[{"oNo":"20223",
+//		"oName":"时尚环保pu夹克系列/防风保暖环保/pu/黑色/净色/夹克",
+//		"NowPrice":"¥399",
+//		"OldPrice":"￥1699.00",
+//		"oNum":"1"}]
+		
+		window.onload = function() {
+		
+			var oNo = document.getElementById("No");//商品款号
+			var oName = document.getElementById("goods_name");//商品名
+			var NowPrice = document.getElementById("now");//现价
+			var OldPrice = document.getElementById("old");//原价
+			var oSize = document.getElementById("size");//尺寸
+			var oNum = document.getElementById("num");//数量
+		
+			var str = getCookie("arr");
+		
+			// var a = "[{}]"
+			// string
+			//alert(typeof str);
+		
+			var arr = JSON.parse(str);
+			alert(str);
+			for (var i = 0; i < arr.length; i++)
+			{
+				oNo.innerHTML = arr[i].oNo;
+			    oName.innerHTML = arr[i].oName;
+			    NowPrice.innerHTML = arr[i].NowPrice;
+			    OldPrice.innerHTML = arr[i].OldPrice;
+			    oSize.innerHTML = arr[i].oSize;
+			    oNum.value = arr[i].oNum;
+				
+				// 取出数组中元素，arr[i] 是一个对象,
+				//    再取出这个对象中的产品名 和 价格
+			}
+			
+		
+		}
+		</script>
 	</head>
-	<body>
+	<body>		
 		<!--头部-->
 		<div class="cart_header"><img src="../img/masamaso_logo.jpg" alt="" /></div>
 		<!--头部end-->
@@ -44,34 +86,31 @@
 		        <tbody>
 		          <!--普通商品-->
 		            <tr>
-			            <td>
-			            	18621 <span style="display:none" class="productcode">18621-M</span> 
-			            	<span style="display:none" class="id">3644968</span> 
-			            	<span style="display:none" class="product_level">1</span>
-			            </td>
+			            <td id="No"></td>
 			            <td class="pro">
 						    <div class="poreat">
 							    <a class="proa" href="" style="color:#796353;">
 							    	<img src="../css/img/shopping.jpg" width="52" height="70" alt="">
 							    </a>
-							    <div class="poreImg"><img src=""></div>
 						    </div>
-		            		<p><a href=""style="color:#796353;"><span>弹力针织夹克系列/拼接/聚酯纤维/黑色/纯色/薄便装</span></a></p>
+		            		<p><a href=""style="color:#796353;"><span id="goods_name"><!--弹力针织夹克系列/拼接/聚酯纤维/黑色/纯色/薄便装--></span></a></p>
 			            </td>
-			            <td>M</td>
-			            <td>¥719</td>
-			            <td>¥359</td>
+			            <td id="size"><!--M--></td>
+			            <td id="old"><!--¥719--></td>
+			            <td id="now"><!--¥359--></td>
 			            <td>
 			            	<div style="position:relative">
-				                <span class="button btn_cut_cart_product_num" style="cursor :pointer"><img src="" width="11" height="11"> </span>
-				                <input type="" class="num" value="1">
+				                <span class="button btn_cut_cart_product_num" style="cursor :pointer">
+				                	<img src="../css/img/tg2_goods_cut.gif" width="11" height="11"> 
+				                </span>
+				                <input type="" id="num" class="num" value="">
 				                <span class="button btn_add_cart_product_num" style="cursor :pointer"> 
-				                	<img src="" width="11" height="11" alt=""> 
+				                	<img src="../css/img/tg2_goods_add.gif" width="11" height="11" alt=""> 
 				                </span>
 			                	<div class="red">库存紧张</div>			  
 			            	</div>
 						</td>
-			            <td>¥359</td>
+			            <td id="now"><!--¥359--></td>
 			            <td><a href="" class="gray">删除</a></td>
 			        </tr>
 		                

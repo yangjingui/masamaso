@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="../js/mycookie.js"></script>
+		
+		<script>
+		// alert(product + ", " + price);
+
+		// [{product:"\u516C\u4E3B\u9774\u5B50", price:"RMB138"}, {product:"\u8776\u5986\u6D77\u84DD\u6E05\u6EE2\u7C89\u5E95\u6DB210", price:"RMB85"}]
+		// 如何将字符串 转换成 数组？
+		
+		/*
+		var s = "1+1";
+		
+		// eval(s) 将字符串按照 JS 的语法，重新解释执行！ 
+		alert( eval(s) );
+		//*/
+		
+		var str = '[{oNo:"\u5546\u54C1\u6B3E\u53F7\uFF1A20223", oName:"<em>\u65F6\u5C1A\u73AF\u4FDDpu\u5939\u514B\u7CFB\u5217/\u9632\u98CE\u4FDD\u6696\u73AF\u4FDD/pu/\u9ED1\u8272/\u51C0\u8272/\u5939\u514B</em>", NowPrice:"\u7279\u4EF7\uFF1A\xA5<strong class=\"price24\">399</strong>", OldPrice:"\u540A\u724C\u4EF7:\uFFE51699.00", oSize:(void 0), oNum:""}]';
+		
+		
+		// 将字符串重新执行，那么可以得到原来的数组
+		//   因为可能存在安全问题
+		//var arr = eval(str);
+		
+		// alert(arr.length)
+		
+		onload = function() {
+		
+			var oBox = document.getElementsByClassName("shopping_box")[0];
+		
+			var str = getCookie("arr");
+		
+			// var a = "[{}]"
+			// string
+			//alert(typeof str);
+		
+			var arr = eval(str);
+		
+			for (var i = 0; i < arr.length; i++)
+			{
+				// 创建一个商品
+				var oLi = document.createElement("li");
+		
+				// 取出数组中元素，arr[i] 是一个对象,
+				//    再取出这个对象中的产品名 和 价格
+				oLi.innerHTML = arr[i].product + ", " + arr[i].price;
+		
+				oBox.appendChild(oLi);
+			}
+		
+		}
+		</script>
+	</head>
+	<body>
+		<ul class="shopping_box">
+		  
+		</ul>
+	</body>
+</html>
