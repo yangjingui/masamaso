@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>空购物车</title>
+		<style>
+		.cart_header{width:100%; height:92px;}
+		
+		/* nav */
+		.top_nav{height:37px}
+		.top_nav li{float:left}
+		
+		.bc_nav{overflow:hidden;height:22px;padding:8px 0 0 10px;font-size:14px; border-bottom:2px solid #000;}
+		.bc_nav *{display:inline;float:left;color:#333}
+		.bc_nav dt{padding-right:11px}
+		.bc_nav dd strong.cur{color:#ff2628;}
+		.bc_nav span{margin:0 8px 0 9px}		
+		#direction{width:1002px;margin:0 auto}
+		
+		#container{clear:both;width:958px;height:200px;margin:0 auto;}
+		#container h2 { float: left;width: 99px;height: 23px;padding: 9px 0 0 10px;color: #ff2628;font: bold 14px SimSun;}
+		.login_tips {width:958px;height:100px;margin:0 auto;clear: both;overflow: hidden;padding: 0 16px 0 26px;background: #f7f8f8;
+			border: 1px solid #dedede;zoom: 1;}
+		.login_tips p {height: 40px; padding-left: 49px;background: url(../css/img/tips_icon.gif) no-repeat;}
+		.login_tips p strong {position: relative;display: inline-block;padding-top: 10px;font: bold 14px SimSun;_zoom: 1;}
+		.login_tips dl { font-size: 12px;float: left; height: 28px; padding-left: 50px;margin-top:-16px;}
+		.login_tips dl dd { margin-left: 26px;}
+		.login_tips dl dd a{color:blue; }
+		.login_tips dl * {display: inline;float: left;}
+		
+		/* footer */
+		#footer{clear:both;width:100%;height:38px;border-top:1px solid #b8b7bc;text-align:center}
+		#footer address{padding:10px 0;color:#727171;font-size:12px;font-family:arial}
+		.nav_box,#container{width:1002px;margin:0 auto}
+		</style>
+	</head>
+	<body>
+		<!--头部-->
+		<div class="cart_header"><img src="../img/masamaso_logo.jpg" alt="" /></div>
+		<!--头部end-->
+		<!--结算步骤-->
+		<div id="direction">
+			<dl class="bc_nav">
+				<dt>结算步骤:</dt>
+				<dd><strong class="cur">我的购物车</strong><span>&gt;&gt;</span></dd>
+				<dd><strong>结算中心</strong><span>&gt;&gt;</span></dd>
+				<dd><strong>订单完成</strong></dd>
+			</dl>
+		</div>
+		<div id="container">
+			<h2 class="title">我的购物车</h2>
+		    <!--结算步骤end-->
+			<!--点击删除按钮后出现的界面-->
+			<div class="login_tips">
+		      	<p><strong>您目前购物车内尚未加入任何商品，现在就开始购物吧。</strong></p>
+		      	<dl>
+		        	<dt>现在，您还可以：</dt>
+			        <dd><a href="">去新装发布</a></dd>
+			        <dd><a href="">去团购</a></dd>
+			        <dd><a href="">去特价区</a></dd>       
+			        <dd><a href="../html/index.html">回到网站首页</a></dd>
+			        <dd><a href="">查看订单</a></dd>
+			        <dd><a href="">反馈意见</a></dd>
+		      	</dl>
+	    	</div>
+    	</div>
+		<!--点击删除按钮后出现的界面end-->
+		<!--底部-->
+		<div id="footer" style="margin-top:12px">
+		    <address>
+		  		Copyright © 2008-2050 MasaMaso.com All Right Reserved 京ICP证080088号
+		    </address>
+		</div>
+	</body>
+</html>

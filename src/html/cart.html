@@ -4,7 +4,10 @@
 		<meta charset="UTF-8">
 		<title>购物车</title>		
 		<link rel="stylesheet" href="../css/cart.css" />
+		
+		<script src="../assets/jquery-1.12.0.js"></script>
 		<script src="../js/mycookie.js"></script>
+		<script src="../js/cart.js"></script>
 		
 		<script>
 //		[{"oNo":"20223",
@@ -58,7 +61,7 @@
 
 				//alert(oNum.value*NowStr);
 			}
-
+			alert(oNum.value*NowStr);
 			//给添加按钮和减去按钮绑定点击事件
 			var low = document.getElementById('low');
 			var add = document.getElementById('add');
@@ -70,11 +73,8 @@
 			}
 			add.onclick = function(){
 				oNum.value ++;
-			}
+			}			
 			
-			function getNum(text){
-				var value = text.replace(/[^0-9]/ig,""); 
-			}
 		}
 		</script>
 	</head>
@@ -134,7 +134,7 @@
 				                <span id="low" class="button" style="cursor :pointer">
 				                	<img src="../css/img/tg2_goods_cut.gif" width="11" height="11"> 
 				                </span>
-				                <input type="" id="num" class="num" value="">
+				                <input type="text" id="num" class="num" value="1">
 				                <span id="add" class="button" style="cursor :pointer"> 
 				                	<img src="../css/img/tg2_goods_add.gif" width="11" height="11" alt=""> 
 				                </span>
@@ -142,7 +142,7 @@
 			            	</div>
 						</td>
 			            <td id="count"><!--¥359--></td>
-			            <td><a href="" class="gray">删除</a></td>
+			            <td><a href="../html/cart_empty.html" class="gray" id="deleted">删除</a></td>
 			        </tr>
 		                
 		        	<!--套装-->

@@ -1,6 +1,10 @@
  //给左侧小图绑定点击事件
  jQuery(function($){
 	var $boxLi = $('#box li');
+	$boxLi.eq(5).lxzoom({
+		width:400,
+		height:400
+	});
 	$('.s_tpc').on('click','li',function(){
 		var idx = $(this).index();
 		$boxLi.eq(idx).show().siblings('li').hide();
@@ -22,10 +26,10 @@ jQuery(function($){
 });
 
 //给商品尺寸绑定点击事件
-// jQuery(function($){	
-// 	$('#selectSizeBox').on('click','li',function(){
-// 		var idx = $(this).index();		
-// 		$(this).addClass('cur').siblings('li').removeClass('cur');
-// 	})
-// });
+   jQuery(function($){	
+   	$('#selectSizeBox').on('click','li',function(){
+   		var idx = $(this).index();		
+   		$(this).addClass('cur').siblings('li').removeClass('cur');
+   	})
+   });
 
