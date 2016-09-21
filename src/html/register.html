@@ -10,8 +10,9 @@
 		<script src="../assets/jquery-1.12.0.js"></script>
 		<script src="../assets/jquery.validate.js"></script>
 		<script src="../assets/jquery.validate.messages_zh.js"></script>
-		<script src="../js/register.js"></script>
 		<script src="../js/common.js"></script>
+		<script src="../js/register.js"></script>
+		
 	<script>
 		
 	</script>
@@ -216,6 +217,7 @@
 	</div>
 
 	<div class="container">
+	
 	<!--用户注册-->
 	<div class="masa_login">
 		<div class="login_left">
@@ -229,7 +231,7 @@
 					<div class="regbutton login_icon on" type="e"><span class="email_t1"></span>使用Email注册</div>
 					<div class="regbutton login_icon" style="margin-left:25px;" type="p"><span class="phone_t1"></span>使用手机号注册</div>
 				</div>
-			<form id="regForm" name="regForm">
+				<form id="regForm" name="regForm">
 				<div class="login_info"> 
 					<div class="tempWrap" style="overflow:hidden; position:relative; height:415px">
 						<div class="tempWrap" style="overflow:hidden; position:relative; height:415px">
@@ -237,34 +239,35 @@
 							<!--邮箱注册  --> 
 							    <div id="reg_email" class="register_case" style="height: 390px;">							    	
 									<p>填写你的信息</p>
-									<table width="100%" border="0" cellspacing="0" cellpadding="0">									
+									<table width="100%" border="0" cellspacing="0" cellpadding="0">
+										
 										<tbody>
 											<tr class="minput">
 												<td style="width:250px;">
-													<input type="text" name="email" class="input login_int" placeholder="请输入你Email地址">
-												</td>												
+													<input type="text" name="email" class="input login_int" placeholder="请输入你Email地址"></td>
+												<td><span class="red"></span></td>
 											</tr> 
 											<tr>
 												<td>
-													<input type="password" name="psw" id="psw" class="input login_int" placeholder="设定登录密码">
-												</td>									
+													<input type="password" name="psw" id="psw" class="input login_int" placeholder="设定登录密码"></td>
+												<td><span class="red"></span></td>
 											</tr>
 											<tr>
 												<td>
 													<table width="240" border="0" cellspacing="0" cellpadding="1">
-														<tbody>
-															<tr>
-																<td width="80" class="password_on" id="low">弱</td>
-																<td width="80" class="password_off" id="mid">中</td>
-																<td width="80" class="password_off" id="strong">强</td>
-															</tr>
-														</tbody>
-													</table>
+														<tbody><tr>
+															<td width="80" class="password_on">弱</td>
+															<td width="80" class="password_off">中</td>
+															<td width="80" class="password_off">强</td>
+														</tr>
+													</tbody></table>
 												</td>
 												<td>&nbsp;</td>
 											</tr>
 											<tr>
-												<td height="65"><input type="password" name="repsw" placeholder="请再次输入登录密码"></td>
+												<td height="65">
+													<input type="password" name="repsw" placeholder="请再次输入登录密码"></td>
+												<td><span class="red"></span></td>
 											</tr>
 																  
 											<tr>
@@ -272,8 +275,10 @@
 												<td>&nbsp;</td>
 											</tr>
 											<tr>
-												<td><input type="image" id="regsubmit" src="../css/img/reg_btn.jpg" value=""></td>
+												<td><input type="image" src="../css/img/reg_btn.jpg" id="regsubmit" value=""></td>
+												<td><span id="e_reg_msg" class="red"></span></td>
 											</tr>
+										 
 										</tbody>
 									</table>									
 								</div>						           						
@@ -284,6 +289,7 @@
 				</form>
 			</div>
 		</div>
+		
 		<div class="login_right">
 			<div class="login_texta">
 				<textarea readonly="readonly" class="input area_agree">北京九合尚品科技有限公司服务协议

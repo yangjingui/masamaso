@@ -1,6 +1,6 @@
 jQuery(function($){
 	// 表单验证插件
-	$('#regsubmit').on('click',function(){
+	//$('#regsubmit').on('click',function(){
 
 		$('#regForm').validate({
 			rules: {
@@ -39,9 +39,10 @@ jQuery(function($){
 	            }
 			}
 		});
-		alert("恭喜您注册成功！为了您的账户安全，一封邮件发送到了您注册账号的邮箱，请您抽取宝贵时间进行验证。");
+		//alert("恭喜您注册成功！为了您的账户安全，一封邮件发送到了您注册账号的邮箱，请您抽取宝贵时间进行验证。");
 			
-	});
+	//});
+
 	$('#psw').on('focus',function(){
 		if($(this).val().length>8){
 			$('#mid').addClass('password_on');
