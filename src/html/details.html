@@ -18,9 +18,8 @@
 	// 当点击“添加到购物车”，就添加 cookie 
 	
 	onload = function() {
-	
+
 		var str = getCookie("arr");
-		console.log(str)
 	
 		// 用于存储所有的商品
 		var arr = [];
@@ -36,47 +35,39 @@
 		// {product: XXX, price: 180}
 	
 		var oBtn = document.getElementsByClassName("goods_ri_btn")[0];
+		//购物车商品数
+		var oTab = document.getElementsByClassName("tab_sup_bd")[0];
+		var oAdd = document.getElementById('add_num');
+		//商品款号
+		var oNo = document.getElementById("No");
+		
+		//商品名
+		var oName = document.getElementById("name");
+		// 这个是商品价格
+		//现价
+		var NowPrice = document.getElementsByClassName("price24")[0];
+		//原价
+		var OldPrice = document.getElementById('old_price');
+		
+		// 这个商品的尺寸
+		//var oSizeBox = document.getElementById('selectSizeBox');	
+		// var oSize = oSizeBox.getElementsBytagName('li');	
+		var oSize = document.getElementById('size');		
+		// 商品数量
+		var oNum = document.getElementById("num");
 		oBtn.onclick = function() {
-			//购物车商品数
-			var oTab = document.getElementsByClassName("tab_sup_bd")[0];
-			var oAdd = document.getElementById('add_num');
-			//商品款号
-			var oNo = document.getElementById("No");
 			
-			//商品名
-			var oName = document.getElementById("name");
-			// 这个是商品价格
-			//现价
-			var NowPrice = document.getElementsByClassName("price24")[0];
-			//原价
-			var OldPrice = document.getElementById('old_price');
-			
-			// 这个商品的尺寸
-			var oSizeBox = document.getElementById('selectSizeBox');	
-			var oSize = oSizeBox.getElementsBytagName('li');			
-			// 商品数量
-			var oNum = document.getElementById("num");
-
 			//购物车数量改变
 			oTab.innerHTML++;
 			oAdd.innerHTML++;
 		
-			var obj = {};
-			
-			for (var i = 0; i < oSize.length; i++) {console.log(111)
-				oSize[i].xxx = i;
-				oSize[i].onclick = function() {
-					var idx = this.xxx;
-					obj.oSize = oSize[idx].innerHTML;
-					alert(obj.oSize);
-				}
-			}
-			
-		
+			var obj = {};	
+					
 			obj.oNo = oNo.innerHTML;
 			obj.oName = oName.innerHTML;
 			obj.NowPrice = NowPrice.innerHTML;
 			obj.OldPrice = OldPrice.innerHTML;
+			obj.oSize = oSize.innerHTML;
 			
 			obj.oNum = oNum.value;
 		
@@ -89,6 +80,21 @@
 			
 			//alert("添加成功");
 		}	
+
+
+		//给添加按钮和减去按钮绑定点击事件
+		var low = document.getElementById('low');
+		var add = document.getElementById('add');
+		low.onclick = function(){
+			
+			if(oNum.value>1){
+				oNum.value --;
+			}
+		}
+		add.onclick = function(){
+			oNum.value ++;
+		}
+			
 		
 	}
 
@@ -515,11 +521,12 @@
 					    </div>
 					</div>
 					<p class="num_box">
-				   		 购买数量： <a href="javascript:;"><img src="../css/img/tg2_goods_cut.gif"></a>     
+				   		 购买数量： 
+				   		 <a id="low" href="javascript:;"><img src="../css/img/tg2_goods_cut.gif"></a>     
 				    	<input type="text" value="1" defaultnumber="1" name="product_num" class="input" id="num"> 
-				    	<a href="javascript:;"><img src="../css/img/tg2_goods_add.gif"></a>         
+				    	<a id="add" href="javascript:;"><img src="../css/img/tg2_goods_add.gif"></a>         
 				    	<span>数量有限，欲购从速</span>        
-				    	<span id="arrival" style="color: rgb(234, 77, 79);">今天下单，配送至广州市，预计2日内送达</span>     
+				    	<span id="arrival" style="color: #ea4d4f;">今天下单，配送至广州市，预计2日内送达</span>     
 					</p>									
               
 					<div class="clearfix pt30">

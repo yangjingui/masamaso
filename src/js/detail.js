@@ -22,9 +22,10 @@ jQuery(function($){
 });
 
 //给商品尺寸绑定点击事件
-// jQuery(function($){	
-// 	$('#selectSizeBox').on('click','li',function(){
-// 		var idx = $(this).index();		
-// 		$(this).addClass('cur').siblings('li').removeClass('cur');
-// 	})
-// });
+jQuery(function($){	
+	$('#selectSizeBox').on('click','li',function(){
+		var idx = $(this).index();		
+		$(this).addClass('cur').siblings('li').removeClass('cur');
+	})
+});
+

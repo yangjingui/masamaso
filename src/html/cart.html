@@ -11,6 +11,7 @@
 //		"oName":"时尚环保pu夹克系列/防风保暖环保/pu/黑色/净色/夹克",
 //		"NowPrice":"¥399",
 //		"OldPrice":"￥1699.00",
+//		"oSize":"S",
 //		"oNum":"1"}]
 		
 		window.onload = function() {
@@ -21,6 +22,10 @@
 			var OldPrice = document.getElementById("old");//原价
 			var oSize = document.getElementById("size");//尺寸
 			var oNum = document.getElementById("num");//数量
+			var oCount = document.getElementById("count");//小计
+			var oldP = document.getElementById("old_p");//原价
+			var favour = document.getElementById("favour");//优惠价
+			var oEnd = document.getElementsByClassName("end")[0];//商品总金额
 		
 			var str = getCookie("arr");
 		
@@ -29,7 +34,10 @@
 			//alert(typeof str);
 		
 			var arr = JSON.parse(str);
-			alert(str);
+			//alert(str);
+
+			// 取出数组中元素，arr[i] 是一个对象,
+			//    再取出这个对象中的产品名 和 价格
 			for (var i = 0; i < arr.length; i++)
 			{
 				oNo.innerHTML = arr[i].oNo;
@@ -38,12 +46,35 @@
 			    OldPrice.innerHTML = arr[i].OldPrice;
 			    oSize.innerHTML = arr[i].oSize;
 			    oNum.value = arr[i].oNum;
+				oCount.innerHTML = arr[i].NowPrice;
+				oldP.innerHTML = arr[i].OldPrice;
+
+				//获取原价和现价，相减得到优惠价
+				var OldStr = parseInt((OldPrice.innerHTML).substring(1,5));
+				var NowStr = parseInt((NowPrice.innerHTML).substring(1,5));
+				favour.innerHTML =  OldStr - NowStr;
+
+				oEnd.innerHTML = oNum.value*NowStr;
+
+				//alert(oNum.value*NowStr);
+			}
+
+			//给添加按钮和减去按钮绑定点击事件
+			var low = document.getElementById('low');
+			var add = document.getElementById('add');
+			low.onclick = function(){
 				
-				// 取出数组中元素，arr[i] 是一个对象,
-				//    再取出这个对象中的产品名 和 价格
+				if(oNum.value>1){
+					oNum.value --;
+				}
+			}
+			add.onclick = function(){
+				oNum.value ++;
 			}
 			
-		
+			function getNum(text){
+				var value = text.replace(/[^0-9]/ig,""); 
+			}
 		}
 		</script>
 	</head>
@@ -100,17 +131,17 @@
 			            <td id="now"><!--¥359--></td>
 			            <td>
 			            	<div style="position:relative">
-				                <span class="button btn_cut_cart_product_num" style="cursor :pointer">
+				                <span id="low" class="button" style="cursor :pointer">
 				                	<img src="../css/img/tg2_goods_cut.gif" width="11" height="11"> 
 				                </span>
 				                <input type="" id="num" class="num" value="">
-				                <span class="button btn_add_cart_product_num" style="cursor :pointer"> 
+				                <span id="add" class="button" style="cursor :pointer"> 
 				                	<img src="../css/img/tg2_goods_add.gif" width="11" height="11" alt=""> 
 				                </span>
 			                	<div class="red">库存紧张</div>			  
 			            	</div>
 						</td>
-			            <td id="now"><!--¥359--></td>
+			            <td id="count"><!--¥359--></td>
 			            <td><a href="" class="gray">删除</a></td>
 			        </tr>
 		                
@@ -132,13 +163,13 @@
 				            <p style="text-align: left">积分折扣：<em>¥0</em></p>
 			            </td>
 			            <td>
-				          	<p style="text-align: left">商品原价：<span>¥719</span></p>
-				            <p style="text-align: left">优惠金额：<em>¥360</em></p>
+				          	<p style="text-align: left">商品原价：<span id="old_p"><!-- ¥719 --></span></p>
+				            <p style="text-align: left">优惠金额：<em>¥</em><em id="favour"><!-- ¥360 --></em></p>
 			            </td>
 			            <td>
 				          	<p style="text-align: left">运费：<span>0</span></p>
 				            <p style="text-align: left; font-size:14px; font-weight:bold;">商品总金额：
-				            	<em class="end">¥359</em>
+				            	<em>¥</em><em class="end"><!-- ¥359 --></em>
 				            </p>
 			            </td>
 			        </tr>
@@ -151,63 +182,7 @@
 		    	</div>
 		    </div>
 
-    		<div class="clearfix"></div>            
-	        <!--<div class="maso_coupon">		        
-		        <div class="coupon" style="margin-right:10px">        
-			        <fieldset class="hidden">
-				        <legend class="blank">使用优惠券</legend>
-				        <input type="checkbox" value="" class="checkbox">
-				        <label for="">使用优惠券(礼品卡/代金券)</label>
-			        </fieldset>
-			        <fieldset class="coupon_code" style="display:none">
-				        <legend class="blank">输入优惠码</legend>
-				        <p>
-					        <label for="in_code">请输入新优惠券的密码：</label>
-					        <input type="text" id="in_coupon_code" value="">
-				        </p>
-				        <p style="padding-bottom:26px">
-					        <label for="in_vercode">请输入验证码：</label>
-					        <span class="in_vercode">
-					        <input type="text" value="" id="in_vercode" class="vercode">
-					        <img id="checkNum" src="" style="vertical-align:middle" value=""></span>         
-					        <input type="image" src="" name="addNewCoupon" title="验证并使用" class="img">
-				        </p>
-				        <p>
-					        <label for="">请您选择已有优惠券<span>(0)</span>：</label>
-					        <span class="select_box"><select name="coupon_list" id="coupon_list"></select></span>
-					        <input type="image" src="" name="addCoupon" id="addCoupon" title="验证并使用" class="img">
-				        </p>
-			        </fieldset>
-		        	<div class="clearfix"></div>
-		    	</div>
-	    	
-	            <div class="coupon">
-			        <fieldset class="hidden">
-			        	<legend class="blank">使用积分</legend>
-			            <input type="checkbox" value="" class="checkbox">
-			            <label for="">使用积分</label>
-			        	<span>账户积分：<a href="">0</a></span>
-			        </fieldset>
-		            <fieldset id="bonus_area" class="used" style="display:none">
-		        		<legend class="blank">请选择使用积分数量</legend>
-				        <p>
-				        	<label for="">请选择积分使用数量：</label>
-					        <span class="select_box">
-						        <select name="" id="choose_bonus">
-						            <option value="用户积分不够500分，不能使用">用户积分不够500分，不能使用</option>
-						        </select>
-					        </span>
-				        </p>
-				        <dl>
-					        <dt>客服提示：</dt>
-					        <dd>1.积分每次使用的数量为500的整数倍;(如：500、1000、1500...)</dd>
-					        <dd>2.500积分可抵用现金￥25.00。</dd>
-					        <dd>3.灰色字体是超出订单金额的积分使用量。</dd>
-				        </dl>
-		            </fieldset>
-		        </div>
-	        </div> -->
-	        <div class="clearfix"></div>	 		   
+    		<div class="clearfix"></div>             		   
 	    </div>
 		<!--购物车内容end-->
 		
