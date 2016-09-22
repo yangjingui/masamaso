@@ -105,8 +105,8 @@
 
 /*商品列表*/
 .tab-bd {height: 810px;overflow: hidden; width:1200px; margin:0 auto;}
-.in_masa{position: relative;  left:0;top:0;width: 1250px; overflow: hidden;height:774px;width:1250px;}
-.in_masa ul{float:left;position: absolute;left:0;top:0;width:1250px;height:774px;display: none;}
+.in_masa{position: relative;  left:0;top:0;overflow: hidden;height:774px;width:8750px;}
+.in_masa ul{float:left;position: relative;left:0;top:0;width:1250px;height:774px;/*display: none;*/}
 .in_masa li{width:232px; float: left; margin-right: 10px;}
 .in_masa .no-right{margin-right:0;}
 .in_masa_up {position: relative; height: 320px;z-index: 5;overflow: hidden;zoom: 1;}

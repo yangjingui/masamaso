@@ -64,7 +64,7 @@
 				for (var k=0;k<oSize.length ;k++ ){
 					oSize[k].className = '';//将所有按钮的样式都去掉，即设为“”空值
 				}
-				oSize[idx].className = 'on';
+				oSize[idx].className = 'cur';
 				obj.oSize = oSize[idx].innerText;
 //				alert(obj.oSize);
 			}	
@@ -75,9 +75,7 @@
 			//购物车数量改变
 			oTab.innerHTML++;
 			oAdd.innerHTML++;
-		
-			
-					
+										
 			obj.oNo = oNo.innerHTML;
 			obj.oName = oName.innerHTML;
 			obj.NowPrice = NowPrice.innerHTML;
@@ -93,8 +91,6 @@
 			
 			//alert("添加成功");
 		}	
-
-
 		//给添加按钮和减去按钮绑定点击事件
 		var low = document.getElementById('low');
 		var add = document.getElementById('add');
@@ -114,11 +110,6 @@
 	</script>	
 	</head>
 	<body>
-	<div class="cart-list">
-        <h4>购物车列表</h4>
-        <ul>
-        </ul>
-    </div>
 	<div class="head-top">		
 	<div class="head">
 	  <!--logo-->
