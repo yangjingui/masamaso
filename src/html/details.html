@@ -14,6 +14,7 @@
 		<script src="../js/jquery.lxzoom.js"></script> 
 		<script src="../js/detail.js"></script>
 		<script src="../js/mycookie.js"></script>
+
 	<script>	
 	// 当点击“添加到购物车”，就添加 cookie 
 	
@@ -49,39 +50,38 @@
 		//原价
 		var OldPrice = document.getElementById('old_price');
 		
-		// 这个商品的尺寸
-//		var oSizeBox = document.getElementById('selectSizeBox');	
-//		 var oSize = oSizeBox.getElementsByTagName('p');	
-		var oSize = document.getElementById('size');
-		
-		
 		// 商品数量
 		var oNum = document.getElementById("num");
+		// 这个商品的尺寸
+		var oSizeBox = document.getElementById('selectSizeBox');	
+		var oSize = oSizeBox.getElementsByTagName('li');	
+//		var oSize = document.getElementById('size');
+		var obj = {};	
+		for(var i = 0;i < oSize.length;i++){
+			oSize[i].xxx = i;
+			oSize[i].onclick = function(){
+				var idx = this.xxx;
+				for (var k=0;k<oSize.length ;k++ ){
+					oSize[k].className = '';//将所有按钮的样式都去掉，即设为“”空值
+				}
+				oSize[idx].className = 'on';
+				obj.oSize = oSize[idx].innerText;
+//				alert(obj.oSize);
+			}	
+		}		
+		
 		oBtn.onclick = function() {
 			
 			//购物车数量改变
 			oTab.innerHTML++;
 			oAdd.innerHTML++;
 		
-			var obj = {};	
+			
 					
 			obj.oNo = oNo.innerHTML;
 			obj.oName = oName.innerHTML;
 			obj.NowPrice = NowPrice.innerHTML;
-			obj.OldPrice = OldPrice.innerHTML;
-
-//			for(var i = 0;i < oSize.length;i++){
-//				//alert(oSize[i].innerText)	
-//				oSize[i].xxx = i;
-//				oSize[i].onclick = function(){
-//					var idx = this.xxx;
-//					obj.oSize = oSize[idx].innerText;
-//					alert(obj.oSize);
-//				}	
-//			}
-
-			obj.oSize = oSize.innerHTML;
-			
+			obj.OldPrice = OldPrice.innerHTML;			
 			obj.oNum = oNum.value;
 		
 			// 将创建好的商品添加到数组中
@@ -111,7 +111,6 @@
 		
 	}
 
-	
 	</script>	
 	</head>
 	<body>

@@ -9,28 +9,11 @@
 		<link rel="stylesheet" href="../css/right.css" />
 
 		<script src="../assets/jquery-1.12.0.js"></script>
+		<script src="../assets/jquery.fullfoucs.js"></script>
 		<script src="../js/index.js"></script>
 		<script src="../js/common.js"></script>
 	<script>
-		jQuery(function($){
-	// load的第二种用法：
-	// 加载远程文件
-
-	// 1、先生成一个div
-	// 2、加载header.html
-	// 3、把div写入页面
-	$('<div/>').load('header.html',function(){
-		$(this).insertBefore('.container');
-	});
-
-	$('<div/>').load('footer.html',function(){
-		$(this).insertAfter('.container');
-	});	
-	$('<div/>').load('right.html',function(){
-		$(this).insertBefore('.container');
-	});
 	
-		
 	</script>
 	</head>
 	<body>
@@ -298,9 +281,6 @@
 							</div>
 						</a>				
 					</li>
-		
-				<!--</ul>-->
-				<!--<ul>-->
 					<li class="bottom">
 						<a href="#">
 							<div class="tab_serv">
@@ -488,11 +468,11 @@
 	    </div>
 		<!--商品列表-->							
 		<div class="tab-bd clearfix" >
-			<div class="in_masa" style="overflow: hidden;width:1250px;height:774px;">
+			<div class="in_masa">
 				<ul>
 					<li>
 						<div class="in_masa_up"> 									 				  
-							<a class="in_pic" href=""><img  src="../css/img/1.jpg"></a> 
+							<a class="in_pic" href=""><img  src="../css/img/j1.jpg"></a> 
 						</div>
 						<div class="in_masa_info">					
 							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
@@ -504,7 +484,7 @@
 					</li>   
 					<li>
 						<div class="in_masa_up"> 									 				  
-							<a class="in_pic" href=""><img  src="../css/img/2.jpg"></a> 
+							<a class="in_pic" href=""><img  src="../css/img/j2.jpg"></a> 
 						</div>
 						<div class="in_masa_info">					
 							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
@@ -528,7 +508,7 @@
 					</li>   
 					<li>
 						<div class="in_masa_up"> 									 				  
-							<a class="in_pic" href=""><img  src="../css/img/3.jpg"></a> 
+							<a class="in_pic" href=""><img  src="../css/img/13.jpg"></a> 
 						</div>
 						<div class="in_masa_info">					
 							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
@@ -540,7 +520,7 @@
 					</li>   
 					<li class="no-right">
 						<div class="in_masa_up"> 								 				  
-							<a class="in_pic" href=""><img  src="../css/img/4.jpg"></a> 
+							<a class="in_pic" href=""><img  src="../css/img/14.jpg"></a> 
 						</div>
 						<div class="in_masa_info">					
 							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
@@ -552,7 +532,7 @@
 					</li>   
 					<li>
 						<div class="in_masa_up"> 									 				  
-							<a class="in_pic" href=""><img  src="../css/img/5.jpg"></a> 
+							<a class="in_pic" href=""><img  src="../css/img/25.jpg"></a> 
 						</div>
 						<div class="in_masa_info">					
 							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
@@ -564,7 +544,7 @@
 					</li> 
 					<li>
 						<div class="in_masa_up"> 									 				  
-							<a class="in_pic" href=""><img  src="../css/img/1.jpg"></a> 
+							<a class="in_pic" href=""><img  src="../css/img/21.jpg"></a> 
 						</div>
 						<div class="in_masa_info">					
 							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
@@ -576,7 +556,7 @@
 					</li>   
 					<li>
 						<div class="in_masa_up"> 									 				  
-							<a class="in_pic" href=""><img  src="../css/img/6.jpg"></a> 
+							<a class="in_pic" href=""><img  src="../css/img/36.jpg"></a> 
 						</div>
 						<div class="in_masa_info">					
 							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
@@ -588,7 +568,7 @@
 					</li>   
 					<li>
 						<div class="in_masa_up"> 									 				  
-							<a class="in_pic" href=""><img  src="../css/img/7.jpg"></a> 
+							<a class="in_pic" href=""><img  src="../css/img/37.jpg"></a> 
 						</div>
 						<div class="in_masa_info">					
 							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
@@ -600,7 +580,253 @@
 					</li>   
 					<li class="no-right">
 						<div class="in_masa_up"> 									 				  
-							<a class="in_pic" href=""><img  src="../css/img/8.jpg"></a> 
+							<a class="in_pic" href=""><img  src="../css/img/41.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+							 
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>429</span></em> 
+							</div>
+						</div>
+					</li>
+					<p class="clearfix"></p>
+				</ul>
+				<ul>
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img  src="../css/img/j1.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+							
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>429</span></em> 
+							</div>
+						</div>
+					</li>   
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img  src="../css/img/j2.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+							 
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>429</span></em> 
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img  src="../css/img/j1.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+							
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>429</span></em> 
+							</div>
+						</div>
+					</li>   
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img  src="../css/img/j3.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+							 
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>429</span></em> 
+							</div>
+						</div>
+					</li>   
+					<li class="no-right">
+						<div class="in_masa_up"> 								 				  
+							<a class="in_pic" href=""><img  src="../css/img/j4.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+							 
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>429</span></em> 
+							</div>
+						</div>
+					</li>   
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img  src="../css/img/j5.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+							 
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>429</span></em> 
+							</div>
+						</div>
+					</li> 
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img  src="../css/img/j1.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+							
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>429</span></em> 
+							</div>
+						</div>
+					</li>   
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img  src="../css/img/j2.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+							 
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>429</span></em> 
+							</div>
+						</div>
+					</li>   
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img  src="../css/img/j3.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+							 
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>429</span></em> 
+							</div>
+						</div>
+					</li>   
+					<li class="no-right">
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img  src="../css/img/j4.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+							 
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>429</span></em> 
+							</div>
+						</div>
+					</li>
+					<p class="clearfix"></p>
+				</ul>
+				<ul>
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img  src="../css/img/11.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+							
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>429</span></em> 
+							</div>
+						</div>
+					</li>   
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img  src="../css/img/12.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+							 
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>429</span></em> 
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img  src="../css/img/13.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+							
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>429</span></em> 
+							</div>
+						</div>
+					</li>   
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img  src="../css/img/14.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+							 
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>429</span></em> 
+							</div>
+						</div>
+					</li>   
+					<li class="no-right">
+						<div class="in_masa_up"> 								 				  
+							<a class="in_pic" href=""><img  src="../css/img/15.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+							 
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>429</span></em> 
+							</div>
+						</div>
+					</li>   
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img  src="../css/img/16.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+							 
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>429</span></em> 
+							</div>
+						</div>
+					</li> 
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img  src="../css/img/17.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+							
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>429</span></em> 
+							</div>
+						</div>
+					</li>   
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img  src="../css/img/18.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+							 
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>429</span></em> 
+							</div>
+						</div>
+					</li>   
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img  src="../css/img/11.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+							 
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>429</span></em> 
+							</div>
+						</div>
+					</li>   
+					<li class="no-right">
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img  src="../css/img/12.jpg"></a> 
 						</div>
 						<div class="in_masa_info">					
 							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
@@ -639,7 +865,7 @@
 					</li>
 					<li>
 						<div class="in_masa_up"> 									 				  
-							<a class="in_pic" href=""><img  src="../css/img/1.jpg"></a> 
+							<a class="in_pic" href=""><img  src="../css/img/3.jpg"></a> 
 						</div>
 						<div class="in_masa_info">					
 							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
@@ -651,7 +877,7 @@
 					</li>   
 					<li>
 						<div class="in_masa_up"> 									 				  
-							<a class="in_pic" href=""><img  src="../css/img/3.jpg"></a> 
+							<a class="in_pic" href=""><img  src="../css/img/4.jpg"></a> 
 						</div>
 						<div class="in_masa_info">					
 							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
@@ -663,35 +889,11 @@
 					</li>   
 					<li class="no-right">
 						<div class="in_masa_up"> 								 				  
-							<a class="in_pic" href=""><img  src="../css/img/4.jpg"></a> 
-						</div>
-						<div class="in_masa_info">					
-							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
-							 
-							<div class="in_price">							
-								<em><span class="yuan">¥</span><span>429</span></em> 
-							</div>
-						</div>
-					</li>   
-					<li>
-						<div class="in_masa_up"> 									 				  
 							<a class="in_pic" href=""><img  src="../css/img/5.jpg"></a> 
 						</div>
 						<div class="in_masa_info">					
 							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
 							 
-							<div class="in_price">							
-								<em><span class="yuan">¥</span><span>429</span></em> 
-							</div>
-						</div>
-					</li> 
-					<li>
-						<div class="in_masa_up"> 									 				  
-							<a class="in_pic" href=""><img  src="../css/img/1.jpg"></a> 
-						</div>
-						<div class="in_masa_info">					
-							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
-							
 							<div class="in_price">							
 								<em><span class="yuan">¥</span><span>429</span></em> 
 							</div>
@@ -708,10 +910,34 @@
 								<em><span class="yuan">¥</span><span>429</span></em> 
 							</div>
 						</div>
-					</li>   
+					</li> 
 					<li>
 						<div class="in_masa_up"> 									 				  
 							<a class="in_pic" href=""><img  src="../css/img/7.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+							
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>429</span></em> 
+							</div>
+						</div>
+					</li>   
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img  src="../css/img/8.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+							 
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>429</span></em> 
+							</div>
+						</div>
+					</li>   
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img  src="../css/img/1.jpg"></a> 
 						</div>
 						<div class="in_masa_info">					
 							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
@@ -723,7 +949,7 @@
 					</li>   
 					<li class="no-right">
 						<div class="in_masa_up"> 									 				  
-							<a class="in_pic" href=""><img  src="../css/img/8.jpg"></a> 
+							<a class="in_pic" href=""><img  src="../css/img/2.jpg"></a> 
 						</div>
 						<div class="in_masa_info">					
 							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
@@ -738,7 +964,7 @@
 				<ul>
 					<li>
 						<div class="in_masa_up"> 									 				  
-							<a class="in_pic" href=""><img  src="../css/img/1.jpg"></a> 
+							<a class="in_pic" href=""><img  src="../css/img/21.jpg"></a> 
 						</div>
 						<div class="in_masa_info">					
 							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
@@ -750,7 +976,7 @@
 					</li>   
 					<li>
 						<div class="in_masa_up"> 									 				  
-							<a class="in_pic" href=""><img  src="../css/img/2.jpg"></a> 
+							<a class="in_pic" href=""><img  src="../css/img/22.jpg"></a> 
 						</div>
 						<div class="in_masa_info">					
 							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
@@ -762,7 +988,7 @@
 					</li>
 					<li>
 						<div class="in_masa_up"> 									 				  
-							<a class="in_pic" href=""><img  src="../css/img/1.jpg"></a> 
+							<a class="in_pic" href=""><img  src="../css/img/23.jpg"></a> 
 						</div>
 						<div class="in_masa_info">					
 							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
@@ -774,7 +1000,7 @@
 					</li>   
 					<li>
 						<div class="in_masa_up"> 									 				  
-							<a class="in_pic" href=""><img  src="../css/img/3.jpg"></a> 
+							<a class="in_pic" href=""><img  src="../css/img/24.jpg"></a> 
 						</div>
 						<div class="in_masa_info">					
 							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
@@ -786,7 +1012,7 @@
 					</li>   
 					<li class="no-right">
 						<div class="in_masa_up"> 								 				  
-							<a class="in_pic" href=""><img  src="../css/img/4.jpg"></a> 
+							<a class="in_pic" href=""><img  src="../css/img/25.jpg"></a> 
 						</div>
 						<div class="in_masa_info">					
 							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
@@ -798,7 +1024,7 @@
 					</li>   
 					<li>
 						<div class="in_masa_up"> 									 				  
-							<a class="in_pic" href=""><img  src="../css/img/5.jpg"></a> 
+							<a class="in_pic" href=""><img  src="../css/img/26.jpg"></a> 
 						</div>
 						<div class="in_masa_info">					
 							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
@@ -810,7 +1036,7 @@
 					</li> 
 					<li>
 						<div class="in_masa_up"> 									 				  
-							<a class="in_pic" href=""><img  src="../css/img/1.jpg"></a> 
+							<a class="in_pic" href=""><img  src="../css/img/27.jpg"></a> 
 						</div>
 						<div class="in_masa_info">					
 							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
@@ -822,7 +1048,7 @@
 					</li>   
 					<li>
 						<div class="in_masa_up"> 									 				  
-							<a class="in_pic" href=""><img  src="../css/img/6.jpg"></a> 
+							<a class="in_pic" href=""><img  src="../css/img/28.jpg"></a> 
 						</div>
 						<div class="in_masa_info">					
 							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
@@ -834,7 +1060,7 @@
 					</li>   
 					<li>
 						<div class="in_masa_up"> 									 				  
-							<a class="in_pic" href=""><img  src="../css/img/7.jpg"></a> 
+							<a class="in_pic" href=""><img  src="../css/img/21.jpg"></a> 
 						</div>
 						<div class="in_masa_info">					
 							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
@@ -846,7 +1072,7 @@
 					</li>   
 					<li class="no-right">
 						<div class="in_masa_up"> 									 				  
-							<a class="in_pic" href=""><img  src="../css/img/8.jpg"></a> 
+							<a class="in_pic" href=""><img  src="../css/img/22.jpg"></a> 
 						</div>
 						<div class="in_masa_info">					
 							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
@@ -861,7 +1087,7 @@
 				<ul>
 					<li>
 						<div class="in_masa_up"> 									 				  
-							<a class="in_pic" href=""><img  src="../css/img/1.jpg"></a> 
+							<a class="in_pic" href=""><img  src="../css/img/31.jpg"></a> 
 						</div>
 						<div class="in_masa_info">					
 							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
@@ -873,7 +1099,7 @@
 					</li>   
 					<li>
 						<div class="in_masa_up"> 									 				  
-							<a class="in_pic" href=""><img  src="../css/img/2.jpg"></a> 
+							<a class="in_pic" href=""><img  src="../css/img/32.jpg"></a> 
 						</div>
 						<div class="in_masa_info">					
 							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
@@ -885,7 +1111,7 @@
 					</li>
 					<li>
 						<div class="in_masa_up"> 									 				  
-							<a class="in_pic" href=""><img  src="../css/img/1.jpg"></a> 
+							<a class="in_pic" href=""><img  src="../css/img/33.jpg"></a> 
 						</div>
 						<div class="in_masa_info">					
 							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
@@ -897,7 +1123,7 @@
 					</li>   
 					<li>
 						<div class="in_masa_up"> 									 				  
-							<a class="in_pic" href=""><img  src="../css/img/3.jpg"></a> 
+							<a class="in_pic" href=""><img  src="../css/img/34.jpg"></a> 
 						</div>
 						<div class="in_masa_info">					
 							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
@@ -909,7 +1135,7 @@
 					</li>   
 					<li class="no-right">
 						<div class="in_masa_up"> 								 				  
-							<a class="in_pic" href=""><img  src="../css/img/4.jpg"></a> 
+							<a class="in_pic" href=""><img  src="../css/img/35.jpg"></a> 
 						</div>
 						<div class="in_masa_info">					
 							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
@@ -921,7 +1147,7 @@
 					</li>   
 					<li>
 						<div class="in_masa_up"> 									 				  
-							<a class="in_pic" href=""><img  src="../css/img/5.jpg"></a> 
+							<a class="in_pic" href=""><img  src="../css/img/36.jpg"></a> 
 						</div>
 						<div class="in_masa_info">					
 							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
@@ -933,7 +1159,7 @@
 					</li> 
 					<li>
 						<div class="in_masa_up"> 									 				  
-							<a class="in_pic" href=""><img  src="../css/img/1.jpg"></a> 
+							<a class="in_pic" href=""><img  src="../css/img/37.jpg"></a> 
 						</div>
 						<div class="in_masa_info">					
 							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
@@ -945,7 +1171,7 @@
 					</li>   
 					<li>
 						<div class="in_masa_up"> 									 				  
-							<a class="in_pic" href=""><img  src="../css/img/6.jpg"></a> 
+							<a class="in_pic" href=""><img  src="../css/img/38.jpg"></a> 
 						</div>
 						<div class="in_masa_info">					
 							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
@@ -957,7 +1183,7 @@
 					</li>   
 					<li>
 						<div class="in_masa_up"> 									 				  
-							<a class="in_pic" href=""><img  src="../css/img/7.jpg"></a> 
+							<a class="in_pic" href=""><img  src="../css/img/31.jpg"></a> 
 						</div>
 						<div class="in_masa_info">					
 							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
@@ -969,7 +1195,130 @@
 					</li>   
 					<li class="no-right">
 						<div class="in_masa_up"> 									 				  
-							<a class="in_pic" href=""><img  src="../css/img/8.jpg"></a> 
+							<a class="in_pic" href=""><img  src="../css/img/32.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+							 
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>429</span></em> 
+							</div>
+						</div>
+					</li>
+					<p class="clearfix"></p>
+				</ul>
+				<ul>
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img  src="../css/img/41.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+							
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>429</span></em> 
+							</div>
+						</div>
+					</li>   
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img  src="../css/img/42.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+							 
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>429</span></em> 
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img  src="../css/img/41.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+							
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>429</span></em> 
+							</div>
+						</div>
+					</li>   
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img  src="../css/img/42.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+							 
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>429</span></em> 
+							</div>
+						</div>
+					</li>   
+					<li class="no-right">
+						<div class="in_masa_up"> 								 				  
+							<a class="in_pic" href=""><img  src="../css/img/41.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+							 
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>429</span></em> 
+							</div>
+						</div>
+					</li>   
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img  src="../css/img/42.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+							 
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>429</span></em> 
+							</div>
+						</div>
+					</li> 
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img  src="../css/img/41.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+							
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>429</span></em> 
+							</div>
+						</div>
+					</li>   
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img  src="../css/img/42.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+							 
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>429</span></em> 
+							</div>
+						</div>
+					</li>   
+					<li>
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img  src="../css/img/41.jpg"></a> 
+						</div>
+						<div class="in_masa_info">					
+							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>
+							 
+							<div class="in_price">							
+								<em><span class="yuan">¥</span><span>429</span></em> 
+							</div>
+						</div>
+					</li>   
+					<li class="no-right">
+						<div class="in_masa_up"> 									 				  
+							<a class="in_pic" href=""><img  src="../css/img/42.jpg"></a> 
 						</div>
 						<div class="in_masa_info">					
 							<a class="gray" href="">个性便装系列/弹力/聚酯纤维/浅蓝/格纹/薄便装</a>

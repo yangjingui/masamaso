@@ -17,7 +17,6 @@
 .tab_logo_ord { background:url(../css/img/nav_icon.png) no-repeat 0 -83px; width:10px; height:14px; margin:0 auto 3px;}
 .tab_favor,.tab_weixin,.tab_top { height:30px;}
 .tab_logo_favor { background:url(../css/img/nav_icon.png) no-repeat -1px -118px; width:14px; height:12px; margin:0 auto 3px;}
-.tab_logo_weixin { background:url(../css/img/nav_icon.png) no-repeat -1px -161px; width:18px; height:14px; margin:0 auto 3px;}
 .tab_logo_weixin { background:url(../css/img/weixin2_icon.png) no-repeat 0 0; width:11px; height:20px; margin:0 auto 3px;}
 
 .bottom { bottom:20px; position:absolute; width:36px; padding-top:120px;}
