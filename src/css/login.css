@@ -52,7 +52,8 @@
 
 /*登录*/
 .login_log_in {background: url('../img/home2016.jpg') no-repeat center;height:565px;}
-.login_log_info { opacity:0.8;background:#fff; width:300px; height:478px; float:right; margin:35px 70px 0px 0px;}
+.login_log_info { opacity:0.8;background:#fff; width:300px; height:478px; float:right; margin:35px 70px 0px 0px;
+position:relative;left:-200px;top:0px;}
 .log_case { padding:0 30px; }
 .log_tit { margin-bottom:20px; color:#333;}
 .log_title { border-top:1px solid #d9d9d9; padding-top:30px; margin-top:30px; margin-bottom:10px;}

@@ -25,7 +25,8 @@ jQuery(function($){
 	});							
 });
 
-jQuery(function(){
+//给底部图片绑定鼠标移入实现动画
+jQuery(function($){
 	var $tip = $('.tip');
 	
 	$('.tabs').on('mouseenter','li',function(){
@@ -38,3 +39,4 @@ jQuery(function(){
 	});
 					
 });
+
