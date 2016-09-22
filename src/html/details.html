@@ -54,17 +54,18 @@
 		var oNum = document.getElementById("num");
 		// 这个商品的尺寸
 		var oSizeBox = document.getElementById('selectSizeBox');	
-		var oSize = oSizeBox.getElementsByTagName('li');	
+		var oSizeLi = oSizeBox.getElementsByTagName('li');
+		var oSize = oSizeBox.getElementsByTagName('i');
 //		var oSize = document.getElementById('size');
 		var obj = {};	
-		for(var i = 0;i < oSize.length;i++){
-			oSize[i].xxx = i;
-			oSize[i].onclick = function(){
+		for(var i = 0;i < oSizeLi.length;i++){
+			oSizeLi[i].xxx = i;
+			oSizeLi[i].onclick = function(){
 				var idx = this.xxx;
-				for (var k=0;k<oSize.length ;k++ ){
-					oSize[k].className = '';//将所有按钮的样式都去掉，即设为“”空值
+				for (var k=0;k<oSizeLi.length ;k++ ){
+					oSizeLi[k].className = '';//将所有按钮的样式都去掉，即设为“”空值
 				}
-				oSize[idx].className = 'cur';
+				oSizeLi[idx].className = 'cur';
 				obj.oSize = oSize[idx].innerText;
 //				alert(obj.oSize);
 			}	
@@ -520,10 +521,10 @@
 					    <div id="selectSizeBox">
 					    	<div class="sizeBox">	
 					    		<ul>
-					    			<li class="cur"><p id='size'>S</p><em>165/88A</em></p></li>
-					    			<li><p id='size'>M</p><em>170/92A</em></p></li>
-					    			<li><p id='size'>L</p><em>175/96A</em></p></li>
-					    			<li><p id='size'>XL</p><em>180/100A</em></p></li>
+					    			<li class="cur"><p><i>S</i></p><em>165/88A</em></p></li>
+					    			<li><p><i>M</i></p><em>170/92A</em></p></li>
+					    			<li><p><i>L</i></p><em>175/96A</em></p></li>
+					    			<li><p><i>XL</i></p><em>180/100A</em></p></li>
 					    		</ul>
 					    	</div>    	
 					    </div>
@@ -595,7 +596,7 @@
 							<a class="in_pic" href=""><img class="lazyload_bk" src="../css/img/j3.jpg"></a> 
 						</div>
 						<div class="in_masa_info">					
-							<a class="gray" href="">时尚环保pu夹克系列/防风保暖/pu/黑色/净色/夹克/a>
+							<a class="gray" href="">时尚环保pu夹克系列/防风保暖/pu/黑色/净色/夹克</a>
 							<div class="in_price">							
 								<em><span class="yuan">¥</span><span>429</span></em>   
 							</div>
@@ -676,7 +677,7 @@
 							<a class="in_pic" href=""><img class="lazyload_bk" src="../css/img/j3.jpg"></a> 
 						</div>
 						<div class="in_masa_info">					
-							<a class="gray" href="">时尚环保pu夹克系列/防风保暖/pu/黑色/净色/夹克/a>
+							<a class="gray" href="">时尚环保pu夹克系列/防风保暖/pu/黑色/净色/夹克</a>
 							<div class="in_price">							
 								<em><span class="yuan">¥</span><span>429</span></em>   
 							</div>
