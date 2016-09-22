@@ -77,8 +77,29 @@
 			
 		}
 		</script>
+
 	</head>
-	<body>		
+	<body>
+		<!--遮罩层-->
+		<div class="overlay"></div>
+		<!--弹窗-->
+		<div class="succeed">    
+			<div class="windowsBox">        
+				<p class="fr"><a href=""><img src="../css/img/close.png"></a></p>        
+				<p class="clear"></p>        
+				<div class="windowsBoxT">            
+					<p class="con2"><img src="../css/img/icon_f.jpg"><strong>确认删除？</strong></p>            
+					<p class="txt">您刚删除的商品可以在购物车中商品列表下面的刚删除商品中查看。</p>        
+				</div>        
+				<div class="windowsBoxB">
+					<input class="sure" type="image" class="yes" src="../css/img/pop_btn_del.gif"> 　            
+					<input class="cancel" type="image" class="no" src="../css/img/pop_btn_cancel.gif">
+				</div>    
+			</div>
+		</div>
+		<!--弹窗end-->
+		
+		
 		<!--头部-->
 		<div class="cart_header"><img src="../img/masamaso_logo.jpg" alt="" /></div>
 		<!--头部end-->
@@ -142,7 +163,7 @@
 			            	</div>
 						</td>
 			            <td id="count"><!--¥359--></td>
-			            <td><a href="../html/cart_empty.html" class="gray" id="deleted">删除</a></td>
+			            <td><a href="" class="gray" id="deleted">删除</a></td>
 			        </tr>
 		                
 		        	<!--套装-->

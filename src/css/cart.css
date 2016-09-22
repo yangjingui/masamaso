@@ -1,7 +1,22 @@
 a{text-decoration: none;}
 *{font-style: normal; font-size:12px;}
 ul, ol, li {list-style: none outside none;}
+/*遮罩层*/
+.overlay{display:none;z-index: 1000; border: none; margin: 0px; padding: 0px; width: 100%; height: 100%; 
+	top: 0px; left: 0px; opacity: 0.4; cursor: wait; position: fixed; background-color:#000;}
+	
+/*弹窗*/
+.succeed {width: 280px;height:200px;margin: 0 auto;text-align: center;font-size: 12px;
+display:none;position:absolute;left:200px;top:100px;z-index: 1002;}
+.windowsBox {background: #f7f8f8;border: 1px solid #dedede;}
+.windowsBox .fr {padding: 0 5px; float:right;}
+.windowsBoxT { padding: 10px 0 20px 0;}
+.windowsBoxT .con2 {color: #ff2628;height: 40px;}
+.windowsBoxT .con2 strong{position: relative;bottom:10px;display: inline-block;padding-top: 10px;font: bold 14px SimSun;}
+.windowsBox .txt { width: 180px; text-align: left;color: #636363;line-height: 22px;margin: 5px auto 0;}
+.windowsBoxB {background: #b7b7b7;padding: 10px 0 5px 0;}
 
+	
 .cart_header{width:100%; height:92px;}
 .gray{color:#666;}
 .red{color:red;}
