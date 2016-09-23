@@ -8,42 +8,23 @@
 		<link rel="stylesheet" href="../css/common.css" />
 		
 		<script src="../assets/jquery-1.12.0.js"></script>
-		<script src="../js/cookie.js"></script>
 		<script src="../js/mycookie.js"></script>
 		<script src="../js/common.js"></script>
 		<script src="../js/login.js"></script>
+
 	<script>
-		onload = function(){
-			var oUser = document.getElementById("username");
-			var oPsw = document.getElementById("password");
+		window.onload = function() {
+			var email= document.getElementById('email');
+			var psw = document.getElementById("psw");
+			var str = getCookie("arr");
 		
-			var oCheck = document.getElementById("check");
-		
-			var oBtn = document.getElementById("logsubmit");
-		
-			var user = getCookie("username");
-			var psw = getCookie("password");
-		
-			if (user && psw)
-			{
-				oUser.value = user;
-				oPsw.value = psw;
-				alert("登录成功！");
+			var arr = JSON.parse(str);
+			for (var i = 0; i < arr.length; i++){
+				email.value = arr[i].email;	  
+			    psw.value = arr[i].psw;console.log(arr[i].psw)
 			}
-		
-			oBtn.onclick = function()
-			{
-				if (oCheck.checked)
-				{
-					var username = oUser.value;
-					var password = oPsw.value;
-		
-					setCookie("username",username,7);
-					setCookie("password",password,7);
-				}
-				alert("登录成功！");
-			}		
 		}
+
 	</script>
 	</head>
 	<body>
@@ -247,6 +228,7 @@
 
 	<div class="container">
 		<!--用户登录界面-->
+		<form id="regForm" name="regForm" action='../html/index.html'>
 		<div class="login_log_in">
 			<div class="masa_login">
 				<div class="login_log_info">
@@ -257,7 +239,7 @@
 								<tbody><tr>
 									<td class="mid_con">
 									   <div>
-										<input type="text" id="username" class="input login_int" value="" placeholder="Email/手机号">
+										<input type="text" id="email" class="input login_int" value="" placeholder="Email/手机号">
 									   </div>
 									</td> 
 									<td></td> 
@@ -266,7 +248,7 @@
 								<tr>
 									<td class="mid_con">
 									    <div>
-										<input type="password" id="password" class="input login_int" placeholder="密码">
+										<input type="password" id="psw" class="input login_int" placeholder="密码">
 										 </div>
 									</td>
 									<td></td> 
@@ -349,6 +331,7 @@
 				</div>
 			</div>
 		</div>
+		</form>
 	<div>
 
 	<!--底部-->

@@ -12,8 +12,33 @@
 		<script src="../assets/jquery.validate.messages_zh.js"></script>
 		<script src="../js/common.js"></script>
 		<script src="../js/register.js"></script>
+		<script src="../js/mycookie.js"></script>
 		
 	<script>
+	onload = function() {
+
+		var str = getCookie("arr");
+	
+		var arr = [];
+		if (str != ""){
+			//将字符串转换成数组
+			arr = JSON.parse(str);
+		}
+	
+		var email= document.getElementById('email');
+		var psw = document.getElementById("psw");
+		var obj = {};	
+		
+		var btn = document.getElementById("regsubmit");
+		btn.onclick = function(){
+			obj.email = email.value;
+			obj.psw = psw.value;
+			
+			arr.push(obj);
+			//JSON.stringify()把JSON对象转换成字符
+			addCookie("arr", JSON.stringify(arr), 7);	
+		}
+	}
 		
 	</script>
 	</head>
@@ -231,7 +256,7 @@
 					<div class="regbutton login_icon on" type="e"><span class="email_t1"></span>使用Email注册</div>
 					<div class="regbutton login_icon" style="margin-left:25px;" type="p"><span class="phone_t1"></span>使用手机号注册</div>
 				</div>
-				<form id="regForm" name="regForm">
+				<form id="regForm" name="regForm" action='../html/login.html'>
 				<div class="login_info"> 
 					<div class="tempWrap" style="overflow:hidden; position:relative; height:415px">
 						<div class="tempWrap" style="overflow:hidden; position:relative; height:415px">
@@ -244,7 +269,7 @@
 										<tbody>
 											<tr class="minput">
 												<td style="width:250px;">
-													<input type="text" name="email" class="input login_int" placeholder="请输入你Email地址"></td>
+													<input type="text" name="email" id="email" class="input login_int" placeholder="请输入你Email地址"></td>
 												<td><span class="red"></span></td>
 											</tr> 
 											<tr>
@@ -266,16 +291,16 @@
 											</tr>
 											<tr>
 												<td height="65">
-													<input type="password" name="repsw" placeholder="请再次输入登录密码"></td>
+													<input type="password" name="repsw" class="input login_int" placeholder="请再次输入登录密码"></td>
 												<td><span class="red"></span></td>
 											</tr>
 																  
 											<tr>
-												<td colspan="2"><label><input type="checkbox" name="check" class="e_reg_checkbox"> 我已阅读并接受<span class="login_red">《北京九品合尚品科技有限公司服务协议》</span></label></td>
+												<td colspan="2"><label><input type="checkbox" name="check" id="check" class="e_reg_checkbox"> 我已阅读并接受<span class="login_red">《北京九品合尚品科技有限公司服务协议》</span></label></td>
 												<td>&nbsp;</td>
 											</tr>
 											<tr>
-												<td><input type="image" src="../css/img/reg_btn.jpg" id="regsubmit" value=""></td>
+												<td><a href="../html/login.html"><input type="image" src="../css/img/reg_btn.jpg" id="regsubmit"></a></td>
 												<td><span id="e_reg_msg" class="red"></span></td>
 											</tr>
 										 
@@ -478,7 +503,7 @@
                 <div class="maso_email_int">
                     <input type="text" id="book_email" value="请输入你的邮箱地址"/>
                 </div>
-                <a class="maso_email_btn" id="sub_email_book" href="javascript:;">订阅</a>                     
+                <a class="maso_email_btn" id="sub_email_book" href="">订阅</a>                     
             </div>
         </div>
 

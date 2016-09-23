@@ -37,14 +37,7 @@ jQuery(function($){
             }
 		}
 	});
-	$('#regsubmit').on('click',function(){
-		if($('#regForm').validate()){
-			alert("恭喜您注册成功！为了您的账户安全，一封邮件发送到了您注册账号的邮箱，请您抽取宝贵时间进行验证。");	
-		}else{
-			alert("请按要求填写信息");
-		}
-				
-	});
+	
 
 	$('#psw').on('focus',function(){
 		if($(this).val().length>8){

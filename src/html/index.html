@@ -11,8 +11,21 @@
 		<script src="../assets/jquery-1.12.0.js"></script>
 		<script src="../js/index.js"></script>
 		<script src="../js/common.js"></script>
+		<script src="../js/mycookie.js"></script>
 	<script>
-	
+	window.onload = function(){
+		var index_one = document.getElementById("index_one");
+		var index_two = document.getElementById("index_two");
+		var username = document.getElementById("username");
+		var str = getCookie("arr");
+		
+		var arr = JSON.parse(str);
+		index_one.style.display = "none";
+		index_two.style.display = "block";
+		for (var i = 0; i < arr.length; i++){
+			username.innerHTML = arr[i].email;	  
+		}
+	}
 	</script>
 	</head>
 	<body>
@@ -26,10 +39,17 @@
 	              <span style="color:red;">365天</span>客服<i>|</i>顺丰快递<i>|</i>主力城市
 	              <span style="color:red;">次日送达</span><i>|</i>&lt;广告&gt;
 	          </div>
-	          <div class="fr top_right_ctl" id="index_login">
+	          <div class="fr top_right_ctl" id="index_one" style="display:block;">
 	          	<a href="../html/login.html">用户登录</a><i>|</i><a href="../html/register.html">新用户注册</a>
 	          </div>
-	          <p class="cl"></p>
+	          <div class="fr top_right_ctl" id="index_two" style="display:none;">
+	          	<a href="" id="username"></a><i>|</i>
+	          	<a href="">我的订单</a><i>|</i>
+	          	<a id="my_msg" href="">我的消息<span id="total_msg">(0)</span></a><i>|</i>
+	          	<a href="" class="marker-bag" target="_blank"> 购物车（<span class="cartnum">0</span>）</a>
+	          	<a href="javascript:userLogout();" onclick=";">退出</a>
+	          </div>
+	          <p class="clearfix"></p>
 	      </div>
 	  </div>
 	  
