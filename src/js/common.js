@@ -40,11 +40,10 @@ jQuery(function($){
 					
 });
 
-jQuery(document).ready(function($){
+jQuery(function($){
 	//回到顶部
 	$('.tab_top').click(function(){
 		$('body').animate({'scrollTop':0},1000)
 	});
-
 
 });
