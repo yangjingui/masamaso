@@ -45,6 +45,7 @@ display:none;position:absolute;left:200px;top:100px;z-index: 1002;}
 
 
 /*shopping_box*/
+.shopping_box .btnNum{display: block;height:13px;width:13px;background-color: #B8B7BC;color: #000;}
 .shopping_box {border: 1px solid #dedede;}
 .shopping_box table {width: 100%;font-family: arial;}
 table {border-collapse: collapse;}
