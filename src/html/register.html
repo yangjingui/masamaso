@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="../css/common.css" />
 
 		<script src="../assets/jquery-1.12.0.js"></script>
+<<<<<<< HEAD
 		<script src="../assets/jquery.validate.js"></script>
 		<script src="../assets/jquery.validate.messages_zh.js"></script>
 		<script src="../js/common.js"></script>	
@@ -81,12 +82,38 @@
 
 	<div class="container">
 	
+=======
+	<script>
+		jQuery(function($){
+			// load的第二种用法：
+			// 加载远程文件
+
+			// 1、先生成一个div
+			// 2、加载header.html
+			// 3、把div写入页面
+			$('<div/>').load('header.html',function(){
+				$(this).insertBefore('.container');
+			});
+
+			$('<div/>').load('footer.html',function(){
+				$(this).insertAfter('.container');
+			});	
+		});
+	</script>
+	</head>
+	<body>
+	<div class="container">
+>>>>>>> b84b4fdec1871248ca709b2d69e445d00dd38e01
 	<!--用户注册-->
 	<div class="masa_login">
 		<div class="login_left">
 			<div class="login_top f14">
 				欢迎新用户注册 <span class="c_gary">|</span> 
+<<<<<<< HEAD
 				<span class="f12 c_gary">已注册可<a class="login_red" href="../html/login.html">直接登录</a></span>
+=======
+				<span class="f12 c_gary">已注册可<a class="login_red" href="">直接登录</a></span>
+>>>>>>> b84b4fdec1871248ca709b2d69e445d00dd38e01
 			</div>
 			<div class="f12">选择注册方式</div>
 			<div class="notice">
@@ -94,12 +121,17 @@
 					<div class="regbutton login_icon on" type="e"><span class="email_t1"></span>使用Email注册</div>
 					<div class="regbutton login_icon" style="margin-left:25px;" type="p"><span class="phone_t1"></span>使用手机号注册</div>
 				</div>
+<<<<<<< HEAD
 				<form id="regForm" name="regForm" action='../html/login.html'>
+=======
+			
+>>>>>>> b84b4fdec1871248ca709b2d69e445d00dd38e01
 				<div class="login_info"> 
 					<div class="tempWrap" style="overflow:hidden; position:relative; height:415px">
 						<div class="tempWrap" style="overflow:hidden; position:relative; height:415px">
 							<div class="tab-bd" style="top: 0px; position: relative; padding: 0px; margin: 0px;">
 							<!--邮箱注册  --> 
+<<<<<<< HEAD
 							    <div id="reg_email" class="register_case" style="height: 390px;">							    	
 									<p>填写你的信息</p>
 									<table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -147,14 +179,128 @@
 										</tbody>
 									</table>									
 								</div>						           						
+=======
+							    <div id="reg_email" class="register_case" style="height: 390px;">
+									<p>填写你的信息</p>
+									<table width="100%" border="0" cellspacing="0" cellpadding="0">
+										
+										<tbody><tr class="minput">
+											<td style="width:250px;">
+												<input type="text" id="e_reg_customer_name" class="input login_int customername" placeholder="请输入你Email地址"></td>
+											<td><span id="e_reg_customer_msg" class="red"></span></td>
+										</tr> 
+										<tr>
+											<td>
+												<input type="password" id="e_reg_first_password" class="input login_int" placeholder="设定登录密码"></td>
+											<td><span id="e_reg_password_msg" class="red"></span></td>
+										</tr>
+										<tr>
+											<td>
+												<table width="240" border="0" cellspacing="0" cellpadding="1">
+													<tbody><tr>
+														<td width="80" id="e_pwd_lower" class="password_on">弱</td>
+														<td width="80" id="e_pwd_middle" class="password_off">中</td>
+														<td width="80" id="e_pwd_high" class="password_off">强</td>
+													</tr>
+												</tbody></table>
+											</td>
+											<td>&nbsp;</td>
+										</tr>
+										<tr>
+											<td height="65">
+												<input type="password" id="e_reg_second_password" placeholder="请再次输入登录密码"></td>
+											<td><span id="e_reg_second_password_msg" class="red"></span></td>
+										</tr>
+															  
+										<tr>
+											<td colspan="2"><label><input type="checkbox" class="e_reg_checkbox"> 我已阅读并接受<span class="login_red">《北京九品合尚品科技有限公司服务协议》</span></label></td>
+											<td>&nbsp;</td>
+										</tr>
+										<tr>
+											<td><input type="image" src="../css/img/reg_btn.jpg" id="regsubmit" value=""></td>
+											<td><span id="e_reg_msg" class="red"></span></td>
+										</tr>
+									 
+									</tbody></table>
+								</div>
+						            
+								<div class="register_case" style="height: 390px;">
+									<!--手机注册  --> 
+									<p>填写你的信息</p>
+									<table width="100%" border="0" cellspacing="0" cellpadding="0">
+										
+										<tbody><tr class="minput">
+											<td style="width:250px;">
+												<input type="text" id="p_reg_customer_name" class="input login_int customername" placeholder="请输入你的手机号码">
+										        <div class="sms" onselect="return false;">发送验证码</div>
+										    </td>
+											<td><span id="p_reg_customer_msg" class="red"></span></td>
+										</tr> 
+										<tr class="phcode"> 
+											<td>
+												<input type="text" id="p_reg_verifycode" placeholder="验证码" class="input login_int" style="width: 60px;" > 
+												<span id="span1">  </span>
+												<a href="javascript:;">换一张</a>	
+											</td>
+											<td><span id="p_reg_verify_code_msg" class="red"></span>
+											</td>
+										</tr>
+										<tr class="minput">
+											<td>
+												<input type="text" id="p_reg_code" class="input login_int customername" placeholder="请输入手机验证码"></td>
+											<td><span id="p_reg_code_msg" class="red"></span></td>
+										</tr> 
+										<tr class="smshide">
+											<td>
+												<input type="password" id="p_reg_first_password" oclass="input login_int" placeholder="设定登录密码"></td>
+											<td><span id="reg_password_msg" class="red"></span></td>
+										</tr>
+										<tr class="smshide">
+											<td>
+												<table width="240" border="0" cellspacing="0" cellpadding="1">
+													<tbody><tr>
+														<td width="80" id="p_pwd_lower" class="password_on">弱</td>
+														<td width="80" id="p_pwd_middle" class="password_off">中</td>
+														<td width="80" id="p_pwd_high" class="password_off">强</td>
+													</tr>
+												</tbody></table>
+											</td>
+											<td>&nbsp;</td>
+										</tr>
+										<tr class="smshide">
+											<td height="65">
+												<input type="password" id="p_reg_second_password" class="input login_int" placeholder="请再次输入登录密码"></td>
+											<td><span id="reg_second_password_msg" class="red"></span></td>
+										</tr>
+															
+										<tr class="smshide">
+											<td colspan="2">
+												<label>
+													<input type="checkbox" class="p_reg_checkbox"> 我已阅读并接受
+														<span class="login_red">《北京九品合尚品科技有限公司服务协议》</span>
+												</label>
+											</td>							 
+										</tr>
+										<tr class="smshide">
+											<td><input type="image" src="../css/img/reg_btn.jpg" id="regsubmit" value="" ></td>
+											<td><span id="p_reg_msg" class="red"></span></td>
+										</tr> 
+									</tbody></table>
+								</div> 	
+>>>>>>> b84b4fdec1871248ca709b2d69e445d00dd38e01
 							</div>
 						</div>
 					</div>					 
 				</div>
+<<<<<<< HEAD
 				</form>
 			</div>
 		</div>
 		
+=======
+			</div>
+		</div>
+>>>>>>> b84b4fdec1871248ca709b2d69e445d00dd38e01
 		<div class="login_right">
 			<div class="login_texta">
 				<textarea readonly="readonly" class="input area_agree">北京九合尚品科技有限公司服务协议

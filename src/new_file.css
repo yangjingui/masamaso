@@ -1,0 +1,130 @@
+/*首页固定导航栏*/
+.nav-me-wr{position: fixed; top: 0px; left: 0px; display: block;}
+#btns_bar {width: 100%; min-width: 1200px;z-index: 1000;background: #e20045;height: 40px; display: none;}
+.nav-me {height: 40px;line-height: 40px;}
+.mem-inte {width: 1200px;margin: 0 auto;}
+.nav-me a.case {display: inline-block;width: 25%; float: left;height: 40px;line-height: 40px;color: #fff;
+    font-size: 18px;text-align: center;font-family: '微软雅黑';letter-spacing: 1px;text-decoration: none;}
+.nav-me a:hover{background: #91122d;}
+
+/*玛萨玛索.中秋嘉年华*/
+.eme-banner{/*position: relative;*/display: block;width: 1920px; height:718px;left: 50%;
+	 margin-left: -285px;overflow: hidden; background: url("../img/img2.jpg") no-repeat;}
+
+/*暖情外套*/
+.bg-banner1{/*position: relative;*/display: block;width: 1920px; height:583px; left: 50%; margin-left: -285px;overflow: hidden;background: url("../img/img3.jpg") no-repeat;}
+
+/*浓情上装*/
+.bg-banner2{/*position: relative;*/display: block;width: 1920px; height:583px; left: 50%; margin-left: -285px;overflow: hidden;background: url("../img/img4.jpg") no-repeat;}
+
+/*倾情下装*/
+.bg-banner3{/*position: relative;*/display: block;width: 1920px; height:583px; left: 50%; margin-left: -285px;overflow: hidden;background: url("../img/img5.jpg") no-repeat;}
+
+/*温情鞋品*/
+.bg-banner4{/*position: relative;*/display: block;width: 1920px; height:583px; left: 50%; margin-left: -285px;overflow: hidden;background: url("../img/img6.jpg") no-repeat;}
+
+/*商品列表*/
+.seven_center1 {height: 1000px; margin-top:-160px;}
+.seven_pic {width: 960px; margin: auto;position: relative;}
+.tab-hd { height: 46px;margin-bottom: 28px;}
+.tab-hd ul{width: 960px; height:46px;}
+.tab-hd li {background: #e20045;float: left; height:46px; line-height: 46px; text-align: center;}
+.tab-hd li a {background: #e20045;color: #fff; font-size: 20px; width:320px; height:46px; display: block;}
+.tab-hd li a:hover{background: #ff8aae;}
+.cl { clear: both;overfl1ow: hidden;}
+.tab-bd {height: 810px;overflow: hidden; position: relative; width: 960px; height: 810px;}
+.in_masa{position: absolute; width: 960px; left: 0px; top: 0px; display:inline-block;}
+.in_masa li{width:232px; float: left; margin-right: 10px;}
+.in_masa .no-right{margin-right:0;}
+.in_masa_up {position: relative; height: 320px;z-index: 5;overflow: hidden;zoom: 1;}
+.in_masa_info .gray {color: #666;height: 40px;overflow: hidden;zoom: 1;display: block; width: 202px; line-height: 18px;}
+.in_price em {font: 18px/24px Verdana, Geneva, sans-serif; color: #fe3235;}
+.seven_btn { width: 482px;height: 40px;font: 18px/40px Microsoft Yahei;color: #fc2a2a;text-align: center;
+margin: 0 auto;display: block; text-decoration: none;background: url("../css/img/more.png") no-repeat center;}
+
+/*浓情上装*/
+.tab-kd { height: 46px;margin-bottom: 28px;}
+.tab-kd ul{width: 960px; height:46px;}
+.tab-kd li {background: #e20045;float: left; height:46px; line-height: 46px; text-align: center;}
+.tab-kd li a {background: #e20045;color: #fff; font-size: 20px; width:240px; height:46px; display: block;}
+.tab-kd li a:hover{background: #ff8aae;}
+
+
+/*menu2*/
+.menu2 ul li a{color:#666; font:13px/28px "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif; padding-left:17px;}
+.menu2 ul li a.act{ color:#fff;}
+.menu2 ul li a.c_red { color:#91152e}
+.menu_box_nav .menu_box_list li{ padding-right:15px; width:69px;}
+.menu_box_nav .menu_box_list li a {color:#666; width:66px; text-align:left;}
+.menu_box_nav .menu_box_list li a.act{color:#fff}
+.menu_box_nav .menu_box_list li a.act:hover{background-color: #333333;}
+.menu_box_nav .menu_box_list li i.arr{
+    display: inline-block;width:10px;height:9px;vertical-align: top;margin-top:10px;*margin-top:3px;
+    background: url('http://image.masamaso.com/2016/meau-arr.png?46165494') no-repeat center 0;margin-left: -2px;
+}
+.menu_box_nav .menu_box_list li i.arr.act{
+    background-position:center -10px;margin-top:10px;*margin-top:3px;
+}
+.menu2:hover{background: #040303; color:#fff;}
+.menu2 ul li:hover{color:#fff;}
+.menu_box_list li:hover{background-color: #333333;}
+
+.maso_nav_wrap { width:1200px; height:254px; position:relative; margin:auto; display:none;}
+.maso_nav { position:absolute; left:0; top:0; width:1200px; height:254px; z-index:2;background-color: #fff;}
+.maso_nav dl { float:left; width:66px; padding-left:17px; margin-top:20px; height:212px; border-right:1px solid #f7f7f7; border-left:1px solid #f7f7f7;; margin-left:-1px;}
+ :root .maso_nav dl{filter:none;}
+.maso_nav .dlhover { background:#e4e4e7; margin-top:0; padding:20px 0 22px 10px; border-right:1px solid #e2e2e2; border-left:1px solid #dddddf;}
+.maso_nav dl dt a { font:12px/24px "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif; color:#666} 
+.maso_nav dl dd a:hover,.maso_nav dl a:hover { color:#000}
+.maso_nav_bg { color:red;background:#f7f7f9; position:absolute; left:0; top:0; width:1200px; height:254px; z-index:1;}
+.masa_nav_add { float:right;}
+.meau-red{color:#91152e;}
+
+/*下部导航菜单*/
+.nav-menu{position: relative;margin-top:-3px;z-index: 2000;}
+.menu_wrap { position:relative; width:1200px; margin:auto; z-index:999;}
+.menu_info { position:absolute; left:0; top:0; width:1200px; margin:auto; z-index:99; overflow:hidden;}
+.menu_box_navbg{ height:32px; z-index:1;position:relative;}
+.menu_box_nav{ height:31px; z-index:2; margin-top:-31px;}
+.menu_box_nav .menu_box_list{ float:left; height:28px;}
+.menu_box_nav .menu_box_list li a{ color:#000; font-size:12px;}
+.menu_box_list li a:hover { color:#c3ceff}
+.menu_box_hot{ float:left; margin-left:10px;}
+.menu_box .menu_box_hot li a{ color:#e4e4e4; font-family:"Microsoft YaHei"; position:relative;}
+.menu_bg {background:#fff;height:28px;line-height: 28px; }
+.menu_box_hot .maso_new_ico,.menu_box_hot .maso_hot_ico { background:url(http://image.masamaso.com/2015/home/maso_new.jpg) no-repeat; width:19px; height:7px; position:absolute; top:6px; right:3px; z-index:99}
+.menu_box_hot .maso_hot_ico { background:url(http://image.masamaso.com/2015/home/maso_hot.jpg) no-repeat;}
+
+.menu,.menu_box_nav{ width:1200px; height:37px; line-height:37px; margin:0px auto; color:#fff; text-align:center; position:relative; zoom:1; }
+.menu_box_nav_bg { position:absolute; left:0; top:0; z-index:1;  height:32px; width:100%;}
+.menu_box_nav { height:28px; line-height:28px; overflow:hidden;}
+.menu2 { position:absolute; z-index:2; width:1200px; height:29px;}
+.menu_box_nav a { line-height:34px;}
+.menu li,.menu2 li{float:left; position:relative; z-index:1; }
+.menu li a:hover { color:#fff;}
+.menu2 li a {display:block; float:left; color:#fff; text-decoration: none;z-index: 5;}
+.menu ul.floatright li { float:left;}
+.menu ul.second_menu,.menu2 ul.second_menu{float:right; height:29px;}
+.menu ul.second_menu { margin-right:10px;}
+.second_menu li{ padding-right: 15px;}
+.menu ul.second_menu li a { display:block; float:left; color:#e4e4e4; text-decoration: none; z-index: 5; height:38px; font-size:12px; padding-left:25px; font-family:"SimSun";}
+.menu ul.menu_box_hot li a { display:block; float:left; color:#e4e4e4; text-decoration: none; z-index: 5; height:38px; font-size:14px; padding-right:25px; font-family:"SimSun";}
+.menu ul.menu_box_hot li a:hover,.menu ul.second_menu li a:hover { color:#c3ceff;}
+.menu ul.f12 li { font-size:12px;}
+.menu ul.second_menu li small{display:inline;float:left;margin:8px 0 0 5px;color:#f00;font-size:10px;font-family:arail}
+.menu ul.second_menu li a { padding-left:0 0 0 10px;}
+
+.menu2 ul li a{color:#666; font:13px/28px "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif; padding-left:17px;}
+.menu2 ul li a.act{ color:#fff;}
+.menu2 ul li a.c_red { color:#91152e}
+.menu_box_nav .menu_box_list li{ padding-right:15px; width:69px;}
+.menu_box_nav .menu_box_list li a {color:#666; width:66px; text-align:left;}
+.menu_box_nav .menu_box_list li a.act{color:#fff}
+.menu_box_nav .menu_box_list li a.act:hover{background-color: #333333;}
+.menu_box_nav .menu_box_list li i.arr{
+    display: inline-block;width:10px;height:9px;vertical-align: top;margin-top:10px;*margin-top:3px;
+    background: url('http://image.masamaso.com/2016/meau-arr.png?46165494') no-repeat center 0;margin-left: -2px;
+}
+.menu_box_nav .menu_box_list li i.arr.act{background-position:center -10px;margin-top:10px;*margin-top:3px;}
+
+

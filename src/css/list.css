@@ -3,6 +3,7 @@
 .in_banner .fullSlide .bd{ margin:0 auto;  z-index:0; overflow:hidden;  }
 .in_banner .fullSlide .bd li{  overflow:hidden; text-align:center; }
 .in_banner .fullSlide .bd li a{ display:block; height:600px; }
+<<<<<<< HEAD
 .in_banner .fullSlide .bd li { height:625px;}
 .in_banner .bd li img { background:url(..css/img/loading.gif) top center no-repeat ; position:relative; left:50%; margin-left:-950px; float:left; display:block;}
 
@@ -10,6 +11,25 @@
 .btns_bar{position: fixed; top: 0px;left:0;}
 .menu_2_nav_bg { background:#1e1e1e; height:55px; line-height:55px; margin-bottom:20px; width:100%;} 
 .menu_2_nav { width:1200px; height:55px;margin:auto ;background:#1e1e1e;}
+=======
+
+.in_banner .fullSlide .hd{ width:100%;  position:absolute; z-index:1; bottom:10px; left:0;}
+.in_banner .fullSlide .hd ul{ text-align:center; }
+.in_banner .fullSlide .hd ul li{ cursor:pointer; display:inline-block; *display:inline; zoom:1; width:592px; height:2px; 
+	margin:1px 12px 0 0; overflow:hidden; background:url(..css/img/in_d2.png) no-repeat;line-height:999px; }
+.in_banner .fullSlide .hd ul .on{ background:url(..css/img/in_d1.png) no-repeat; }
+
+.in_banner .fullSlide .prev,
+.in_banner .fullSlide .next{  display:block;  position:absolute; z-index:1; top:50%; margin-top:-70px; left:15%;  z-index:1;
+	 width:44px; height:120px; background:url(..css/img/in_l.png) no-repeat;  cursor:pointer;   }
+.in_banner .fullSlide .next{ left:auto; right:15%; background:url(..css/img/in_r.png) no-repeat;}
+.in_banner .fullSlide .bd li { height:625px;}
+.in_banner .bd li img { background:url(..css/img/loading.gif) top center no-repeat ; position:relative; left:50%; margin-left:-950px; float:left; display:block;}
+
+/*浮动菜单		*/
+.menu_2_nav_bg { background:rgb(30, 30, 30); height:55px; line-height:55px; margin-bottom:20px; width:100%;} 
+.menu_2_nav { width:1200px; margin:auto ;}
+>>>>>>> b84b4fdec1871248ca709b2d69e445d00dd38e01
 .menu_2_nav li { float:left; text-align:center}
 .menu_2_nav a { padding:0 22px; color:#fff; display:block; float:left; font-size:14px;}
 .menu_2_nav a:hover { background:#900; color:#fff; text-decoration:none; }
@@ -83,7 +103,11 @@
 .in_masa_up {position: relative; height: 320px;z-index: 5;overflow: hidden;zoom: 1;}
 .in_masa_info .gray {color: #666666;height: 40px;overflow: hidden;zoom: 1;display: block; width: 202px; line-height: 18px;}
 .in_price{width:200px; height:30px;}
+<<<<<<< HEAD
 .in_masa_info .in_price span{font: 14px/24px Verdana, Geneva, sans-serif; color:#f66; float:left;}
+=======
+.in_masa_info .in_price em {font: 18px/24px Verdana, Geneva, sans-serif; color:#f66; float:left;}
+>>>>>>> b84b4fdec1871248ca709b2d69e445d00dd38e01
 .seven_btn { width: 482px;height: 40px;font: 18px/40px Microsoft Yahei;color: #fc2a2a;text-align: center;
 margin: 0 auto;display: block; text-decoration: none;background: url("../css/img/more.png") no-repeat center;}
 .in_masa_info .comment{color:#999;}

@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="../css/common.css" />
 		
 		<script src="../assets/jquery-1.12.0.js"></script>
+<<<<<<< HEAD
 		<script src="../js/mycookie.js"></script>
 		<script src="../js/common.js"></script>
 		<script src="../js/login.js"></script>
@@ -32,6 +33,29 @@
 	<div class="container">
 		<!--用户登录界面-->
 		<form id="regForm" name="regForm" action='../html/index.html'>
+=======
+	<script>
+		jQuery(function($){
+			// load的第二种用法：
+			// 加载远程文件
+
+			// 1、先生成一个div
+			// 2、加载header.html
+			// 3、把div写入页面
+			$('<div/>').load('header.html',function(){
+				$(this).insertBefore('.container');
+			});
+
+			$('<div/>').load('footer.html',function(){
+				$(this).insertAfter('.container');
+			});		
+		});
+	</script>
+	</head>
+	<body>
+	<div class="container">
+		<!--用户登录界面-->
+>>>>>>> b84b4fdec1871248ca709b2d69e445d00dd38e01
 		<div class="login_log_in">
 			<div class="masa_login">
 				<div class="login_log_info">
@@ -42,7 +66,12 @@
 								<tbody><tr>
 									<td class="mid_con">
 									   <div>
+<<<<<<< HEAD
 										<input type="text" id="email" class="input login_int" value="" placeholder="Email/手机号">
+=======
+										<input type="text" id="login_customer" class="input login_int" value="" placeholder="Email/手机号">
+										<div id="login_customer_msg" class="red"></div>
+>>>>>>> b84b4fdec1871248ca709b2d69e445d00dd38e01
 									   </div>
 									</td> 
 									<td></td> 
@@ -51,6 +80,7 @@
 								<tr>
 									<td class="mid_con">
 									    <div>
+<<<<<<< HEAD
 										<input type="password" id="psw" class="input login_int" placeholder="密码">
 										 </div>
 									</td>
@@ -61,15 +91,47 @@
 										<label><input type="checkbox" id="check" style="cursor: pointer; vertical-align: middle; margin-top: 0; *margin-top: -1px;" value="1" id="remember_email">记住用户名 </label>
 										<a href="" class="c_gary" style="margin-left: 10px; text-decoration: underline;">忘记密码？</a> | 
 										<a class="login_red" href="../html/register.html">免费注册</a>
+=======
+										<input type="password" id="login_password" class="input login_int" placeholder="密码">
+										<div id="login_password_msg" class="red"></div>
+										 </div>
+									</td>
+									<td></td> 
+								</tr> 
+								<tr id="login_code">
+									<td>
+									   <div>
+										<input type="text" id="log_verifycode" class="input login_int" style="width: 60px;" placeholder="验证码"> 
+										<span id="span1"></span>								
+										<div id="log_verify_code_msg" class="red"></div>
+										</div>
+									</td>
+									<td>
+									</td>
+								</tr>
+								
+								<tr>
+									<td class="mid_con">
+										<label><input type="checkbox" style="cursor: pointer; vertical-align: middle; margin-top: 0; *margin-top: -1px;" value="1" id="remember_email">记住用户名 </label>
+										<a href="" class="c_gary" style="margin-left: 10px; text-decoration: underline;">忘记密码？</a> | 
+										<a class="login_red" href="">免费注册</a>
+>>>>>>> b84b4fdec1871248ca709b2d69e445d00dd38e01
 									</td>
 									<td>&nbsp;</td>
 								</tr>
 								<tr>
 									<td class="mid_con">
 										<div>
+<<<<<<< HEAD
 											<a href="../html/index.html" id="loading"> 
 												<input type="image" id="logsubmit" src="../css/img/log_btn.jpg" value="" align="absmiddle"> 
 											</a>						
+=======
+											<span id="loading"> 
+												<input type="image" src="../css/img/log_btn.jpg" id="logsubmit" value="" align="absmiddle"> 
+											</span>
+											<div id="login_msg" class="red"></div>
+>>>>>>> b84b4fdec1871248ca709b2d69e445d00dd38e01
 										</div>
 									</td>
 									<td></td>
@@ -134,7 +196,10 @@
 				</div>
 			</div>
 		</div>
+<<<<<<< HEAD
 		</form>
+=======
+>>>>>>> b84b4fdec1871248ca709b2d69e445d00dd38e01
 	<div>
 	</body>
 </html>

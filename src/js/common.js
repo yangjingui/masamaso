@@ -12,6 +12,7 @@ jQuery(function($){
 	$('<div/>').load('footer.html',function(){
 		$(this).insertAfter('.container');
 	});	
+<<<<<<< HEAD
 	
 				
 });
@@ -63,4 +64,11 @@ jQuery(function($){
 		$('body').animate({'scrollTop':0},1000)
 	});
 
+=======
+	$('<div/>').load('right.html',function(){
+		$(this).insertBefore('.container');
+	});
+	
+				
+>>>>>>> b84b4fdec1871248ca709b2d69e445d00dd38e01
 });

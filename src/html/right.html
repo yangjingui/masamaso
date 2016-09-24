@@ -8,7 +8,23 @@
 		
 		<script src="../assets/jquery-1.12.0.js"></script>
 		<script>
+<<<<<<< HEAD
 			
+=======
+			jQuery(function(){
+				var $tip = $('.tip');
+				
+				$('.tabs').on('mouseenter','li',function(){
+					var idx = $(this).index();
+					$tip.css({left:-150});
+					$tip.eq(idx).show().animate({left:-130});
+				}).on('mouseleave','li',function(){
+					var idx = $(this).index();
+					$tip.eq(idx).hide();
+				});
+								
+			});
+>>>>>>> b84b4fdec1871248ca709b2d69e445d00dd38e01
 		</script>
 	</head>
 	<body>
@@ -18,7 +34,11 @@
 			<div class="tabs">
 				<ul class="top" style="top: 6px;">
 					<li index="cart">
+<<<<<<< HEAD
 						<a href="../html/cart.html">
+=======
+						<a href="#">
+>>>>>>> b84b4fdec1871248ca709b2d69e445d00dd38e01
 							<div class="tab_cart">
 								<div class="tab_logo_cart"></div>
 								<div class="tab_txt">购物车</div>

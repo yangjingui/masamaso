@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 .container{width:1250px;margin:0 auto;}
+=======
+.container{width:1250px;}
+>>>>>>> b84b4fdec1871248ca709b2d69e445d00dd38e01
 /*首页顶部固定导航栏*/
 #btns_bar1{width: 100%; position: fixed; top: 0px; z-index: 1300; background-color:#1e1e1e; display: none;}
 #btns_bar1 .header-nav{
@@ -104,9 +108,14 @@
 .recomment li.red:hover,.recomment li .red{color:red;}
 
 /*商品列表*/
+<<<<<<< HEAD
 .tab-bd {height: 810px;overflow: hidden; width:1200px; margin:0 auto;}
 .in_masa{position: relative;  left:0;top:0;overflow: hidden;height:774px;width:8750px;}
 .in_masa ul{float:left;position: relative;left:0;top:0;width:1250px;height:774px;/*display: none;*/}
+=======
+.tab-bd {height: 810px;overflow: hidden; position: relative; width:1200px; margin:0 auto;}
+.in_masa{position: absolute; width: 1250px;  display:inline-block;}
+>>>>>>> b84b4fdec1871248ca709b2d69e445d00dd38e01
 .in_masa li{width:232px; float: left; margin-right: 10px;}
 .in_masa .no-right{margin-right:0;}
 .in_masa_up {position: relative; height: 320px;z-index: 5;overflow: hidden;zoom: 1;}
@@ -173,5 +182,10 @@ margin: 0 auto;display: block; text-decoration: none;background: url("../css/img
 .foot_add .text .hottextcontent{color:#2a2a2a;font-size: 20px;font-weight: normal;}
 .foot_add .text:hover p{color:#fff;}
 .foot_add .text:hover{background:#990000;}
+<<<<<<< HEAD
 .foot_add li:hover .text p{color:#fff;}
 .foot_add li:hover div{background:#990000;color:#fff;}
+=======
+.hot-active li:hover .text p{color:#fff;}
+.hot-active li:hover div{background:#990000;color:#fff;}
+>>>>>>> b84b4fdec1871248ca709b2d69e445d00dd38e01

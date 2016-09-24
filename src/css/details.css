@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> b84b4fdec1871248ca709b2d69e445d00dd38e01
 .wrap-bg{width:1200px; margin:0 auto;}
 .info_nav{padding-bottom:15px; font-size:10px;}
 span,em,i,a{color:#666;}
@@ -25,6 +28,7 @@ h3 {float: left;color: #000;width: 65px;}
 .goods_tp_box{width:588px;height:630px;float:left;}
 .goods_tp_rbox{width:592px;float:right;}
 .goods_tp_box .s_tpc{width:82px;height:630px;margin-right: 15px; float:left;}
+<<<<<<< HEAD
 .goods_tp_box .s_tpc li{width:74px;margin-bottom:10px;margin-right:20px;border:1px solid #fff;}
 .goods_tp_box .s_tp li img{width:72px;height: 91px;}
 .goods_tp_box .s_tp li .on{border-color:#9b5251;}
@@ -33,6 +37,12 @@ overflow: hidden;position: relative;}
 .goods_tp_box #box li{height:600px;position: absolute;left:0;top:0;}
 a {color: #666;}
 #box img{width:490px; height:600px;}
+=======
+.goods_tp_box .s_tpc li{width:74px;margin-bottom:10px;margin-right:20px;}
+.s_tp img {width:72px;height: 91px;}
+.goods_tp_box #box {float: right;display: inline; padding-bottom: 10px; width:490px; height:745px;}
+a {color: #666;}
+>>>>>>> b84b4fdec1871248ca709b2d69e445d00dd38e01
 
 /*商品基础信息*/
 .show_div_box{width:592px;}
@@ -71,6 +81,7 @@ a {color: #666;}
 .overflow {overflow:hidden;} 
 .goods_color strong{font-weight:bold;color:#000;}
 #selectSizeBox{width:500px; height:50px; }
+<<<<<<< HEAD
 #selectSizeBox ul{width:400px;height:50px;}
 #selectSizeBox ul li{float:left; margin-right:10px}
 .sizeBox{float:left; padding:0 5px;}
@@ -78,12 +89,21 @@ a {color: #666;}
 .sizeBox .layer{z-index:11;}
 .sizeBox .layer {background: url(../css/img/sizeLayerBg1.png) no-repeat;color: #878787;width: 100px;height: 68px;
    padding: 7px 0 0 10px;line-height: 18px;}
+=======
+.sizeBox{float:left; padding:0 5px;}
+.sizeBox ul li { position:relative; border:1px dashed #999;}
+.sizeBox .layer{z-index:11;}
+>>>>>>> b84b4fdec1871248ca709b2d69e445d00dd38e01
 .size_img_box {padding:15px 6px;}
 #select_size li{text-align: center;}
 #select_size li em {background:none; color:#999;border-top:1px solid #ccc;}
 #select_size li.cur em {background:none; }
 #select_size li.cur {border:1px solid #e4393c}
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> b84b4fdec1871248ca709b2d69e445d00dd38e01
 #select_size li  .phover,.goods_ri_p3 li.phover{border:1px solid #e4393c;}
 .scorestar{background:url(../css/img/star-off.png);height:16px;width:80px;cursor:pointer;}
 .scorestar_show{width:0px; background:url(../css/img/star-on.png);height:16px;}

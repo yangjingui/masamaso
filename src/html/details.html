@@ -2,7 +2,11 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
+<<<<<<< HEAD
 		<title>详情页</title>
+=======
+		<title></title>
+>>>>>>> b84b4fdec1871248ca709b2d69e445d00dd38e01
 		<link rel="stylesheet" href="../css/reset.css" />
 		<link rel="stylesheet" href="../css/details.css" />
 		<link rel="stylesheet" href="../css/common.css" />
@@ -11,6 +15,7 @@
 
 		<script src="../assets/jquery-1.12.0.js"></script>
 		<script src="../js/common.js"></script>
+<<<<<<< HEAD
 		<script src="../js/jquery.lxzoom.js"></script> 
 		<script src="../js/detail.js"></script>
 		<script src="../js/mycookie.js"></script>
@@ -21,11 +26,26 @@
 	</head>
 	<body>
 
+=======
+		<script src="../js/jquery.lxzoom.js"></script>
+	<script>
+		jQuery(function($){
+			// 实现放大镜效果
+			$('#box').lxzoom({
+				width:500,
+				height:300
+			});
+		});
+	</script>
+	</head>
+	<body>
+>>>>>>> b84b4fdec1871248ca709b2d69e445d00dd38e01
 	<div class="container">
 		<!--商品详情页-->
 		<div class="wrap-bg">
 			<div class="goods_part"> 
 				<p class="info_nav">
+<<<<<<< HEAD
 					<a href="../html/index.html">首页</a> &gt; 
 					<a class="ch_1" href="../html/list.html">外套</a> &gt; 
                     <a class="ch_1" href="">薄便装</a> &gt; 
@@ -54,12 +74,80 @@
 					</div>			
 				    <p class="clearfix"></p>
 				</div>																
+=======
+					<a href="">首页</a> &gt; 
+					<a class="ch_1" href="">外套</a> &gt; 
+                    <a class="ch_1" href="">薄便装</a> &gt; 
+                    <span class="ch_3">时尚环保pu夹克系列/防风保暖环保/pu/黑色/净色/夹克</span>                             
+			    </p>
+				<div class="goods_info_box clearfix"> 
+				<!-- 左上侧图片循环展示  --> 
+				<div class="goods_tp_box"> 
+					<div style="float:left;">	    								
+						<ul class="s_tpc clearfix">
+                     		<li> <a href="javascript:void(0);"><img src="../css/img/s1.jpg"></a> </li>
+                     		<li> <a href="javascript:void(0);"><img src="../css/img/s2.jpg"></a> </li>
+                     		<li> <a href="javascript:void(0);"><img src="../css/img/s3.jpg"></a> </li>
+                     		<li> <a href="javascript:void(0);"><img src="../css/img/s4.jpg"></a> </li>
+                     		<li> <a href="javascript:void(0);"><img src="../css/img/s5.jpg"></a> </li>
+                     		<li> <a href="javascript:void(0);"><img src="../css/img/s6.jpg"></a> </li>
+						</ul>
+						<!--<a href="" class="b_tp lxbzoom" ><img src="../css/img/ss.jpg"/></a>-->
+						<div id="box" class="lxbzoom"><img src="../css/img/ss.jpg"/></div>
+					</div>
+				    <p class="clearfix"></p>
+				</div>							
+				<!--尺码弹出展示部分--> 
+				<div class="show_div_box" style="display: none; width: 390px;" id="size_select_dialog">
+				    <div class="show_title"> 
+				        <span class="title" style="display: inline; float: left">选择尺码</span> 
+				        <span class="close"></span> 
+				    </div>                
+				    <div class="show_div gray"> 
+					    <strong class="title">选择尺码：</strong>
+					    <ul class="size" style="margin-top: 15px;">
+					      	<div class="sizeBox">
+					      		<div class="layer">最佳体型：<br>身高165-170cm<br>体重55-60kg</div>	
+					      		<ul>		
+					      			<li class=""><p>S</p><em>165/88A</em></li>	
+					      		</ul>
+					      	</div>
+					      	<div class="sizeBox">
+					      		<div class="layer">最佳体型：<br>身高170-175cm<br>体重62-68kg</div>	
+					      		<ul>		
+					      			<li class=""><p>M</p><em>170/92A</em></li>	
+					      		</ul>
+					      	</div>
+					      	<div class="sizeBox"><div class="layer">最佳体型：<br>身高175-180cm<br>体重70-75kg</div>	
+					      	<ul>		
+					      		<li class=""><p>L</p><em>175/96A</em></li>	
+					      	</ul>
+					      	</div>
+					      	<div class="sizeBox"><div class="layer">最佳体型：<br>身高175-180cm<br>体重80-85kg</div>	
+					      	<ul>		
+					      		<li class=""><p>XL</p><em>180/100A</em> </li>	
+					      	</ul>
+					      	</div>
+					    </ul>
+					    <p class="clear"></p>
+					        <form action="" onsubmit="return false;">
+				        <legend class="blink"></legend>
+				        <fieldset>
+				            <input type="image" src="" value="确定" class="btn" >
+				        </fieldset>
+				      </form>
+				    </div>
+			    	<p class="clearfix"></p>
+				</div>  
+					
+>>>>>>> b84b4fdec1871248ca709b2d69e445d00dd38e01
 			<!-- 商品基础信息 --> 
 			<div class="goods_tp_rbox">
 				<form id="submit_product" method="post">
 					<div class="goods_gary">
 						<!--原来-->
 						<div class="goods_ri_p1" id="tagtop">
+<<<<<<< HEAD
 							<h1 class="goods_title"><em id="name">时尚环保pu夹克系列/防风保暖环保/pu/黑色/净色/夹克</em></h1>
 							<div class="goods_ri_p2 price_color"> 					    
 				    			<input type="hidden" id="productCodeNoSize" name="productCodeNoSize" value="20223">
@@ -70,6 +158,18 @@
 								<p class="goods_artNo" style="float: right;">商品款号：<span id="No">20223</span></p>
 								<div class="goods_vip" style="float: left; width: 100%;">
 									(<span class="vip_col"></span>请<a href="javascript:void(0);"  id="loginlv3">登录</a>查看是否享受会员优惠)
+=======
+							<h1 class="goods_title"><em>时尚环保pu夹克系列/防风保暖环保/pu/黑色/净色/夹克</em></h1>
+							<div class="goods_ri_p2 price_color"> 					    
+				    			<input type="hidden" id="productCodeNoSize" name="productCodeNoSize" value="20223">
+				    			<div class="fl" style="width:200px">					                     
+					                <span class="yuan">特价：¥</span><strong class="price24">399</strong>
+					                <div class="fr"><span>吊牌价:￥1699.00</span></div>
+					            </div>					     
+								<p class="goods_artNo" style="float: right;">商品款号：20223</p>
+								<div class="goods_vip" style="float: left; width: 100%;">
+									(<span class="vip_col"></span>请<a href="javascript:void(0);" id="loginlv3">登录</a>查看是否享受会员优惠)
+>>>>>>> b84b4fdec1871248ca709b2d69e445d00dd38e01
 								</div>
 							</div>	
 						</div>
@@ -101,28 +201,48 @@
 							<div class="goods_ri_p3_r">
 								<ul>
 									<li class="">
+<<<<<<< HEAD
 										<a href="javascript:void(0);" alt="蓝色">
+=======
+										<a href="" alt="蓝色">
+>>>>>>> b84b4fdec1871248ca709b2d69e445d00dd38e01
 											<div class="fl overflow"><img src="../css/img/m1.jpg" height="35" title="蓝色"></div>蓝色
 										</a>
 									</li> 
 							   	    <li class="color_red">
+<<<<<<< HEAD
 							   	    	<a href="javascript:void(0);" alt="黑色">
+=======
+							   	    	<a href="javascript:void(0)" alt="黑色">
+>>>>>>> b84b4fdec1871248ca709b2d69e445d00dd38e01
 										     <div class="goods_cor"></div>
 										     <div class="fl overflow"><img src="../css/img/m2.jpg" height="35" title="黑色"></div>黑色
 									    </a>
 									</li> 
 							   	    <li class="">
+<<<<<<< HEAD
 								       	<a href="javascript:void(0);" alt="蓝色">
+=======
+								       	<a href="" alt="蓝色">
+>>>>>>> b84b4fdec1871248ca709b2d69e445d00dd38e01
 										<div class="fl overflow"><img src="../css/img/m4.jpg" height="35" title="蓝色"></div>蓝色
 										</a>
 									</li> 
 							   	    <li class="">
+<<<<<<< HEAD
 								       	<a href="javascript:void(0);" alt="咖色">
+=======
+								       	<a href="" alt="咖色">
+>>>>>>> b84b4fdec1871248ca709b2d69e445d00dd38e01
 											<div class="fl overflow"><img src="../css/img/m5.jpg" height="35" title="咖色"></div>咖色
 										</a>
 									</li> 
 							   	    <li class="">
+<<<<<<< HEAD
 								       	<a href="javascript:void(0);" alt="黑色">
+=======
+								       	<a href="" alt="黑色">
+>>>>>>> b84b4fdec1871248ca709b2d69e445d00dd38e01
 											<div class="fl overflow"><img src="../css/img/m6.jpg" height="35" title="黑色"></div>黑色
 										</a>
 									</li>   		 
@@ -133,6 +253,7 @@
 					<div class="size_img_box clearfix" id="select_size">
 					    <h3 class="bold fl">选择尺码：</h3>
 					    <div id="selectSizeBox">
+<<<<<<< HEAD
 					    	<div class="sizeBox">	
 					    		<ul>
 					    			<li class="cur"><p><i>S</i></p><em>165/88A</em></p></li>
@@ -154,6 +275,49 @@
               
 					<div class="clearfix pt30">
 					    <input value="0" type="hidden" id="skip">			            
+=======
+					    	<div class="sizeBox">
+					    		<div class="layer" style="display: none;">最佳体型：<br>身高165-170cm<br>体重55-60kg</div>	
+					    		<ul>		
+					    			<li class=""><p>S</p><em>165/88A</em></p></li>	
+					    		</ul>
+					    	</div>
+					    	<div class="sizeBox">
+					    		<div class="layer" style="display: none;">最佳体型：<br>身高170-175cm<br>体重62-68kg</div>	
+					    		<ul>		
+					    			<li class=""><p>M</p><em>170/92A</em></p></li>	
+					    		</ul>
+					    	</div>
+					    	<div class="sizeBox"><div class="layer" style="display: none;">最佳体型：<br>身高175-180cm<br>体重70-75kg</div>	
+						    	<ul>		
+						    		<li class=""><p>L</p><em>175/96A</em></p></li>	
+						    	</ul>
+					    	</div>
+					    	<div class="sizeBox"><div class="layer" style="display: none;">最佳体型：<br>身高175-180cm<br>体重80-85kg</div>	
+						    	<ul>		
+						    		<li class=""><p>XL</p><em>180/100A</em></p></li>	
+						    	</ul>
+					    	</div>
+					    </div>
+					</div>
+					<p class="num_box">
+				   		 购买数量： <a href="javascript:;">
+				    	<img src="../css/img/tg2_goods_cut.gif"></a>     
+				    	<input type="text" value="1" defaultnumber="1" name="product_num" class="input"> 
+				    	<a href="javascript:;"><img src="../css/img/tg2_goods_add.gif"></a>         
+				    	<span>数量有限，欲购从速</span>        
+				    	<span id="arrival" style="color: rgb(234, 77, 79);">今天下单，配送至广州市，预计2日内送达</span>     
+					</p>									
+              
+					<div class="clearfix pt30">
+					    <input value="0" type="hidden" id="skip">
+			            <!--<span class="predict_newgoods">
+	                       <em>
+	                           <span style="font-size:16px">预售商品&nbsp;</span>
+	                           <span style="font-size:12px">下单7天后发货</span>
+	                       </em>
+	                   </span> -->
+>>>>>>> b84b4fdec1871248ca709b2d69e445d00dd38e01
 	                    <input value="" type="button" class="goods_buy_btn fl" id="submit_btn">
                    		<input value="" type="button" class="goods_ri_btn fl" id="submit_btn2">
 			            <p class="collect_goods">
@@ -210,7 +374,11 @@
 							<a class="in_pic" href=""><img class="lazyload_bk" src="../css/img/j3.jpg"></a> 
 						</div>
 						<div class="in_masa_info">					
+<<<<<<< HEAD
 							<a class="gray" href="">时尚环保pu夹克系列/防风保暖/pu/黑色/净色/夹克</a>
+=======
+							<a class="gray" href="">时尚环保pu夹克系列/防风保暖/pu/黑色/净色/夹克/a>
+>>>>>>> b84b4fdec1871248ca709b2d69e445d00dd38e01
 							<div class="in_price">							
 								<em><span class="yuan">¥</span><span>429</span></em>   
 							</div>
@@ -248,14 +416,24 @@
 		
 		<!--百分点推荐-->          
 		<p class="clear"></p>
+<<<<<<< HEAD
 			<p class="baifendian"><a href="javascript:void(0);"><img src="../css/img/logo_bfd.gif" width="100" height="13"></a></p>
+=======
+			<p class="baifendian"><a href=""><img src="../css/img/logo_bfd.gif" width="100" height="13"></a></p>
+>>>>>>> b84b4fdec1871248ca709b2d69e445d00dd38e01
 		<p class="clear"></p>
 		<!--百分点推荐end-->
 		
 		<div class="goods_ad3">
+<<<<<<< HEAD
 		    <a href="javascript:void(0);"><img src="../css/img/b1.jpg"></a>
 		    <a href="javascript:void(0);"><img src="../css/img/b2.jpg"></a>
 		    <a href="javascript:void(0);"></a><img src="../css/img/b3.jpg"></a>
+=======
+		    <a href=""><img src="../css/img/b1.jpg"></a>
+		    <a href=""><img src="../css/img/b2.jpg"></a>
+		    <a href=""></a><img src="../css/img/b3.jpg"></a>
+>>>>>>> b84b4fdec1871248ca709b2d69e445d00dd38e01
 		</div>			 
 		<!--买过这个商品的人还买过-->
 		<div class="mayaluo">
@@ -291,7 +469,11 @@
 							<a class="in_pic" href=""><img class="lazyload_bk" src="../css/img/j3.jpg"></a> 
 						</div>
 						<div class="in_masa_info">					
+<<<<<<< HEAD
 							<a class="gray" href="">时尚环保pu夹克系列/防风保暖/pu/黑色/净色/夹克</a>
+=======
+							<a class="gray" href="">时尚环保pu夹克系列/防风保暖/pu/黑色/净色/夹克/a>
+>>>>>>> b84b4fdec1871248ca709b2d69e445d00dd38e01
 							<div class="in_price">							
 								<em><span class="yuan">¥</span><span>429</span></em>   
 							</div>
@@ -327,7 +509,11 @@
 		<!--买过这个商品的人还买过end-->
 		<!--百分点推荐-->          
 		<p class="clear"></p>
+<<<<<<< HEAD
 			<p class="baifendian"><a href="javascript:void(0);"><img src="../css/img/logo_bfd.gif" width="100" height="13"></a></p>
+=======
+			<p class="baifendian"><a href=""><img src="../css/img/logo_bfd.gif" width="100" height="13"></a></p>
+>>>>>>> b84b4fdec1871248ca709b2d69e445d00dd38e01
 		<p class="clear"></p>
 		<!--百分点推荐end-->
 		
@@ -649,7 +835,11 @@
 			    <div class="ztpf_r">
 			    	<p>与其他人分享您的观点</p>
 			        <p><a class="btn_comm" href="">我要写评论</a></p>
+<<<<<<< HEAD
 		            <p class="zc"><a href="javascript:void(0);">注册</a><a href="javascript:void(0);">登录</a></p>
+=======
+		            <p class="zc"><a href="">注册</a><a href="">登录</a></p>
+>>>>>>> b84b4fdec1871248ca709b2d69e445d00dd38e01
 		        </div>
 			</div>
 			<p class="clear"></p>
@@ -755,7 +945,11 @@
 						    	<td></td>
 						        <td align="right">
 							        <span><input type="image" src="../css/img/btn_question.gif" id="btnComment" onclick="javascript: submitQuestion();return false;"></span>
+<<<<<<< HEAD
 							        <span><a href="javascript:void(0);">清空</a></span>
+=======
+							        <span><a href="">清空</a></span>
+>>>>>>> b84b4fdec1871248ca709b2d69e445d00dd38e01
 						        </td>
 						    </tr>
 						</tbody>

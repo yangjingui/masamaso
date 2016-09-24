@@ -1,7 +1,11 @@
+<<<<<<< HEAD
 jQuery(function($){
 	$('<div/>').load('right.html',function(){
 		$(this).insertBefore('.container');
 	});
+=======
+jQuery(function($){	
+>>>>>>> b84b4fdec1871248ca709b2d69e445d00dd38e01
 	//banner图轮播
 	//获取页面元素
 	var $bd = $('.bd');
@@ -24,7 +28,11 @@ jQuery(function($){
 	}
 	function scrollBg(index){
 		//大图渐隐渐现
+<<<<<<< HEAD
 		$bdLi.eq(index).fadeIn(500).siblings().fadeOut(500);
+=======
+		$bdLi.eq(index).fadeIn(100).siblings().fadeOut(100);
+>>>>>>> b84b4fdec1871248ca709b2d69e445d00dd38e01
 		
 		//当前小图显示红框
 		$hdSpan.eq(index).addClass('on').siblings('span').removeClass('on');
@@ -41,7 +49,11 @@ jQuery(function($){
 		scrollBg(i);
 		
     }).on('mouseleave',function(){
+<<<<<<< HEAD
       timer = setInterval(carousel,5000);	
+=======
+      timer = setInterval(carousel,100);	
+>>>>>>> b84b4fdec1871248ca709b2d69e445d00dd38e01
     });
     //给底部大图绑定移入事件
     $bdLi.on('mouseenter',function(){
@@ -156,6 +168,7 @@ jQuery(function($){
 			"marginLeft": "0px"
 		}, 1000);	
 	});
+<<<<<<< HEAD
 });
 
 
@@ -249,3 +262,15 @@ jQuery(function($){
 
 
 
+=======
+
+			
+		$("#nav-reflection a").hover(function() {
+		    $(this).stop().animate({ marginTop: "-10px" }, 200);
+		    $(this).parent().find("span").stop().animate({ marginTop: "18px", opacity: 0.25 }, 200);
+		},function(){
+		    $(this).stop().animate({ marginTop: "0px" }, 300);
+		    $(this).parent().find("span").stop().animate({ marginTop: "1px", opacity: 1 }, 300);
+		});
+});
+>>>>>>> b84b4fdec1871248ca709b2d69e445d00dd38e01

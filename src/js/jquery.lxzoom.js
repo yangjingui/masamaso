@@ -74,7 +74,11 @@
 
 
 				// 定位大图
+<<<<<<< HEAD
 				var bigPos = {left:minPos.left*ratio,top:minPos.top*ratio};
+=======
+				var bigPos = {left:oLeft*ratio,top:oTop*ratio};
+>>>>>>> b84b4fdec1871248ca709b2d69e445d00dd38e01
 
 				// 判断大图到底后不再移动
 				if(bigPos.top >= $bigPic.outerHeight()-$bigWrap.outerHeight()){
@@ -97,6 +101,7 @@
 			function init(src){
 				// 生成html结构
 				$bigPic = $('<img/>').attr('src',src);
+<<<<<<< HEAD
 				$bigPic.load(function(){
 					// 大图加载完后计算比率
 					ratio = $bigPic.outerWidth()/$smallPic.outerWidth();
@@ -107,20 +112,37 @@
 						height:opt.height/ratio
 					}).appendTo($self);
 				});
+=======
+>>>>>>> b84b4fdec1871248ca709b2d69e445d00dd38e01
 				$bigWrap = $('<div/>').addClass('lxbzoom').append($bigPic).appendTo('body');
 
 				if(opt.position == 'right'){
 					var left = smallPicPos.x + $self.outerWidth() + opt.gap;
 					var top = smallPicPos.y;
+<<<<<<< HEAD
 				}
 
+=======
+					
+				}
+>>>>>>> b84b4fdec1871248ca709b2d69e445d00dd38e01
 				$bigWrap.css({
 					left:left,
 					top:top,
 					width:opt.width,
 					height:opt.height
+<<<<<<< HEAD
 				});
 				
+=======
+				})
+
+				$minZoom = $('<span/>').addClass('minzoom').appendTo($self);
+
+				// $bigPic.load(function(){
+					ratio = $bigPic.outerWidth()/$smallPic.outerWidth();
+				// })
+>>>>>>> b84b4fdec1871248ca709b2d69e445d00dd38e01
 			}
 
 			function remove(){
