@@ -1,4 +1,4 @@
-.container{width:1250px;}
+.container{width:1250px;margin:0 auto;}
 /*首页顶部固定导航栏*/
 #btns_bar1{width: 100%; position: fixed; top: 0px; z-index: 1300; background-color:#1e1e1e; display: none;}
 #btns_bar1 .header-nav{

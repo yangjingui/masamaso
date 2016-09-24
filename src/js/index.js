@@ -1,4 +1,7 @@
-jQuery(function($){	
+jQuery(function($){
+	$('<div/>').load('right.html',function(){
+		$(this).insertBefore('.container');
+	});
 	//banner图轮播
 	//获取页面元素
 	var $bd = $('.bd');
@@ -228,7 +231,21 @@ jQuery(function($){
        //按钮点击时为这个按钮添加高亮状态，并且将其他按钮高亮状态去掉
         $Li.eq(index).addClass("on").siblings('li').removeClass("on");                
     }
-})
+});
+
+//获取购物车cookie
+jQuery(function($){
+	var $tab = $('#maso_tab');
+	var $mytab = $('#mytab');
+
+	var str = getCookie("arr");
+
+	var arr = JSON.parse(str);
+	for (var i = 0; i < arr.length; i++) {
+		$tab.html(arr[i].oTab);
+		$mytab.html(arr[i].oAdd);
+	}
+});
 
 
 

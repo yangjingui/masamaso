@@ -55,9 +55,15 @@ function removeCookie(name)
 	addCookie(name, 1, -1);
 }
 
-
-
-
+function delCookie(name, path, domain, secure) {
+    var value = $getCookie(name);
+    if (value != null) {
+        var exp = new Date();
+        exp.setMinutes(exp.getMinutes() - 1000);
+        path = path || "/";
+        document.cookie = name + '=;expires=' + exp.toGMTString() + (path ? ';path=' + path : '') + (domain ? ';domain=' + domain : '') + (secure ? ';secure' : '');
+    }
+}
 
 
 function binding(oElem, eventName, fn)

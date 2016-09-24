@@ -21,19 +21,6 @@ jQuery(function($){
     		top:($(window).height()-$pop.outerHeight())/2 + $(window).scrollTop()
     	});
     });
-
-	//给弹窗的删除按钮和取消按钮绑定点击事件
-	$('.windowsBoxB').on('click','.sure',function(){
-		window.location.href = "cart_empty.html";
-	}).on('click','.cancel',function(){
-		$('.overlay').hide();
-		$pop.hide();
-	});
-	
-	$('.close').on('click','.cancel',function(){
-		$('.overlay').hide();
-		$pop.hide();
-	});
 });
 
 
@@ -51,42 +38,14 @@ jQuery(function($){
 	var oEnd = $(".end");//商品总金额
 
 	var str = getCookie("arr");
-
-	var arr = JSON.parse(str);
+	var arr = [];
+	if(str != ""){
+		arr = JSON.parse(str);
+	}
 	//alert(str);
 
 	// 取出数组中元素，arr[i] 是一个对象,
 	//    再取出这个对象中的产品名 和 价格
-	
-	/*<tr>
-        <td id="No"></td>
-        <td class="pro">
-		    <!--<div class="poreat">
-			    <a class="proa" href="" style="color:#796353;">
-			    	<img src="../css/img/shopping.jpg" width="52" height="70" alt="">
-			    </a>
-		    </div>-->
-    		<p><a href=""style="color:#796353;"><span id="goods_name"><!--弹力针织夹克系列/拼接/聚酯纤维/黑色/纯色/薄便装--></span></a></p>
-        </td>
-        <td id="size"><!--M--></td>
-        <td id="old"><!--¥719--></td>
-        <td id="now"><!--¥359--></td>
-        <td>
-        	<div style="position:relative">
-                <span id="low" class="button" style="cursor :pointer">
-                	<img src="../css/img/tg2_goods_cut.gif" width="11" height="11"> 
-                </span>
-                <input type="text" id="num" class="num" value="1">
-                <span id="add" class="button" style="cursor :pointer"> 
-                	<img src="../css/img/tg2_goods_add.gif" width="11" height="11" alt=""> 
-                </span>
-            	<div class="red">库存紧张</div>			  
-        	</div>
-		</td>
-        <td id="count"><!--¥359--></td>
-        <td><a href="" class="gray" id="deleted">删除</a></td>
-    </tr>*/
-   
    
 	for (var i = 0; i < arr.length; i++){
 		var $tr = $('<tr/>');
@@ -121,7 +80,7 @@ jQuery(function($){
 		var $td2 = $Td.append([div1,div2]);
 		
 		var oCount = $("<td/>").html(arr[i].NowPrice);//小计
-		var $delete = $('<td><a href="" class="gray" id="deleted">删除</a></td>');
+		var $delete = $('<td><span class="gray" id="maso_del">删除</span></td>');
 		
 		$tr.append([oNo,$td1,oSize,OldPrice,NowPrice,$td2,oCount,$delete]);
 
@@ -134,23 +93,37 @@ jQuery(function($){
 		var sum = 0;
 		for (var j = 0; j <= i; j++) {
 			sum += arr[i].sum;
-//			console.log(j,sum)
 		}
 		oEnd.html(sum);
 		//alert(oNum.value*NowStr);
 	}
+	//删除商品
+	$("#tab tr").each(function(idx,item) {
+	  	var $del = $(item).find('#maso_del'); 
+	  	$del.on('click',function(){console.log($(this))   
+	  	$(this).parents('tr').remove();
+		  	var idx = $(this).index();
+		  	var data = JSON.parse(getCookie("arr"));
+		  	
+		  	//splice() 方法向/从数组中添加/删除项目,然后返回被删除的项目
+		   	data.splice(idx,1);
+		   	var pro=JSON.stringify(data);
+			addCookie('arr',pro,7);
+	    });
+	});
 
 	//alert(oNum.value*NowStr);
 	//给添加按钮和减去按钮绑定点击事件
 	var low = $('#low');
 	var add = $('#add');
-	low.on('click',function(){
+	low.on('click.low',function(){
 	
 		if($num>1){
 			$input.val($num --);
 		}
 	});
-	add.on('click',function(){
+	add.on('click.add',function(){
 		$input.val($num ++);
 	});
 });
+

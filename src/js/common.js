@@ -1,4 +1,21 @@
 jQuery(function($){
+	// load的第二种用法：
+	// 加载远程文件
+
+	// 1、先生成一个div
+	// 2、加载header.html
+	// 3、把div写入页面
+	$('<div/>').load('header.html',function(){
+		$(this).insertBefore('.container');
+	});
+
+	$('<div/>').load('footer.html',function(){
+		$(this).insertAfter('.container');
+	});	
+	
+				
+});
+jQuery(function($){
 	//给下部导航菜单添加鼠标移入事件
 	$('.menu_box_nav').on('mouseenter','.menu2',function(){
 		//给menu2添加active类

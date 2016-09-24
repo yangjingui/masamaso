@@ -11,3 +11,15 @@ jQuery(function($){
 	
 });
 
+//jQuery(function(){
+//	var email= $('#email');
+//	var psw = $("#psw");
+//	var str = getCookie("a");
+//
+//	var a = JSON.parse(str);console.log(a)
+//	for (var i = 0; i < a.length; i++){
+//		email.val(a[i].email);	  
+//	    psw.val(a[i].psw);
+//	}
+//
+//});

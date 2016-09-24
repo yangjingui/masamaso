@@ -1,5 +1,9 @@
  //给左侧小图绑定点击事件
  jQuery(function($){
+ 	$('<div/>').load('right.html',function(){
+		$(this).insertBefore('.container');
+	});
+ 	
 	var $boxLi = $('#box li');
 	$boxLi.eq(5).lxzoom({
 		width:400,
@@ -87,7 +91,7 @@ jQuery(function($){
 		obj.favour = $old - $now;
 		// 将创建好的商品添加到数组中
 		arr.push(obj);
-	
+		console.log(arr)
 		// cookie 的名字是 arr, 内容是数组中的商品，过期时间是7天以后
 		addCookie("arr", JSON.stringify(arr), 7);
 		obj = {};

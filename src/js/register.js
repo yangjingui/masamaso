@@ -38,12 +38,31 @@ jQuery(function($){
 		}
 	});
 	
-
-	$('#psw').on('focus',function(){
-		if($(this).val().length>8){
-			$('#mid').addClass('password_on');
-			$('#low').removeClass('password_on');
-		}
-	});
-	
 });
+
+
+//jQuery(function($){
+//	
+//	var str = getCookie("a");
+//	
+//	var a = [];
+//	if (str != ""){
+//		//将字符串转换成数组
+//		a = JSON.parse(str);
+//	}
+//
+//	var email= $('#email');
+//	var psw = $("#psw");
+//	var obj = {};	
+//	
+//	var btn = $("#regsubmit");
+//	btn.on('click',function(){
+//		obj.email = email.val();
+//		obj.psw = psw.val();
+//		
+//		a.push(obj);
+//		//JSON.stringify()把JSON对象转换成字符
+//		addCookie("a", JSON.stringify(a), 7);	
+//	}
+//});
+		

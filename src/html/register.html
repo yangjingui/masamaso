@@ -10,19 +10,20 @@
 		<script src="../assets/jquery-1.12.0.js"></script>
 		<script src="../assets/jquery.validate.js"></script>
 		<script src="../assets/jquery.validate.messages_zh.js"></script>
-		<script src="../js/common.js"></script>
-		<script src="../js/register.js"></script>
+		<script src="../js/common.js"></script>	
 		<script src="../js/mycookie.js"></script>
+		<script src="../js/register.js"></script>
 		
 	<script>
 	onload = function() {
 
-		var str = getCookie("arr");
+		var str = getCookie("a");
 	
-		var arr = [];
+		var a = [];
 		if (str != ""){
-			//将字符串转换成数组
-			arr = JSON.parse(str);
+			// 说明之前 cookie 中有商品的内容
+			// 取出来转换成数组
+			a = JSON.parse(str);
 		}
 	
 		var email= document.getElementById('email');
@@ -34,212 +35,49 @@
 			obj.email = email.value;
 			obj.psw = psw.value;
 			
-			arr.push(obj);
-			//JSON.stringify()把JSON对象转换成字符
-			addCookie("arr", JSON.stringify(arr), 7);	
+			a.push(obj);
+			addCookie("a", JSON.stringify(a), 7);	
 		}
-	}
 		
+		//密码强度
+		var login_tab = document.getElementById("login_tab");
+		var oTd = login_tab.getElementsByTagName('td');
+		psw.onblur = function(){
+		
+			var str = this.value;
+			var reg = /^\w{6,20}$/;
+			//安全级别显示思路：没有输入时，先隐藏颜色条
+			//      当密码全部是数字时，安全级别低，显示红色
+			//      当密码由数字和字母或者下划线等组成时，安全级别较高，显示橘色
+			//      当密码由数字、字母和下划线等组成时，安全级别高。显示绿色
+			//【说明】无法进入判断，但是没有错误提示
+			var modes = 0;
+			//正则表达式验证符合要求的
+			if (/[\d|a-z|A-z]/.test(str)){
+				modes++; //数字或字母
+				oTd[0].className = "password_on";
+				oTd[1].className = "password_off";
+				oTd[2].className = "password_off";
+			}
+			if (/[a-zA-Z]/.test(str) && /\d/.test(str)){
+				modes++; //数字和字母
+				oTd[0].className = "password_off";
+				oTd[1].className = "password_on";
+				oTd[2].className = "password_off";
+			}
+			if (/\w/.test(str) && /[(\ )(\~)(\!)(\@)(\#)(\$)(\%)(\^)(\&)(\*)(\()(\))(\-)(\_)(\+)(\=)(\[)(\])(\{)(\})(\|)(\\)(\;)(\:)(\')(\")(\,)(\.)(\/)(\<)(\>)(\?)(\)]+/.test(str)) {
+				modes++; //数字,字母,下划线组成
+				oTd[0].className = "password_off";
+				oTd[1].className = "password_off";
+				oTd[2].className = "password_on";
+			}
+			
+			
+		}				
+	}
 	</script>
 	</head>
 	<body>
-	<div class="head-top">		
-	<div class="head">
-	  <!--logo-->
-	  <div class="header_top">
-	      <div class="top_box">
-	          <div class="top_left_box fl">
-	              <span style="color:red;">30天</span>无障碍退换货<i>|</i>
-	              <span style="color:red;">365天</span>客服<i>|</i>顺丰快递<i>|</i>主力城市
-	              <span style="color:red;">次日送达</span><i>|</i>&lt;广告&gt;
-	          </div>
-	          <div class="fr top_right_ctl" id="index_login">
-	          	<a href="../html/login.html">用户登录</a><i>|</i><a href="../html/register.html">新用户注册</a>
-	          </div>
-	          <p class="cl"></p>
-	      </div>
-	  </div>
-	  
-	  <div class="header_box">
-	      <div class="header clearfix">
-	          <a href=""><img src="../css/img/logor.jpg" class="logo-img"></a>
-	          <div class="header-seach">    
-		          <form>
-	                  <input type="text" placeholder="查找" name="keywords" class="search-input">
-	                  <input type="submit" value=""> 
-		          </form>
-	          </div>
-	      </div>
-	      <p class="clearfix"></p>
-	  </div>  
-	  
-	 <!-- 上部导航菜单 -->  
-	   <div class="header-nav"> 
-	      <div class="fl">    
-			   <a href="../html/index.html" title="首页"  >首页</a>  
-			   <a href="../html/list.html" title="薄便装"  >薄便装</a> 		 
-			   <a href="../html/list.html" title="短T"  >短T </a> 		 
-			   <a href="../html/list.html" title="牛仔系列"  >牛仔系列<i class="new-nav"><img src="../css/img/hot.gif"></i></a> 		 
-			   <a href="../html/list.html" title="男包"  >男包</a> 		 
-			   <a href="../html/list.html" title="衬衫"  >衬衫</a> 		 
-			   <a href="../html/list.html" title="休闲裤"  >休闲裤</a> 		 
-			   <a href="../html/list.html" title="长T"  >长T</a> 		 
-			   <a href="../html/list.html" title="休闲鞋"  >休闲鞋</a> 		 
-			   <a href="../html/list.html" title="皮衣"  >皮衣</a> 		 
-			   <a href="../html/list.html" title="正装鞋"  >正装鞋</a> 		 
-			   <a href="../html/list.html" title="长袖毛衫"  >长袖毛衫</a> 		 
-	      </div>
-	      <div class="fr">
-	      	<a href="../html/list.html" title="限时抢购"  >限时抢购</a> 
-			<a href="../html/list.html" title="本周会员专享"  >本周会员专享<i class="hot-nav"><img src="../css/img/hot.gif"></i></a>   			      
-			<a href="../html/list.html" title="断码清仓"  >断码清仓</a>   				      
-			<a href="../html/list.html" title="新品发布" class="no-mr" >新品发布</a>   				     
-	      </div>
-	      <p class="clearfix"></p>
-	  </div>
-	<!-- 上部导航菜单 menu_end-->    
-	</div>
-	<!-- 下部导航菜单 --> 
- 	<div class="menu_box_nav">
-	    <div class="menu2">
-	        <ul class="second_menu f12">								 
-				<li class=""><a id="" href=""  title="会员机制">会员机制</a></li>									 
-				<li class=""><a id="" href=""  title="vivian女装">vivian女装</a></li>	
-			</ul>
-	        <ul class="menu_box_list">    	   
-				<li class="mm0">
-					<a id="menu_m0" href="../html/list.html" title="外套"  >
-						<span id="imgdropmenu0">外套</span> 
-						<i class="arr"></i>
-					</a>
-				</li>  
-				<li class="mm1">
-					<a id="menu_m1" href="../html/list.html" title="T恤"  >
-						<span id="imgdropmenu0">T恤</span> 
-						<i class="arr"></i>
-					</a>
-				</li>  
-				<li class="mm2">
-					<a id="menu_m2" href="../html/list.html" title="衬衫"  >
-						<span id="imgdropmenu0">衬衫</span> 
-						<i class="arr"></i>
-					</a>
-				</li>	   
-				<li class="mm3">
-					<a id="menu_m3" href="../html/list.html" title="裤子"  >
-						<span id="imgdropmenu0">裤子</span> 
-						<i class="arr"></i>
-					</a>
-				</li>    
-				<li class="mm4">
-					<a id="menu_m4" href="../html/list.html" title="男鞋"  >
-						<span id="imgdropmenu0">男鞋</span> 
-						<i class="arr"></i>
-					</a>
-				</li>   
-				<li class="mm5">
-					<a id="menu_m5" href="../html/list.html" title="针织衫"  >
-						<span id="imgdropmenu0">针织衫</span> 
-						<i class="arr"></i>
-					</a>
-				</li>
-				<li class="mm6">
-					<a id="menu_m6" href="../html/list.html" title="内衣"  >
-						<span id="imgdropmenu0">内衣</span> 
-						<i class="arr"></i>
-					</a>
-				</li> 
-				<li class="mm7">
-					<a id="menu_m7" href="../html/list.html" title="皮包"  >
-						<span id="imgdropmenu0">皮包</span> 
-						<i class="arr"></i>
-					</a>
-				</li><li class="mm8">
-					<a id="menu_m8" href="../html/list.html" title="皮带"  >
-						<span id="imgdropmenu0">皮带</span> 
-						<i class="arr"></i>
-					</a>
-				</li> 
-				<li class="mm9">
-					<a id="menu_m9" href="../html/list.html" title="饰品"  >
-						<span id="imgdropmenu0">饰品</span> 
-						<i class="arr"></i>
-					</a>
-				</li>
-	         </ul>
-	     </div>
-	     <p class="clearfix"></p>     
-     
-     	<!--弹出菜单-->     
-         <div class="maso_nav">
-            <div class="masa_nav_ali">
-                <a href=""  ><img src="../css/img/masa_nav_add.jpg"></a>
-            </div>                        
-			<ul class="" index="0">
-				<li><a href="../html/list.html"  >个性便装</a></li>
-				<li><a href="../html/list.html"  >皮衣</a></li>
-				<li><a href="../html/list.html"  >时尚夹克</a></li>
-				<li><a href="../html/list.html"  >牛仔外套</a></li>
-				<li><a href="../html/list.html"  >冬装外套</a></li>
-				<li><a href="../html/list.html"  >卫衣</a></li>
-		  	</ul>
-			<ul class="" index="1">
-				<li><a href="../html/list.html"  >短袖T恤</a></li>
-				<li><a href="../html/list.html"  >长袖T恤</a></li>
-				<li><a href="../html/list.html"  >打底衫</a></li>
-		  	</ul>
-			<ul class="" index="2">
-				<li><a href="../html/list.html"  >牛仔衬衫</a></li>
-				<li><a href="../html/list.html"  >牛津纺/亚麻</a></li>
-				<li><a href="../html/list.html"  >极简系列</a></li>
-				<li><a href="../html/list.html"  >格纹系列</a></li>
-				<li><a href="../html/list.html"  >品质系列</a></li>
-				<li><a href="../html/list.html"  >短袖衬衫</a></li>
-		  	</ul>
-		  	<ul class="" index="3">
-				<li><a href="../html/list.html"  >休闲裤</a></li>
-				<li><a href="../html/list.html"  >牛仔裤</a></li>
-				<li><a href="../html/list.html"  >休闲短裤</a></li>
-				<li><a href="../html/list.html"  >西裤</a></li>
-		  	</ul>
-		  	<ul class="" index="4">
-				<li><a href="../html/list.html"  >休闲鞋</a></li>
-				<li><a href="../html/list.html"  >运动鞋</a></li>
-				<li><a href="../html/list.html"  >正装鞋</a></li>
-				<li><a href="../html/list.html"  >皮靴</a></li>
-				<li><a href="../html/list.html"  >编织鞋</a></li>
-				<li><a href="../html/list.html"  >凉鞋</a></li>
-		  	</ul>
-			<ul class="" index="5">
-				<li><a href="../html/list.html"  >长袖毛衫</a></li>
-				<li><a href="../html/list.html"  >长袖开衫</a></li>
-				<li><a href="../html/list.html"  >毛背心</a></li>
-		  	</ul>		  
-			<ul class="" index="6">
-				<li><a href="../html/list.html"  >男内衣</a></li>
-				<li><a href="../html/list.html"  >家居服</a></li>
-				<li><a href="../html/list.html"  >内裤</a></li>
-				<li><a href="../html/list.html"  >袜子</a></li>
-		  	</ul>
-			<ul class="" index="7">
-				<li><a href="../html/list.html"  >包</a></li>
-				<li><a href="../html/list.html"  >皮夹</a></li>
-			</ul>						  
-			<ul class="" index="8">
-				<li><a href="../html/list.html"  >正装皮带</a></li>
-				<li><a href="../html/list.html"  >休闲皮带</a></li>
-			</ul>						  
-			<ul class="" index="9">
-				<li><a href="../html/list.html"  >围巾</a></li>
-				<li><a href="../html/list.html"  >方巾</a></li>
-		  	</ul>	
-		  	<p class="clearfix"></p>
-         </div>
-         <!--<div class="menu_box_nav_bg"></div>-->
-     </div>
-     
-	<!-- 下部菜单，结束 menu_end --> 
-	</div>
 
 	<div class="container">
 	
@@ -279,13 +117,15 @@
 											</tr>
 											<tr>
 												<td>
-													<table width="240" border="0" cellspacing="0" cellpadding="1">
-														<tbody><tr>
-															<td width="80" class="password_on">弱</td>
-															<td width="80" class="password_off">中</td>
-															<td width="80" class="password_off">强</td>
-														</tr>
-													</tbody></table>
+													<table id="login_tab" width="240" border="0" cellspacing="0" cellpadding="1">
+														<tbody>
+															<tr>
+																<td width="80" class="password_on">弱</td>
+																<td width="80" class="password_off">中</td>
+																<td width="80" class="password_off">强</td>
+															</tr>
+														</tbody>
+													</table>
 												</td>
 												<td>&nbsp;</td>
 											</tr>
@@ -456,75 +296,5 @@
 	</div>
 		<!--用户注册end-->
 	</div>
-
-	<!--底部-->
-	<div class="footer" >
-        <div class="footer_box"> 
-            <div class="footer_promise">
-                <img src="../css/img/footer_m_6.jpg" border="0">
-            </div>
-        </div>
-        <div class="help_link_list">
-            <ul class="help_link"> 
-                <p>新手指南</p>
-                <li><a href="" target="_blank">注册新用户</a></li>
-                <li><a href="" target="_blank">网站订购流程</a></li>
-            </ul>
-            <ul class="help_link">
-                <p>售后服务</p>
-                <li><a href="" target="_blank">退换货政策</a></li>
-                <li><a href="" target="_blank">鞋类三包政策</a></li>
-            </ul>
-            <ul class="help_link">
-                <p>客服中心</p>
-                <li><a href="" target="_blank">常见问题</a></li>
-                <li><a href="" target="_blank">投诉与建议</a></li>
-            </ul>
-            <ul class="help_link">
-                <p>如何付款/退款</p>
-                <li><a href="" target="_blank">支付方式及付款等待期限</a></li>
-                <li><a href="" target="_blank">常见支付问题</a></li>
-            </ul>
-            <ul class="help_link">
-                <p>配送方式</p>
-                <li><a href="" target="_blank">配送方式及范围</a></li>
-                <li><a href="" target="_blank">货到付款城市目录</a></li>
-                <li><a href="" target="_blank">配送常见问题</a></li>
-            </ul>
-            <ul class="help_link">
-                <p>技术与服务</p>
-                <li><a href="" target="_blank">B2C仓储服务</a></li>
-            </ul>
-            <div class="maso_email">
-                <div class="maso_email_top">
-                    <h3>订阅邮箱</h3>
-                    <p>立即订阅，获得每日最新资讯</p>
-                </div>
-                <div class="maso_email_int">
-                    <input type="text" id="book_email" value="请输入你的邮箱地址"/>
-                </div>
-                <a class="maso_email_btn" id="sub_email_book" href="">订阅</a>                     
-            </div>
-        </div>
-
-        <p class="clear"></p>        
-		<div class="footer_nav_box">
-            <div class="footer_nav">
-                <ul>
-                    <li><a target="_blank" href="">关于MasaMaso</a><span>|</span></li>                    
-                    <li><a target="_blank" href="">网站地图</a><span>|</span></li>
-                    <li><a target="_blank" href="">隐私条款</a><span>|</span></li>
-                    <li><a target="_blank" href="">企业订购</a><span>|</span></li>
-                    <li><a target="_blank" href="">加入我们</a><span>|</span></li>
-                    <li><a target="_blank" href="">帮助中心</a><span>|</span></li> 
-                    <li><a target="_blank" href="">网站联盟</a><span>|</span></li>
-                    <li><a target="_blank" href="">友情链接</a><span>|</span></li>
-                    <li class="pe"><a target="_blank" href="">总裁邮箱</a><span>|</span></li>
-                    <li class="integrity"><a href="" target="_blank"><img src="../css/img/integrity_logo.gif"></a></li>
-                </ul>
-            </div>
-            <p class="copyright">Copyright © 2008-2050 MasaMaso.com All Right Reserved 京ICP证080088号， 京ICP备09042941号-8，  北京市公安局朝阳分局备案编号：1101051120</p>
-        </div>
-    </div>
 	</body>
 </html>
